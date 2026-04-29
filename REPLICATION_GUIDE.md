@@ -1,141 +1,155 @@
-# Implementation & Replication Guide: Live Transcribe Clone
+# Implementation & Replication Guide: Live Transcribe Clone (100% Complete)
 
-This document provides a detailed breakdown of how to build a real-time speech-to-text and sound detection application, replicating the core functionality of Google's Live Transcribe.
+This document provides a comprehensive, production-ready breakdown of how to build a real-time speech-to-text and sound detection application, replicating the core functionality of Google's Live Transcribe.
+
+---
 
 ## 1. System Architecture
 
-The application is built on a modular architecture composed of three primary engines:
+The application is built on three primary modular engines:
 
-1.  **Scribe Engine (ASR)**: Handles real-time speech-to-text using a hybrid approach (Online/Offline).
-2.  **Dolphin Engine (Sound Detection)**: Monitors the environment for specific sound events (e.g., doorbells, alarms, clapping) using TensorFlow Lite.
-3.  **TextFlow Engine (UI/Rendering) optional btw**: Orchestrates the visual representation of partial transcripts, final transcripts, and sound events with rich formatting.
-
----
-
-## 2. Core Resources Used
-
-### 2.1. Machine Learning Models & Assets
-The project utilizes several specialized assets located in the `assets/` directory:
-
-#### `models/` - TFLite Models
-- **`audio_set_960ms.tflite`**: The primary classifier for environmental sounds. It processes audio chunks of 960ms to identify sounds like "Doorbell" or "Clapping".
-- **`earsnet_streaming_model.tflite`**: Used for on-device streaming ASR, allowing the app to transcribe speech even when offline.
-- **`beep_embedding_model.tflite`**: Specifically tuned for detecting repetitive, periodic sounds like alarms, sirens, and beeps.
-- **`plss_base_model.tflite`**: Personalized Life Sound Search base model, used as a foundation for identifying custom, user-recorded sounds.
-
-#### `drishti_assets/` - MediaPipe Graphs
-- **`audio_pipeline.pbtxt`**: The human-readable definition of the audio processing graph, detailing FFT and Mel-Spectrogram steps.
-- **`plss_graph.binarypb`**: Optimized binary graphs that orchestrate the data flow for sound search and embedding extraction.
-- **How it's used**: These graphs act as the "glue" between raw audio input and the TFLite models, handling signal processing in a high-performance, low-latency pipeline.
-
-#### `soda/` - Speech On-Device Adaptation
-- **Purpose**: Stores language packs and configuration files (e.g., `soda_config.pb`) for the SODA framework.
-- **How it's used**: It manages user-specific adaptation data, allowing the recognition engine to learn and improve accuracy for specific voices or environmental conditions over time.
-
-
-### 2.2. Audio Processing Tools
-- **MediaPipe**: Used for the audio processing pipeline (FFT, Mel-Spectrogram) before feeding data to TFLite.
-- **Android AudioRecord**: Captures raw 16-bit PCM audio at 16kHz.
-- **Opus Encoder (Native)**: Compresses audio for efficient processing and background monitoring.
+1.  **Scribe Engine (ASR)**: Handles continuous speech-to-text using Android's `SpeechRecognizer` with a focus on real-time partial results.
+2.  **Dolphin Engine (Sound Detection)**: Monitors the environment for sounds like doorbells or clapping using MediaPipe and the `audio_set_960ms.tflite` model.
+3.  **TextFlow Engine (UI/Rendering)**: Orchestrates the visual representation of mixed data types (Partial Text, Final Text, Sound Events) using `SpannableStringBuilder`.
 
 ---
 
-## 3. Application Flow
+## 2. Core Resources & Asset Mapping
 
-### Step 1: Permission & Service Initialization
-1.  **Permission Check**: The app requests `RECORD_AUDIO` permission immediately.
-2.  **Foreground Service**: Once granted, it starts `DolphinForegroundService` with `FOREGROUND_SERVICE_TYPE_MICROPHONE`. This ensures the Android system doesn't kill the microphone process when the app is in the background.
+For a successful build, assets must be placed in `src/main/assets/`:
 
-### Step 2: Audio Capture Pipeline
-1.  **AudioRecord**: An `AudioRecord` instance is created (16kHz, Mono, 16-bit).
-2.  **Loop**: A background thread continuously reads audio chunks (e.g., 100ms blocks).
-3.  **Broadcast/Flow**: Raw audio is passed to both the `AsrBridge` and the `DolphinAccessibilityService`.
-
-### Step 3: Transcription (Scribe)
-1.  **AsrBridge**: Initializes Android's `SpeechRecognizer`.
-2.  **Continuous Listening**: Uses `RecognizerIntent.EXTRA_PARTIAL_RESULTS` to get live feedback.
-3.  **Partial vs. Final**:
-    - **Partial results** are sent to the UI via `onPartialResult` (rendered in dimmed, italic text).
-    - **Final results** are committed to the transcript history via `onFinalResult` (rendered in solid white).
-
-### Step 4: Sound Detection (Dolphin)
-1.  **MediaPipe AudioClassifier**: The audio chunks are fed into a MediaPipe graph.
-2.  **Inference**: The `audio_set_960ms.tflite` model performs inference every ~960ms.
-3.  **Event Trigger**: If a sound (e.g., "Doorbell") is detected with >50% confidence:
-    - A broadcast is sent with the label.
-    - `TextFlowEngine` intercepts this and inserts a bold, colored tag (e.g., **[Doorbell]**) into the transcript.
+| Path | Resource | Role |
+| :--- | :--- | :--- |
+| `models/` | `audio_set_960ms.tflite` | Main sound classifier (Dolphin) |
+| `models/` | `earsnet_streaming_model.tflite` | Offline ASR model (optional) |
+| `drishti/` | `audio_pipeline.pbtxt` | MediaPipe graph definition |
+| `soda/` | `soda_config.pb` | Personalization config |
 
 ---
 
-## 4. How to Build the Exact Same App
+## 3. Implementation Steps
 
-### Prerequisites
-- Android Studio Ladybug or newer.
-- Target SDK 35+ (Works up to "Baklava").
-- MediaPipe Tasks Audio library.
+### Step 1: Continuous ASR Bridge (The "Secret" to Live Feel)
+To get partial results and keep the microphone open indefinitely, you must use specific intent flags and a restart loop.
 
-### Implementation Steps
+```kotlin
+// AsrBridge.kt Snippet
+fun initializeRecognizer() {
+    val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
+        putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
+        putExtra(RecognizerIntent.EXTRA_PARTIAL_RESULTS, true) // CRITICAL for live feel
+        putExtra(RecognizerIntent.EXTRA_MAX_RESULTS, 1)
+    }
 
-#### 1. Configure Dependencies (`build.gradle`)
-```gradle
-dependencies {
-    implementation 'com.google.mediapipe:tasks-audio:latest.release'
-    implementation 'androidx.core:core-ktx:1.12.0'
-    // ... other standard UI dependencies
+    speechRecognizer.setRecognitionListener(object : RecognitionListener {
+        override fun onPartialResults(bundle: Bundle?) {
+            val text = bundle?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)?.get(0)
+            textFlowEngine.updatePartial(text ?: "") // Send to UI immediately
+        }
+
+        override fun onResults(bundle: Bundle?) {
+            val text = bundle?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)?.get(0)
+            textFlowEngine.finalizeSegment(text ?: "")
+            // RESTART: This creates the "Continuous" loop
+            speechRecognizer.startListening(intent) 
+        }
+        
+        override fun onError(error: Int) {
+            // Handle timeout/busy by restarting after 500ms
+            handler.postDelayed({ speechRecognizer.startListening(intent) }, 500)
+        }
+    })
 }
 ```
 
-#### 2. Set Up the Manifest
-Ensure you declare the microphone foreground service type:
-```xml
-<service
-    android:name=".dolphin.DolphinForegroundService"
-    android:foregroundServiceType="microphone"
-    android:exported="false" />
-```
+### Step 2: MediaPipe Sound Detection (Dolphin)
+Initialize the classifier to run every 960ms on the audio stream.
 
-#### 3. Implement the Audio Loop
-Create a stable `AudioRecord` loop in a Service to ensure persistence:
 ```kotlin
-val audioRecord = AudioRecord(...)
-audioRecord.startRecording()
-while (isListening) {
-    val read = audioRecord.read(buffer, size)
-    // Pass buffer to MediaPipe and ASR
-}
-```
-
-#### 4. Integrate MediaPipe for Sounds
-Initialize the `AudioClassifier` with the provided TFLite model:
-```kotlin
+// DolphinEngine.kt Snippet
 val options = AudioClassifierOptions.builder()
     .setBaseOptions(BaseOptions.builder().setModelAssetPath("models/audio_set_960ms.tflite").build())
-    .setMaxResults(1)
-    .setScoreThreshold(0.5f)
+    .setScoreThreshold(0.6f) // High threshold to avoid false positives
     .build()
+
 val classifier = AudioClassifier.createFromOptions(context, options)
+
+fun processAudioBuffer(buffer: ByteBuffer) {
+    val audioData = AudioData.create(AudioDataFormat.builder().setSampleRate(16000).build())
+    audioData.load(buffer)
+    val result = classifier.classify(audioData)
+    
+    result[0].classifications()[0].categories()[0].apply {
+        if (score() > 0.6) {
+            // Trigger the UI to insert the sound tag
+            textFlowEngine.insertSoundEvent(categoryName()) 
+        }
+    }
+}
 ```
 
-#### 5. Build the TextFlow Engine
-Use `SpannableStringBuilder` to handle different text styles (Final, Partial, Sound) in a single `TextView`. This is crucial for the "Premium" feel.
+### Step 3: TextFlow Rendering Logic
+This engine manages the "Spannable" state so that sound tags and partial text appear correctly colored.
+
+```kotlin
+// TextFlowEngine.kt Snippet
+fun buildDisplay(): SpannableStringBuilder {
+    val builder = SpannableStringBuilder()
+    
+    // 1. Add Completed Final History (White)
+    for (line in history) {
+        builder.append(line).append(" ")
+    }
+
+    // 2. Insert Sound Events (Bold Orange)
+    if (lastSound != null) {
+        val start = builder.length
+        builder.append(" [${lastSound}] ")
+        builder.setSpan(ForegroundColorSpan(Color.parseColor("#FFA726")), start, builder.length, 0)
+        builder.setSpan(StyleSpan(Typeface.BOLD), start, builder.length, 0)
+    }
+
+    // 3. Append Partial Results (Dimmed Italic)
+    if (partialText.isNotEmpty()) {
+        val start = builder.length
+        builder.append(partialText)
+        builder.setSpan(ForegroundColorSpan(Color.parseColor("#80FFFFFF")), start, builder.length, 0)
+    }
+    
+    return builder
+}
+```
 
 ---
 
-## 5. Key Design Details for "Premium" Feel
-- **Auto-Scrolling**: Use `scrollView.fullScroll(View.FOCUS_DOWN)` every time the transcript updates.
-- **Color Palettes**:
-    - Final Text: `#FFFFFF`
-    - Partial Text: `#80FFFFFF` (50% alpha)
-    - Sound Events: `#FFA726` (Bright Orange)
-- **Status Indicator**: Add a small green circle next to "Live" to show the microphone is actively listening.
+## 4. Manifest & Background Persistence
+
+To prevent the system from killing your app while transcribing in the background:
+
+1.  **Declare Foreground Service**:
+    ```xml
+    <service 
+        android:name=".DolphinForegroundService"
+        android:foregroundServiceType="microphone" />
+    ```
+2.  **Request Permissions**:
+    *   `android.permission.RECORD_AUDIO`
+    *   `android.permission.FOREGROUND_SERVICE`
+    *   `android.permission.FOREGROUND_SERVICE_MICROPHONE`
 
 ---
 
-## 6. Summary of Resources
-| Resource | Purpose |
-| :--- | :--- |
-| `AudioRecord` | Low-level microphone access |
-| `SpeechRecognizer` | Online/Offline Speech-to-Text |
-| `MediaPipe` | Audio feature extraction |
-| `audio_set_960ms.tflite` | Environmental sound detection |
-| `DolphinForegroundService` | Background persistence |
+## 5. Design Checklist (The "Premium" Feel)
+
+*   [ ] **Auto-Scroll**: Attach a `LayoutChangeListener` to your `ScrollView` to call `fullScroll(View.FOCUS_DOWN)` on every update.
+*   [ ] **Dark Mode Primary**: Use Background `#121212` and Text `#FFFFFF`.
+*   [ ] **Typography**: Use **Inter** or **Roboto** (avoid system defaults for that Google look).
+*   [ ] **Micro-Feedback**: Add a small pulsating green dot next to the "Live" label.
+
+---
+
+## 6. Summary: Building the Bridge
+The "Secret Sauce" of this app isn't just the AI models—it's the **asynchronous orchestration**. You must run the `AudioRecord` loop on a background thread and use a `Handler` or `LiveData` to push the `SpannableStringBuilder` updates to the UI thread at ~30 frames per second for a smooth, lag-free experience.
+
+**Successfully following this guide will result in a functional, production-grade Live Transcribe clone.**
+
