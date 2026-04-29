@@ -37,26 +37,7 @@ A sophisticated UI orchestrator that manages `SpannableStringBuilder` to render 
 
 ## 📊 Technical Flow
 
-```mermaid
-flowchart TD
-    Start([App Launch]) --> PermCheck{Microphone Permission}
-    PermCheck -->|Yes| StartService[Start DolphinForegroundService]
-    StartService --> Init[Initialize Engines]
-    
-    subgraph Pipeline [Native Audio Pipeline]
-        AudioIn[Audio Capture 16kHz] --> Resample[Resample / DSP]
-        Resample --> ML[AI Inference Layers]
-        ML --> Env[Environmental Model]
-        ML --> ASRStream[Streaming Speech Model]
-    end
-
-    subgraph UI [TextFlow Rendering]
-        ASRStream --> Partial[Partial Text]
-        ASRStream --> Final[Final Text]
-        Env --> Tag[Sound Event Tag]
-        Partial & Final & Tag --> Render[Scrollable TextView]
-    end
-```
+![Technical Flow](assets/flowchart.png)
 
 ---
 
