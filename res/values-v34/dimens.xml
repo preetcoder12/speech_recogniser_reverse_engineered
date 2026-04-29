@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="m3_control_ripple_color_selector_default_alpha">0.2</item>
+    <item type="dimen" name="m3_control_ripple_color_selector_focused_alpha">0.17</item>
+    <item type="dimen" name="m3_control_ripple_color_selector_hovered_alpha">0.1</item>
+    <item type="dimen" name="m3_control_ripple_color_selector_pressed_alpha">0.12</item>
+    <dimen name="sud_description_text_size">14.0sp</dimen>
+    <dimen name="sud_glif_description_text_size_material_you">14.0sp</dimen>
+    <dimen name="sud_glif_margin_start_material_you">24.0dip</dimen>
+</resources>

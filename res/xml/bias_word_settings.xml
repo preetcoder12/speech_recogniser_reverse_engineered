@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.android.settingslib.widget.TopIntroPreference
+        android:key="@string/pref_bias_word_info" />
+    <PreferenceCategory
+        android:key="@string/pref_bias_word_category"
+        app:iconSpaceReserved="false">
+        <com.google.audio.hearing.visualization.accessibility.scribe.ui.bias.BiasWordPreference
+            android:key="@string/pref_bias_word_add"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

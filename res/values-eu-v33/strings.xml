@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">Soinuaren kalitateari buruzko oharrak bidaltzea hautatu ezean, ez zaio bidaliko Google-ri ez audiorik, ez atzeko planoko elkarrizketarik.</string>
+    <string name="live_transcribe_html_description">Istanteko transkripzioa erabiltzen duzunean, hauek egin ditzakezu:&lt;br/> &lt;ol> &lt;li> Pantailan ikusten duzun transkripziorako erantzunak idatzi.&lt;/li> &lt;li> Alertak jaso zure izena hautematen denean.&lt;/li> &lt;li> Transkripzioetan bilaketak egin.&lt;/li> &lt;/ol>&lt;br/> Google-k zure elkarrizketak prozesatzen ditu, baina ez ditu inoiz gordetzen</string>
+    <string name="dolphin_intro">Jaso inguruko soinu garrantzitsuei buruzko jakinarazpenak, hala nola ke-alarma bat entzuten denean edo haur batek negar egiten duenean</string>
+    <string name="scribe_intro">Istanteko transkripzioa aplikazioak esaten eta entzuten dena pantailan erakusten du. Horrela, errazago parte hartu ahalko duzu inguruko elkarrizketetan.</string>
+</resources>

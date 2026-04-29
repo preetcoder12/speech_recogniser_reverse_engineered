@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">O áudio e as conversas de fundo não são enviados ao Google, a menos que você escolha enviar feedback sobre a qualidade do som.</string>
+    <string name="live_transcribe_html_description">Ao usar o app Transcrição instantânea, você pode:&lt;br/> &lt;ol> &lt;li> digitar respostas para a transcrição que aparece na tela;&lt;/li> &lt;li> receber alertas quando seu nome for falado;&lt;/li> &lt;li> pesquisar nas transcrições.&lt;/li> &lt;/ol>&lt;br/> O Google processa suas conversas, mas nunca as armazena.</string>
+    <string name="dolphin_intro">Receba notificações sobre sons importantes à sua volta, como o choro de um bebê ou o alarme do detector de fumaça</string>
+    <string name="scribe_intro">A Transcrição Instantânea converte o que está sendo falado em texto na sua tela para você participar de conversas com mais facilidade</string>
+</resources>

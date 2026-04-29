@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">Hljóð eða samtöl í bakgrunni eru ekki send til Google, nema að þú sendir inn ábendingu varðandi hljóðgæði</string>
+    <string name="live_transcribe_html_description">Með „Umritun í beinni“ geturðu:&lt;br/> &lt;ol> &lt;li> Slegið inn svör við textauppskriftinni sem birtist á skjánum&lt;/li> &lt;li> Fengið tilkynningu þegar nafnið þitt heyrist&lt;/li> &lt;li> Leitað í textauppskriftum&lt;/li> &lt;/ol>&lt;br/> Google vinnur úr samtölunum þínum en vistar þau aldrei</string>
+    <string name="dolphin_intro">Fáðu tilkynningar um mikilvæg hljóð umhverfis þig, eins og þegar reykskynjari pípir eða barn grætur</string>
+    <string name="scribe_intro">Umritun í beinni sýnir tal sem texta á skjánum svo þú eigir auðveldara með að taka þátt í samtölum í kringum þig.</string>
+</resources>

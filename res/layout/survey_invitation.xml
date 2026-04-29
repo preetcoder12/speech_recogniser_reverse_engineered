@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="end"
+    android:id="@id/survey_prompt_buttons"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="12.0dip"
+    android:layout_marginRight="12.0dip"
+    android:layout_marginBottom="16.0dip"
+    style="@style/SurveyInvitationStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.libraries.surveys.internal.view.ButtonWithMaxTextSize
+        android:textSize="@dimen/survey_prompt_buttons_text_size"
+        android:id="@id/survey_prompt_no_thanks_button"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginRight="4.0dip"
+        android:text="@string/survey_prompt_no_thanks"
+        app:textSizeMaxDp="@dimen/survey_prompt_buttons_max_text_size"
+        style="@style/SurveyNoThanksButtonStyle" />
+    <com.google.android.libraries.surveys.internal.view.ButtonWithMaxTextSize
+        android:textSize="@dimen/survey_prompt_buttons_text_size"
+        android:id="@id/survey_prompt_take_survey_button"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginRight="4.0dip"
+        android:text="@string/survey_prompt_take_our_survey"
+        app:textSizeMaxDp="@dimen/survey_prompt_buttons_max_text_size"
+        style="@style/SurveyTakeSurveyButtonStyle" />
+</LinearLayout>

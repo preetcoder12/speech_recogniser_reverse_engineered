@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_gravity="end|bottom|center"
+    android:orientation="vertical"
+    android:id="@id/survey_main_scroll_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@id/fl_card_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_gravity="end|bottom|center"
+            android:id="@id/survey_overall_container"
+            android:clipToPadding="false"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="16.0dip"
+            app:cardElevation="2.0dip"
+            app:enforceMaterialTheme="false"
+            app:strokeWidth="0.0dip"
+            style="@style/SurveyOverallContainerStyle">
+            <LinearLayout
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:id="@id/survey_container"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:alpha="1.0">
+                <com.google.android.libraries.surveys.internal.view.SurveyViewPager
+                    android:id="@id/survey_viewpager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:overScrollMode="never" />
+            </LinearLayout>
+            <include
+                layout="@layout/survey_close_button" />
+        </com.google.android.material.card.MaterialCardView>
+    </FrameLayout>
+</ScrollView>

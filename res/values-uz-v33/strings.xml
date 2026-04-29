@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">Ovoz sifati haqida fikr-mulohaza yuborishni tanlamaguningizgacha audio va fondagi suhbatlar hech qachon Googlega yuborilmaydi.</string>
+    <string name="live_transcribe_html_description">Jonli transkripsiya ishlatilganda, siz quyidagilarni bajarishingiz mumkin:&lt;br/> &lt;ol> &lt;li> Ekrandagi suhbatlarda javoblar yozish&lt;/li> &lt;li> Ismingiz aytilganda xabar olish&lt;/li> &lt;li> Transkripsiyalar ichidan qidirish&lt;/li> &lt;/ol>&lt;br/> Google suhbatlarni qayta ishlaydi, lekin saqlamaydi</string>
+    <string name="dolphin_intro">Atrofingizda tutun signali yoki chaqaloq yigʻisi kabi muhim tovushlar haqida bildirishnomalar oling.</string>
+    <string name="scribe_intro">Jonli transkripsiya ekranda nutqni matn shaklida chiqaradi va atrofdagi suhbatlarda qatnashishni osonlashtiradi</string>
+</resources>

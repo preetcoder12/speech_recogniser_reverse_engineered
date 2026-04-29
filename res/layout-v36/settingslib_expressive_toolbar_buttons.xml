@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_gravity="end"
+    android:id="@id/toolbar_buttons_container"
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:filterTouchesWhenObscured="true"
+    android:paddingStart="@dimen/settingslib_expressive_space_extrasmall6"
+    android:layout_marginEnd="@dimen/settingslib_expressive_space_small4"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.button.MaterialButton
+        android:theme="@style/Theme.Material3.DynamicColors.DayNight"
+        android:id="@id/primary_button"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        app:iconTint="@color/settingslib_materialColorOnSurfaceVariant"
+        style="@style/Widget.Material3.Button.IconButton" />
+    <com.google.android.material.button.MaterialButton
+        android:theme="@style/Theme.Material3.DynamicColors.DayNight"
+        android:id="@id/secondary_button"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        app:iconTint="@color/settingslib_materialColorOnSurfaceVariant"
+        style="@style/Widget.Material3.Button.IconButton" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@id/action_button"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        style="@style/SettingsLibButtonStyle.Expressive.Filled" />
+    <com.google.android.material.button.MaterialButton
+        android:layout_gravity="center_horizontal"
+        android:id="@id/action_icon_only_button"
+        android:visibility="gone"
+        android:layout_width="@dimen/settingslib_expressive_space_medium5"
+        android:layout_height="@dimen/settingslib_expressive_space_medium4"
+        app:iconGravity="textStart"
+        app:iconPadding="@dimen/settingslib_expressive_space_none"
+        style="@style/SettingsLibButtonStyle.Expressive.Filled" />
+</LinearLayout>

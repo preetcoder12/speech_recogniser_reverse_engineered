@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:topLeftRadius="@dimen/join_broadcast_bottom_layout_top_round_corner_radius"
+        android:topRightRadius="@dimen/join_broadcast_bottom_layout_top_round_corner_radius"
+        android:bottomLeftRadius="@dimen/join_broadcast_bottom_layout_bottom_round_corner_radius"
+        android:bottomRightRadius="@dimen/join_broadcast_bottom_layout_bottom_round_corner_radius" />
+    <solid
+        android:color="@color/join_broadcast_bottom_layout_background_color" />
+</shape>

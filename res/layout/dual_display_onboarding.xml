@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/onboarding_background"
+        android:padding="@dimen/dual_display_onboarding_padding"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/dual_display_onboarding_text_padding">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/dual_display_onboarding_title_icon_size"
+                android:layout_height="@dimen/dual_display_onboarding_title_icon_size"
+                android:layout_marginBottom="@dimen/dual_display_onboarding_title_margin"
+                android:src="@drawable/gs_dual_screen_vd_theme_24"
+                android:scaleType="fitCenter"
+                android:tint="?android:colorAccent"
+                android:contentDescription="@null" />
+            <TextView
+                android:textSize="@dimen/dual_display_onboarding_title_font_size"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dual_display_onboarding_title_margin"
+                android:text="@string/dual_display_onboarding_title"
+                android:fontFamily="@font/google_sans" />
+            <TextView
+                android:textSize="@dimen/dual_display_onboarding_content_font_size"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dual_display_onboarding_content"
+                android:fontFamily="@font/google_sans_text" />
+        </LinearLayout>
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_gravity="center"
+            android:id="@id/animation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="0.0dip"
+            android:scaleType="fitCenter"
+            android:minHeight="@dimen/dual_display_onboarding_image_min_height"
+            android:layout_weight="1.0"
+            android:contentDescription="@null"
+            android:layout_marginVertical="@dimen/dual_display_onboarding_image_margin"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/motion_onboarding" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@id/continue_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dual_display_onboarding_turn_on"
+            android:backgroundTint="@color/colorAccentPrimary"
+            app:shapeAppearance="@style/DualDisplayOnboardingUpperButtonShapeAppearance"
+            style="@style/OnboardingButtonTheme" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@id/dismiss_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dual_display_onboarding_button_margin"
+            android:text="@string/dual_display_onboarding_not_now"
+            android:backgroundTint="@color/colorAccentSecondary"
+            app:shapeAppearance="@style/DualDisplayOnboardingLowerButtonShapeAppearance"
+            style="@style/OnboardingButtonTheme" />
+    </LinearLayout>
+</ScrollView>

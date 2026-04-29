@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/content_bottom_sheet_background"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:textSize="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:textAppearance="?textAppearanceBody1"
+        android:textColor="?android:textColorSecondary"
+        android:id="@id/search_option"
+        android:background="@drawable/search_option_background"
+        android:paddingTop="@dimen/search_bottom_sheet_text_secondary_padding"
+        android:paddingBottom="@dimen/search_bottom_sheet_text_secondary_padding"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/search_bottom_sheet_item_padding"
+        android:text="@string/search"
+        android:drawableLeft="@drawable/quantum_ic_search_grey600_24"
+        android:drawablePadding="@dimen/search_bottom_sheet_item_padding"
+        android:paddingStart="?android:listPreferredItemPaddingStart"
+        android:paddingEnd="?android:listPreferredItemPaddingEnd" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="?android:listPreferredItemPaddingStart"
+        android:paddingEnd="?android:listPreferredItemPaddingEnd">
+        <TextView
+            android:textAppearance="?textAppearanceBody2"
+            android:textColor="?android:colorAccent"
+            android:paddingRight="?android:listPreferredItemPaddingRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.0dip"
+            android:text="@string/text_size_title" />
+        <com.google.audio.hearing.visualization.accessibility.scribe.common.ui.TextSizeLinearLayout
+            android:gravity="center_vertical"
+            android:id="@id/text_size_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.0dip"
+            textSize:defaultTextSizeIndex="@integer/default_text_size_index"
+            textSize:spKey="@string/pref_text_size"
+            textSize:textSizeEntries="@array/text_size_entries"
+            textSize:textSizeValues="@array/text_size_values">
+            <ImageView
+                android:id="@id/smaller"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:focusable="true"
+                android:layout_width="48.0dip"
+                android:layout_height="48.0dip"
+                android:src="@drawable/ic_font_size_16dp"
+                android:scaleType="center"
+                android:tint="?android:textColorPrimary"
+                android:contentDescription="@string/make_smaller_text_size_description"
+                android:tintMode="src_in" />
+            <com.google.android.material.slider.Slider
+                android:theme="@style/Theme.MaterialComponents.DayNight"
+                android:id="@id/text_size_slider"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:maxHeight="@dimen/text_size_slider_height"
+                android:minHeight="@dimen/text_size_slider_height"
+                android:layout_weight="1.0"
+                android:contentDescription="@string/text_size_title"
+                android:paddingStart="20.0dip"
+                android:paddingEnd="20.0dip"
+                style="@style/SettingslibSliderStyle.Expressive" />
+            <ImageView
+                android:id="@id/larger"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:focusable="true"
+                android:layout_width="48.0dip"
+                android:layout_height="48.0dip"
+                android:src="@drawable/ic_font_size_24dp"
+                android:scaleType="center"
+                android:tint="?android:textColorPrimary"
+                android:contentDescription="@string/make_larger_text_size_description"
+                android:tintMode="src_in" />
+        </com.google.audio.hearing.visualization.accessibility.scribe.common.ui.TextSizeLinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@id/container_settings"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

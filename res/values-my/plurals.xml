@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bias_custom_name_summary">
+        <item quantity="other">အမည် %d ခု</item>
+        <item quantity="one">အမည် %d ခု</item>
+    </plurals>
+    <plurals name="bias_custom_word_summary">
+        <item quantity="other">စကားလုံး %d လုံး</item>
+        <item quantity="one">စကားလုံး %d လုံး</item>
+    </plurals>
+    <plurals name="dolphin_notification_title_sound_event_information">
+        <item quantity="other">ပြီးခဲ့သော %2$d နာရီအတွင်း သိရှိသောအသံ %1$d ခု</item>
+        <item quantity="one">ပြီးခဲ့သော %2$d နာရီအတွင်း သိရှိသောအသံ %1$d ခု</item>
+    </plurals>
+    <plurals name="dolphin_service_detecting">
+        <item quantity="other">အသံ {0,number,integer} ခုကို နားထောင်နေသည်…</item>
+        <item quantity="one">အသံ {0,number,integer} ခုကို နားထောင်နေသည်…</item>
+    </plurals>
+    <plurals name="survey_star_rating">
+        <item quantity="other">ကြယ် %2$d ပွင့်အနက် %1$d ပွင့်</item>
+        <item quantity="one">ကြယ် %2$d ပွင့်အနက် %1$d ပွင့်</item>
+    </plurals>
+    <plurals name="tts_settings_language_unavailable">
+        <item quantity="other">ဘာသာစကားများ</item>
+        <item quantity="one">ဘာသာစကား</item>
+    </plurals>
+</resources>

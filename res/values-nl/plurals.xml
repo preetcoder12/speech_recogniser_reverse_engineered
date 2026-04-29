@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bias_custom_name_summary">
+        <item quantity="other">%d namen</item>
+        <item quantity="one">%d naam</item>
+    </plurals>
+    <plurals name="bias_custom_word_summary">
+        <item quantity="other">%d woorden</item>
+        <item quantity="one">%d woord</item>
+    </plurals>
+    <plurals name="dolphin_notification_title_sound_event_information">
+        <item quantity="other">%1$d geluiden waargenomen in de afgelopen %2$d uur</item>
+        <item quantity="one">%1$d geluid waargenomen in de afgelopen %2$d uur</item>
+    </plurals>
+    <plurals name="dolphin_service_detecting">
+        <item quantity="other">Luisteren naar {0,number,integer} geluiden…</item>
+        <item quantity="one">Luisteren naar {0,number,integer} geluid…</item>
+    </plurals>
+    <plurals name="survey_star_rating">
+        <item quantity="other">%1$d sterren van de %2$d</item>
+        <item quantity="one">%1$d ster van de %2$d</item>
+    </plurals>
+    <plurals name="tts_settings_language_unavailable">
+        <item quantity="other">talen</item>
+        <item quantity="one">taal</item>
+    </plurals>
+</resources>

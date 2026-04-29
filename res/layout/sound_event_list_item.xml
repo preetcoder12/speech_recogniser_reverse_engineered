@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/sound_event_chip_margin"
+    android:layout_marginEnd="@dimen/sound_event_chip_margin"
+    android:layout_marginVertical="@dimen/sound_event_chip_bottom_margin"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.chip.Chip
+        android:textSize="@dimen/sound_event_chip_text_size"
+        android:id="@id/sound_event_chip"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/sound_event_chip_height"
+        android:paddingStart="@dimen/sound_event_chip_horizontal_padding"
+        android:paddingEnd="@dimen/sound_event_chip_horizontal_padding"
+        app:iconSize="@dimen/sound_event_chip_icon_size"
+        style="@style/SoundChip" />
+</LinearLayout>

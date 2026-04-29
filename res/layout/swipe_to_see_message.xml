@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_gravity="center|top"
+    android:orientation="vertical"
+    android:id="@id/swipe_to_see_container"
+    android:visibility="gone"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/abc_action_bar_elevation_material"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="?swipeToSeeGradientBackgroundEndColor"
+        android:padding="@dimen/header_padding"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="?android:textColorSecondary"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/swipe_to_see"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/swipe_to_see" />
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/quantum_ic_expand_more_grey600_18"
+            android:importantForAccessibility="no" />
+    </LinearLayout>
+    <View
+        android:background="@drawable/swipe_to_see_background"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_gradient_height" />
+</LinearLayout>

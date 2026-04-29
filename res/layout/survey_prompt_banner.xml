@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_gravity="end|bottom|center"
+    android:orientation="vertical"
+    android:id="@id/survey_prompt_container_wrapper"
+    android:scrollbars="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.card.MaterialCardView
+            android:id="@id/survey_prompt_container"
+            android:clipToPadding="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="16.0dip"
+            android:layout_marginBottom="@dimen/survey_card_vertical_margin"
+            app:cardBackgroundColor="@color/survey_surface_color_elevation_2"
+            app:cardCornerRadius="@dimen/survey_prompt_corner_radius"
+            app:cardElevation="2.0dip"
+            app:enforceMaterialTheme="false"
+            app:strokeWidth="0.0dip">
+            <com.google.android.libraries.surveys.internal.view.SurveyPromptBannerWrapper
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@id/survey_prompt_banner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@id/survey_prompt_header"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/SurveyPromptHeaderStyle">
+                        <include
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/survey_display_logo_margin_top"
+                            android:layout_marginBottom="@dimen/survey_display_logo_margin_bottom"
+                            layout="@layout/survey_display_logo"
+                            style="@style/SurveyPromptLogoStyle" />
+                        <TextView
+                            android:textSize="@dimen/survey_question_text_size"
+                            android:textColor="@color/survey_primary_text_color"
+                            android:id="@id/survey_prompt_title_text"
+                            android:background="@drawable/survey_prompt_selector"
+                            android:paddingTop="2.0dip"
+                            android:focusable="true"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/survey_display_logo_margin_top"
+                            android:layout_marginBottom="12.0dip"
+                            android:minHeight="24.0dip"
+                            android:text="@string/survey_default_prompt_title"
+                            android:includeFontPadding="false"
+                            android:layout_weight="1.0"
+                            android:fontFamily="@string/survey_font_medium"
+                            android:focusedByDefault="true"
+                            android:accessibilityHeading="true" />
+                        <include
+                            layout="@layout/survey_close_button" />
+                    </LinearLayout>
+                    <androidx.core.widget.NestedScrollView
+                        android:id="@id/survey_prompt_banner_scrollable_container"
+                        android:scrollbars="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fadeScrollbars="false">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:id="@id/survey_prompt_banner_container"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:descendantFocusability="afterDescendants"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" />
+                            <include
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/survey_divider_horizontal_margin"
+                                android:layout_marginRight="@dimen/survey_divider_horizontal_margin"
+                                layout="@layout/survey_divider" />
+                            <include
+                                layout="@layout/survey_legal_text" />
+                        </LinearLayout>
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+            </com.google.android.libraries.surveys.internal.view.SurveyPromptBannerWrapper>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

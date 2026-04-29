@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:padding="@dimen/sud_glif_expressive_setup_progress_indicator_container_padding"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/sud_glif_expressive_setup_progress_indicator_container_min_size"
+    android:minHeight="@dimen/sud_glif_expressive_setup_progress_indicator_container_min_size"
+    android:filterTouchesWhenObscured="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.loadingindicator.LoadingIndicator
+        android:layout_gravity="center"
+        android:id="@id/sud_setup_progress_indicator_indeterminate"
+        android:visibility="gone"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:containerColor="?colorSurfaceContainerHigh"
+        app:containerHeight="@dimen/sud_glif_expressive_setup_progress_indicator_min_size"
+        app:containerWidth="@dimen/sud_glif_expressive_setup_progress_indicator_min_size"
+        app:indicatorColor="?colorPrimary"
+        app:indicatorSize="@dimen/sud_glif_expressive_setup_progress_loading_indicator_size"
+        style="@style/Widget.Material3.LoadingIndicator.Contained" />
+    <TextView
+        android:textSize="@dimen/sud_glif_expressive_setup_progress_indicator_text_size"
+        android:textColor="?colorOnSecondary"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/sud_setup_progress_indicator_text"
+        android:background="@drawable/sud_setup_progress_indicator_background"
+        android:padding="0.0dip"
+        android:visibility="gone"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/sud_glif_expressive_setup_progress_indicator_min_size"
+        android:minHeight="@dimen/sud_glif_expressive_setup_progress_indicator_min_size"
+        android:includeFontPadding="false"
+        android:fontFamily="@string/sudGlifExpressiveDialogFontFamily"
+        android:backgroundTint="?colorPrimary" />
+    <ImageView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@id/sud_setup_progress_indicator_icon"
+        android:background="@drawable/sud_setup_progress_indicator_background"
+        android:padding="@dimen/sud_glif_expressive_setup_progress_indicator_icon_padding"
+        android:visibility="gone"
+        android:clickable="false"
+        android:layout_width="@dimen/sud_glif_expressive_setup_progress_indicator_min_size"
+        android:layout_height="@dimen/sud_glif_expressive_setup_progress_indicator_min_size"
+        android:tint="?colorPrimary"
+        android:contentDescription="@string/sud_setup_progress_indicator_icon_description"
+        android:backgroundTint="?colorSurfaceContainerHigh" />
+</FrameLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.camera.view.PreviewView
+        android:id="@id/join_broadcast_preview_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.audio.hearing.visualization.accessibility.scribe.ui.broadcast.BroadcastPreviewOverlay
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/join_broadcast_bottom_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Space
+        android:id="@id/join_broadcast_center_space_view"
+        android:layout_width="@dimen/join_broadcast_center_space_view_size"
+        android:layout_height="@dimen/join_broadcast_center_space_view_size"
+        app:layout_constraintBottom_toTopOf="@id/join_broadcast_bottom_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.textview.MaterialTextView
+        android:textSize="16.0sp"
+        android:textColor="?colorOnSurface"
+        android:gravity="center"
+        android:paddingBottom="@dimen/join_broadcast_layout_text_view_padding_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/join_broadcast_layout_text_view_message"
+        android:layout_marginHorizontal="@dimen/join_broadcast_layout_text_view_layout_margin_horizontal"
+        app:layout_constraintBottom_toTopOf="@id/join_broadcast_center_space_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/join_broadcast_upload_from_gallery_button_height"
+        android:layout_marginTop="@dimen/join_broadcast_upload_from_gallery_button_layout_margin_top"
+        android:text="@string/join_broadcast_upload_from_gallery_button"
+        android:layout_marginHorizontal="@dimen/join_broadcast_upload_from_gallery_button_layout_margin_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/join_broadcast_center_space_view" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="vertical"
+        android:id="@id/join_broadcast_bottom_layout"
+        android:background="@drawable/join_broadcast_bottom_layout_round_corner_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/join_broadcast_bottom_layout_padding_horizontal"
+        android:paddingVertical="@dimen/join_broadcast_bottom_layout_padding_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@id/join_broadcast_enter_exist_session_text_input"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/join_broadcast_enter_exist_session_text_input_height"
+            android:hint="@string/join_broadcast_enter_exist_session_text_input_hint"
+            android:importantForAccessibility="no"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/BroadcastTextInputLayout">
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:textSize="@dimen/join_broadcast_enter_exist_session_text_input_text_size"
+                android:textColor="?colorOnSurface"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textview.MaterialTextView
+            android:textSize="@dimen/join_broadcast_bottom_layout_text_size"
+            android:textColor="?colorOnSurface"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/join_broadcast_bottom_layout_text_view_message"
+            android:paddingHorizontal="@dimen/join_broadcast_bottom_layout_text_view_padding_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/join_broadcast_enter_exist_session_text_input" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

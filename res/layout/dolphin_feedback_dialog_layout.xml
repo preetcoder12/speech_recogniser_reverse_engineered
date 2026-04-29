@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:keepScreenOn="true"
+        android:paddingHorizontal="@dimen/dolphin_feedback_dialog_layout_padding"
+        android:paddingVertical="@dimen/dolphin_feedback_dialog_layout_padding">
+        <FrameLayout
+            android:id="@id/dropdown_layout_container"
+            android:focusable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="no"
+                style="@style/DropdownLayoutTheme">
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@id/select_sound_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dolphin_spinner_select_sound_type_text"
+                    android:inputType="none"
+                    android:importantForAccessibility="no" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </FrameLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/include_audio_layout"
+            android:focusable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dolphin_feedback_dialog_include_audio_layout_margin_top"
+            android:baselineAligned="false"
+            android:layout_below="@id/dropdown_layout_container"
+            android:onClick="toggleSwitch"
+            android:layout_alignParentStart="true">
+            <LinearLayout
+                android:orientation="vertical"
+                android:focusable="false"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+                <TextView
+                    android:textSize="@dimen/dolphin_feedback_dialog_larger_text_size"
+                    android:layout_gravity="start"
+                    android:focusable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dolphin_send_feedback_with_audio_checkbox"
+                    style="@style/PrimaryTitleTextStyle" />
+                <TextView
+                    android:layout_gravity="start"
+                    android:id="@id/send_audio_info"
+                    android:focusable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dolphin_feedback_dialog_context_include_audio_file"
+                    style="@style/SecondaryTitleTextStyle" />
+            </LinearLayout>
+            <include
+                layout="@layout/dolphin_switch_material_no_bg" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

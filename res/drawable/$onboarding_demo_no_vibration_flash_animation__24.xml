@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    android:ordering="together"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_no_vibration_flash_animation__24__0"
+        android:duration="7450"
+        android:startOffset="0"
+        android:valueFrom="0"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="scaleX" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_no_vibration_flash_animation__24__1"
+        android:duration="7450"
+        android:startOffset="0"
+        android:valueFrom="0"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="scaleY" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_no_vibration_flash_animation__24__2"
+        android:duration="300"
+        android:startOffset="7450"
+        android:valueFrom="0"
+        android:valueTo="1.05"
+        android:valueType="floatType"
+        android:propertyName="scaleX" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_no_vibration_flash_animation__24__3"
+        android:duration="300"
+        android:startOffset="7450"
+        android:valueFrom="0"
+        android:valueTo="1.05"
+        android:valueType="floatType"
+        android:propertyName="scaleY" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_no_vibration_flash_animation__24__4"
+        android:duration="200"
+        android:startOffset="7750"
+        android:valueFrom="1.05"
+        android:valueTo="1"
+        android:valueType="floatType"
+        android:propertyName="scaleX" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_no_vibration_flash_animation__24__5"
+        android:duration="200"
+        android:startOffset="7750"
+        android:valueFrom="1.05"
+        android:valueTo="1"
+        android:valueType="floatType"
+        android:propertyName="scaleY" />
+</set>

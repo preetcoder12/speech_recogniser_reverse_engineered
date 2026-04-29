@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bias_custom_name_summary">
+        <item quantity="other">%d ta ism</item>
+        <item quantity="one">%d ta ism</item>
+    </plurals>
+    <plurals name="bias_custom_word_summary">
+        <item quantity="other">%d ta soʻz</item>
+        <item quantity="one">%d ta soʻz</item>
+    </plurals>
+    <plurals name="dolphin_notification_title_sound_event_information">
+        <item quantity="other">Oxirgi %2$d soat ichida %1$d ta tovush aniqlangan</item>
+        <item quantity="one">Oxirgi %2$d soat ichida %1$d ta tovush aniqlangan</item>
+    </plurals>
+    <plurals name="dolphin_service_detecting">
+        <item quantity="other">{0,number,integer} ta tovush tinglanmoqda…</item>
+        <item quantity="one">{0,number,integer} ta tovush tinglanmoqda…</item>
+    </plurals>
+    <plurals name="survey_star_rating">
+        <item quantity="other">%1$d/%2$d yulduz</item>
+        <item quantity="one">%1$d/%2$d yulduz</item>
+    </plurals>
+    <plurals name="tts_settings_language_unavailable">
+        <item quantity="other">tillar</item>
+        <item quantity="one">til</item>
+    </plurals>
+</resources>

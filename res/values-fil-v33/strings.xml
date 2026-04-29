@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">Hindi ipinapadala sa Google ang audio at mga pag-uusap sa background, maliban kung piliin mong magpadala ng feedback tungkol sa kalidad ng tunog</string>
+    <string name="live_transcribe_html_description">Kapag ginagamit ang Instant Transcribe, magagawa mong:&lt;br/> &lt;ol> &lt;li> Mag-type ng mga sagot sa transcription na nakikita mo sa screen&lt;/li> &lt;li> Makatanggap ng mga alerto kapag binanggit ang iyong pangalan&lt;/li> &lt;li> Maghanap sa mga transcription&lt;/li> &lt;/ol>&lt;br/> Ipinoproseso ng Google ang iyong mga pag-uusap pero hinding-hindi nito sino-store ang mga ito</string>
+    <string name="dolphin_intro">Maabisuhan tungkol sa mahahalagang tunog sa paligid mo, gaya ng mga pag-beep ng smoke alarm o pag-iyak ng sanggol</string>
+    <string name="scribe_intro">Ipinapakita ng Instant Transcribe ang speech bilang text sa iyong screen para mas madali kang makasali sa mga pag-uusap sa paligid mo</string>
+</resources>

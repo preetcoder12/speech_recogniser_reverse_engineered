@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">Audio dan percakapan di latar belakang tidak dikirim ke Google, kecuali jika Anda memilih mengirim masukan terkait kualitas suara</string>
+    <string name="live_transcribe_html_description">Saat menggunakan Transkripsi Instan, Anda dapat:&lt;br/> &lt;ol> &lt;li> Mengetik respons terhadap transkripsi yang Anda lihat di layar&lt;/li> &lt;li> Mendapatkan notifikasi saat nama Anda disebut&lt;/li> &lt;li> Menelusuri dalam transkripsi&lt;/li> &lt;/ol>&lt;br/> Google memproses percakapan Anda tetapi tidak pernah menyimpannya</string>
+    <string name="dolphin_intro">Dapatkan notifikasi tentang suara penting di sekitar Anda, misalnya saat ada suara alarm asap atau tangisan bayi</string>
+    <string name="scribe_intro">Transkripsi Instan menampilkan ucapan sebagai teks di layar sehingga memudahkan Anda mengikuti percakapan di sekitar</string>
+</resources>

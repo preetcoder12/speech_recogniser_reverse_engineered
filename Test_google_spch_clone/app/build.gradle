@@ -1,0 +1,60 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.google.audio.hearing.visualization.accessibility.scribe.clone'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId "com.google.audio.hearing.visualization.accessibility.scribe.clone"
+        minSdk 26
+        targetSdk 36
+        versionCode 200000
+        versionName "1.0-clone"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "arm64-v8a"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.activity:activity-ktx:1.8.0'
+    
+    // TFLite
+    implementation 'org.tensorflow:tensorflow-lite:2.16.1'
+    implementation 'org.tensorflow:tensorflow-lite-gpu:2.16.1'
+    implementation 'org.tensorflow:tensorflow-lite-support:0.4.4'
+    
+    // gRPC
+    implementation 'io.grpc:grpc-android:1.68.0'
+    implementation 'io.grpc:grpc-okhttp:1.68.0'
+    implementation 'io.grpc:grpc-protobuf-lite:1.68.0'
+    implementation 'io.grpc:grpc-stub:1.68.0'
+    
+    // Protobuf
+    implementation 'com.google.protobuf:protobuf-javalite:4.28.0'
+    
+    // MediaPipe
+    implementation 'com.google.mediapipe:tasks-audio:0.10.14'
+}

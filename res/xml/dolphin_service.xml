@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service
+    android:description="@string/dolphin_description"
+    android:summary="@string/dolphin_summary"
+    android:settingsActivity="com.google.audio.hearing.visualization.accessibility.dolphin.ui.settings.DolphinSettingsPreferenceActivity"
+    android:accessibilityEventTypes="typeAnnouncement"
+    android:accessibilityFeedbackType="feedbackHaptic|feedbackVisual"
+    android:accessibilityFlags="flagIncludeNotImportantViews"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

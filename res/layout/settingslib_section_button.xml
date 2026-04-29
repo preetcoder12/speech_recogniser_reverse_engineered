@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:filterTouchesWhenObscured="true"
+    android:importantForAccessibility="no"
+    android:paddingVertical="@dimen/settingslib_expressive_space_extrasmall4"
+    style="@style/SettingsLibButtonPreferenceStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.button.MaterialButton
+        android:id="@id/settingslib_section_button"
+        style="@style/SettingsLibSectionButtonStyle.Expressive" />
+</LinearLayout>

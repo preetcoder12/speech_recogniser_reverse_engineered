@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">Izingxoxo zomsindo nezingemuva azithunyelwa ku-Google, ngaphandle uma ukhetha ukuthumela impendulo mayelana nekhwalithi yomsindo</string>
+    <string name="live_transcribe_html_description">Lapho usebenzisa i-Live Transcribe, ungakwazi:&lt;br/> &lt;ol> &lt;li> Ukuthayipha izimpendulo zokuloba ozibona esikrinini&lt;/li> &lt;li> Ukuthola izexwayiso lapho igama lakho likhulunywa&lt;/li> &lt;li> Ukusesha ngaphakathi kokuloba&lt;/li> &lt;/ol>&lt;br/> I-Google icubungula izingxoxo zakho, kodwa ayilokothi izigcine</string>
+    <string name="dolphin_intro">Yaziswa ngemisindo ebalulekile ekuzungezile, njengalapho kukhala i-alamu yentuthu noma lapho kukhala ingane</string>
+    <string name="scribe_intro">I-Live Transcribe ibonisa inkulumo njengombhalo esikrinini sakho ukuze ubambe iqhaza ezingxoxweni eziseduze nawe kalula</string>
+</resources>

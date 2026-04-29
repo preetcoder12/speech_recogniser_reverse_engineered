@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">"L'àudio i les converses de fons no s'envien a Google, tret que decideixis compartir suggeriments sobre la qualitat del so"</string>
+    <string name="live_transcribe_html_description">Quan utilitzes Transcripció instantània, pots:&lt;br/> &lt;ol> &lt;li> Escriure respostes a la transcripció que veus en pantalla.&lt;/li> &lt;li> Rebre alertes quan algú diu el teu nom.&lt;/li> &lt;li> Fer cerques dins de les transcripcions.&lt;/li> &lt;/ol>&lt;br/> Google processa les teves converses, però mai les emmagatzema.</string>
+    <string name="dolphin_intro">"Rep notificacions dels sons importants del teu voltant, com ara una alarma de fum o el plor d'un nadó"</string>
+    <string name="scribe_intro">Transcripció instantània mostra la parla com a text a la pantalla perquè puguis participar en les converses del teu voltant més fàcilment</string>
+</resources>

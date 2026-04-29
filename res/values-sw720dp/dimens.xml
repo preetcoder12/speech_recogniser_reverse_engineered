@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="action_menu_view_margin_horizontal">30.0dip</dimen>
+    <dimen name="sound_event_chip_layout_margin_start">30.0dip</dimen>
+    <dimen name="text_view_margin">40.0dip</dimen>
+</resources>

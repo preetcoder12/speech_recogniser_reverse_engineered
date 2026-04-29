@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="?android:selectableItemBackground"
+    android:paddingLeft="@dimen/survey_multiple_select_horizontal_padding"
+    android:paddingRight="@dimen/survey_multiple_select_horizontal_padding"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/survey_option_tap_minheight"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox
+        android:textSize="@dimen/survey_answer_text_size"
+        android:textColor="@color/survey_checkbox_text_color"
+        android:layout_gravity="start|center"
+        android:id="@id/survey_multiple_select_checkbox"
+        android:padding="12.0dip"
+        android:focusable="false"
+        android:clickable="false"
+        android:saveEnabled="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</FrameLayout>

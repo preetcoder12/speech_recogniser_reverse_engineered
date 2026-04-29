@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="dissatisfied">@drawable/quantum_ic_sentiment_dissatisfied_vd_theme_24</item>
+    <item type="drawable" name="neutral">@drawable/quantum_ic_sentiment_neutral_vd_theme_24</item>
+    <item type="drawable" name="satisfied">@drawable/quantum_ic_sentiment_satisfied_vd_theme_24</item>
+    <item type="drawable" name="survey_close_button_icon">@drawable/quantum_ic_close_grey600_48</item>
+    <item type="drawable" name="very_dissatisfied">@drawable/quantum_ic_sentiment_very_dissatisfied_vd_theme_24</item>
+    <item type="drawable" name="very_satisfied">@drawable/quantum_ic_sentiment_very_satisfied_vd_theme_24</item>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="0.0dip"
+    android:layout_height="wrap_content"
+    android:layout_weight="1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:layout_gravity="end"
+        android:id="@id/survey_rating_number_layout"
+        android:background="@drawable/survey_rounded_button_background"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="48.0dip"
+        android:minHeight="48.0dip">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_gravity="center"
+            android:id="@id/survey_rating_number_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/google_transparent"
+            app:cardCornerRadius="4.0dip"
+            app:enforceMaterialTheme="false"
+            app:strokeColor="@color/survey_secondary_text_color"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+            <TextView
+                android:textSize="@dimen/survey_rating_number_text_size"
+                android:textColor="@color/survey_primary_text_color"
+                android:layout_gravity="center"
+                android:id="@id/survey_rating_number_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.card.MaterialCardView>
+    </FrameLayout>
+</FrameLayout>

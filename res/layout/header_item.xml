@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:textSize="14.0sp"
+    android:textColor="@color/dolphin_accent_color"
+    android:layout_gravity="start|center"
+    android:id="@id/header"
+    android:paddingTop="@dimen/main_context_frag_list_view_margin_top"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:singleLine="true"
+    android:fontFamily="google-sans-text"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" />

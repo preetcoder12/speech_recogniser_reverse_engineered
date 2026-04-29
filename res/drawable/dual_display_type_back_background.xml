@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid
+        android:color="@color/dual_display_type_back_layout_background" />
+    <corners
+        android:topLeftRadius="@dimen/dual_display_type_back_layout_radius"
+        android:topRightRadius="@dimen/dual_display_type_back_layout_radius" />
+</shape>

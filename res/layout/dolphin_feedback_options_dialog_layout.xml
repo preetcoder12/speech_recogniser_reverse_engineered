@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadeScrollbars="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@id/container"
+        android:paddingBottom="@dimen/dolphin_feedback_dialog_layout_padding"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dolphin_feedback_dialog_layout_padding"
+        android:paddingEnd="@dimen/dolphin_feedback_dialog_layout_padding">
+        <com.google.android.material.button.MaterialButton
+            android:id="@id/sound_incorrectly_detected_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dolphin_feedback_options_dialog_sound_incorrectly_detected"
+            android:layout_alignParentStart="true"
+            app:shapeAppearance="@style/UpperButtonShapeAppearance"
+            style="@style/FeedbackDialogButtonTheme" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@id/sound_was_not_detected_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dolphin_feedback_dialog_button_margin"
+            android:text="@string/dolphin_feedback_options_dialog_sound_was_not_detected"
+            android:layout_below="@id/sound_incorrectly_detected_btn"
+            android:layout_alignParentStart="true"
+            app:shapeAppearance="@style/MiddleButtonShapeAppearance"
+            style="@style/FeedbackDialogButtonTheme" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@id/general_feedback_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dolphin_feedback_dialog_button_margin"
+            android:text="@string/dolphin_feedback_options_dialog_general_feedback"
+            android:layout_below="@id/sound_was_not_detected_btn"
+            android:layout_alignParentStart="true"
+            app:shapeAppearance="@style/MiddleButtonShapeAppearance"
+            style="@style/FeedbackDialogButtonTheme" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@id/cancel_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dolphin_feedback_dialog_button_margin"
+            android:text="@android:string/cancel"
+            android:layout_below="@id/general_feedback_btn"
+            android:layout_alignParentStart="true"
+            app:shapeAppearance="@style/LowerButtonShapeAppearance"
+            style="@style/FeedbackDialogButtonTheme" />
+    </RelativeLayout>
+</ScrollView>

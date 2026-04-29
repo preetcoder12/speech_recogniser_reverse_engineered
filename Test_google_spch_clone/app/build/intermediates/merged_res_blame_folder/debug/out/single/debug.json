@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.google.audio.hearing.visualization.accessibility.scribe.app-merged_res-35:/layout_activity_main.xml.flat",
+        "source": "com.google.audio.hearing.visualization.accessibility.scribe.app-main-37:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.google.audio.hearing.visualization.accessibility.scribe.app-merged_res-35:/xml_accessibility_service_config.xml.flat",
+        "source": "com.google.audio.hearing.visualization.accessibility.scribe.app-main-37:/xml/accessibility_service_config.xml"
+    }
+]

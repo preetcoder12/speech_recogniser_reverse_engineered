@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sud_glif_expressive_back_button_margin_start">68.0dip</dimen>
+    <dimen name="sud_glif_expressive_content_padding_top">0.0dip</dimen>
+    <dimen name="sud_glif_expressive_footer_bar_padding_end">68.0dip</dimen>
+    <dimen name="sud_glif_expressive_footer_bar_padding_start">68.0dip</dimen>
+    <dimen name="sud_glif_expressive_margin_end">72.0dip</dimen>
+    <dimen name="sud_glif_expressive_margin_start">72.0dip</dimen>
+</resources>

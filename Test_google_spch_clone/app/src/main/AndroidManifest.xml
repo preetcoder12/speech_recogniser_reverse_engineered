@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.audio.hearing.visualization.accessibility.scribe.clone"
+    android:targetSdkVersion="36">
+
+    <!-- Microphone access -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- Overlay for sound notifications -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- Context for transcriptions -->
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+    <!-- External microphone support -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <!-- Foreground service -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+    <!-- Quick settings -->
+    <uses-permission android:name="android.permission.BIND_QUICK_SETTINGS_TILE" />
+
+    <application
+        android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.scribe.ScribeApplication"
+        android:label="Live Transcribe"
+        android:supportsRtl="true">
+
+        <!-- ============================================================ -->
+        <!-- Accessibility Service (Background listening - Dolphin)        -->
+        <!-- ============================================================ -->
+        <service
+            android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.dolphin.DolphinAccessibilityService"
+            android:exported="true"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+        <!-- ============================================================ -->
+        <!-- Foreground Service (Microphone type - high priority)          -->
+        <!-- ============================================================ -->
+        <service
+            android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.dolphin.DolphinForegroundService"
+            android:foregroundServiceType="microphone"
+            android:exported="false" />
+
+        <!-- ============================================================ -->
+        <!-- Quick Settings Tiles                                          -->
+        <!-- ============================================================ -->
+        <service
+            android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.scribe.ScribeTileService"
+            android:exported="true"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.dolphin.DolphinTileService"
+            android:exported="true"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <!-- ============================================================ -->
+        <!-- Main Activity (Scribe - Live Transcribe)                      -->
+        <!-- ============================================================ -->
+        <activity
+            android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.scribe.MainActivity"
+            android:label="Live Transcribe"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ============================================================ -->
+        <!-- Custom Sound Recording (Personalized sounds)                  -->
+        <!-- ============================================================ -->
+        <activity
+            android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.dolphin.CustomSoundRecordingActivity"
+            android:label="Custom Sound"
+            android:windowSoftInputMode="adjustResize" />
+
+    </application>
+</manifest>

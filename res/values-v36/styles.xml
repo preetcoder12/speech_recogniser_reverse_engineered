@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CollapsingToolbarLayoutStyle.SettingsLib" parent="@style/Base.CollapsingToolbarLayoutStyle.SettingsLib">
+        <item name="collapsedTitleTextColor">@color/settingslib_materialColorOnSurface</item>
+        <item name="expandedTitleTextColor">@color/settingslib_materialColorOnSurface</item>
+    </style>
+    <style name="SettingsLibStatusBannerCardStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginVertical">@dimen/settingslib_expressive_space_extrasmall4</item>
+        <item name="cardBackgroundColor">@color/settingslib_materialColorSurfaceBright</item>
+        <item name="cardCornerRadius">@dimen/settingslib_expressive_radius_extralarge1</item>
+        <item name="cardElevation">0.0dip</item>
+        <item name="rippleColor">?android:colorControlHighlight</item>
+        <item name="strokeWidth">0.0dip</item>
+    </style>
+    <style name="TextAppearance.SettingsLib.BodyLarge" parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">variable-body-large</item>
+        <item name="android:letterSpacing">0.03125</item>
+        <item name="android:hyphenationFrequency">normalFast</item>
+        <item name="android:lineHeight">24.0sp</item>
+        <item name="android:lineBreakWordStyle">phrase</item>
+    </style>
+    <style name="TextAppearance.SettingsLib.BodyLarge.Emphasized" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">variable-body-large-emphasized</item>
+        <item name="android:letterSpacing">0.009375</item>
+        <item name="android:hyphenationFrequency">normalFast</item>
+        <item name="android:lineHeight">24.0sp</item>
+        <item name="android:lineBreakWordStyle">phrase</item>
+    </style>
+    <style name="TextAppearance.SettingsLib.BodyMedium" parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">variable-body-medium</item>
+        <item name="android:letterSpacing">0.01785714</item>
+        <item name="android:hyphenationFrequency">normalFast</item>
+        <item name="android:lineHeight">20.0sp</item>
+        <item name="android:lineBreakWordStyle">phrase</item>
+    </style>
+    <style name="TextAppearance.SettingsLib.DisplaySmall.Emphasized" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
+        <item name="android:textSize">36.0sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">variable-display-small-emphasized</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="android:hyphenationFrequency">normalFast</item>
+        <item name="android:lineHeight">44.0sp</item>
+        <item name="android:lineBreakWordStyle">phrase</item>
+    </style>
+    <style name="TextAppearance.SettingsLib.HeadlineSmall" parent="@android:style/TextAppearance.DeviceDefault.Headline">
+        <item name="android:textSize">24.0sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">variable-headline-small</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="android:hyphenationFrequency">normalFast</item>
+        <item name="android:lineHeight">32.0sp</item>
+        <item name="android:lineBreakWordStyle">phrase</item>
+    </style>
+    <style name="TextAppearance.SettingsLib.LabelLarge" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">variable-label-large</item>
+        <item name="android:letterSpacing">0.00714286</item>
+        <item name="android:hyphenationFrequency">normalFast</item>
+        <item name="android:lineHeight">20.0sp</item>
+        <item name="android:lineBreakWordStyle">phrase</item>
+    </style>
+    <style name="TextAppearance.SettingsLib.LabelMedium" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">variable-label-medium</item>
+        <item name="android:letterSpacing">0.04166667</item>
+        <item name="android:hyphenationFrequency">normalFast</item>
+        <item name="android:lineHeight">16.0sp</item>
+        <item name="android:lineBreakWordStyle">phrase</item>
+    </style>
+    <style name="TextAppearance.SettingsLib.TitleLarge.Emphasized" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">variable-title-large-emphasized</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="android:hyphenationFrequency">normalFast</item>
+        <item name="android:lineHeight">28.0sp</item>
+        <item name="android:lineBreakWordStyle">phrase</item>
+    </style>
+    <style name="TextAppearance.SettingsLib.TitleMedium" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">variable-title-medium</item>
+        <item name="android:letterSpacing">0.009375</item>
+        <item name="android:hyphenationFrequency">normalFast</item>
+        <item name="android:lineHeight">24.0sp</item>
+        <item name="android:lineBreakWordStyle">phrase</item>
+    </style>
+    <style name="TextAppearance.SettingsLib.TitleSmall" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">variable-title-small</item>
+        <item name="android:letterSpacing">0.00714286</item>
+        <item name="android:hyphenationFrequency">normalFast</item>
+        <item name="android:lineHeight">20.0sp</item>
+        <item name="android:lineBreakWordStyle">phrase</item>
+    </style>
+    <style name="Theme.CollapsingToolbar.Settings" parent="@style/Theme.MaterialComponents.DayNight">
+        <item name="colorAccent">@color/settingslib_materialColorPrimary</item>
+        <item name="colorPrimary">@color/settingslib_materialColorOnSurfaceInverse</item>
+        <item name="elevationOverlayColor">?colorPrimary</item>
+        <item name="elevationOverlayEnabled">true</item>
+    </style>
+    <style name="Theme.SettingsBase" parent="@style/Theme.SettingsBase_v36" />
+    <style name="Banner.Dismiss.SettingsLib.Expressive" parent="@style/Banner.Dismiss.SettingsLib">
+        <item name="android:src">@drawable/settingslib_expressive_icon_cross</item>
+        <item name="android:contentDescription">@string/accessibility_banner_message_dismiss</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+    <style name="Banner.Header.SettingsLib.Expressive" parent="">
+        <item name="android:textAppearance">@style/TextAppearance.SettingsLib.LabelMedium</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+    <style name="Banner.NegativeButton.SettingsLib.Expressive" parent="@style/SettingsLibButtonStyle.Expressive.Outline.Extra">
+        <item name="materialSizeOverlay">@style/SizeOverlay.Material3Expressive.Button.Small</item>
+    </style>
+    <style name="Banner.PositiveButton.SettingsLib.Expressive" parent="@style/SettingsLibButtonStyle.Expressive.Filled.Extra">
+        <item name="materialSizeOverlay">@style/SizeOverlay.Material3Expressive.Button.Small</item>
+    </style>
+    <style name="Banner.Preference.SettingsLib.Expressive" parent="@style/Banner.Preference.SettingsLib">
+        <item name="android:background">@drawable/settingslib_expressive_card_background</item>
+        <item name="android:padding">@dimen/settingslib_expressive_space_small1</item>
+    </style>
+    <style name="Banner.ResolvedText.SettingsLib.Expressive" parent="">
+        <item name="android:textAppearance">@style/TextAppearance.SettingsLib.BodyMedium</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:drawablePadding">@dimen/settingslib_expressive_space_small1</item>
+    </style>
+    <style name="Banner.Subtitle.SettingsLib.Expressive" parent="">
+        <item name="android:textAppearance">@style/TextAppearance.SettingsLib.BodyMedium</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+    <style name="Banner.Summary.SettingsLib.Expressive" parent="">
+        <item name="android:textAppearance">@style/TextAppearance.SettingsLib.BodyMedium</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:paddingTop">@dimen/settingslib_expressive_space_extrasmall6</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+    <style name="Banner.Title.SettingsLib.Expressive" parent="">
+        <item name="android:textAppearance">@style/TextAppearance.SettingsLib.TitleLarge.Emphasized</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+    <style name="PreferenceTheme.SettingsLib.Expressive" parent="@style/PreferenceTheme.SettingsLib">
+        <item name="checkBoxPreferenceStyle">@style/SettingsLibPreference.CheckBoxPreference.Expressive</item>
+        <item name="dialogPreferenceStyle">@style/SettingsLibPreference.DialogPreference.Expressive</item>
+        <item name="dropdownPreferenceStyle">@style/SettingsLibPreference.DropDown.Expressive</item>
+        <item name="editTextPreferenceStyle">@style/SettingsLibPreference.DialogPreference.EditTextPreference.Expressive</item>
+        <item name="preferenceCategoryStyle">@style/SettingsLibPreference.Category.Expressive</item>
+        <item name="preferenceCategoryTitleTextAppearance">@style/TextAppearance.CategoryTitle.SettingsLib</item>
+        <item name="preferenceCategoryTitleTextColor">@color/settingslib_materialColorPrimary</item>
+        <item name="preferenceScreenStyle">@style/SettingsLibPreference.PreferenceScreen.Expressive</item>
+        <item name="preferenceStyle">@style/SettingsLibPreference.Expressive</item>
+        <item name="seekBarPreferenceStyle">@style/SettingsLibPreference.SeekBarPreference.Expressive</item>
+        <item name="switchPreferenceCompatStyle">@style/SettingsLibPreference.SwitchPreferenceCompat.Expressive</item>
+    </style>
+    <style name="Seekbar.SettingsLib" parent="@android:style/Widget.Material.SeekBar">
+        <item name="android:progressTint">@android:color/system_accent1_800</item>
+        <item name="android:progressBackgroundTint">@color/settingslib_neutral_variant55</item>
+        <item name="android:progressBackgroundTintMode">src_over</item>
+        <item name="android:thumbTint">@android:color/system_accent1_800</item>
+    </style>
+    <style name="SettingsLibButtonPreferenceStyle.Expressive" parent="@style/SettingsLibButtonPreferenceStyle">
+        <item name="android:paddingVertical">@dimen/settingslib_expressive_space_small1</item>
+    </style>
+    <style name="SettingsLibCollapsingToolbarLayoutStyle">
+        <item name="collapsedTitleTextAppearance">@style/SettingsLibCollapsingToolbarTitle.Collapsed</item>
+        <item name="collapsedTitleTextColor">@color/settingslib_materialColorOnSurface</item>
+        <item name="contentScrim">@color/settingslib_materialColorSurfaceVariant</item>
+        <item name="expandedTitleMarginBottom">@dimen/settingslib_expressive_space_medium1</item>
+        <item name="expandedTitleMarginEnd">@dimen/settingslib_expressive_space_small4</item>
+        <item name="expandedTitleMarginStart">@dimen/settingslib_expressive_space_small4</item>
+        <item name="expandedTitleTextAppearance">@style/SettingsLibCollapsingToolbarTitle.Expanded</item>
+        <item name="expandedTitleTextColor">@color/settingslib_materialColorOnSurface</item>
+        <item name="extraMultilineHeightEnabled">true</item>
+        <item name="maxLines">3</item>
+        <item name="scrimAnimationDuration">50</item>
+        <item name="scrimVisibleHeightTrigger">@dimen/settingslib_scrim_visible_height_trigger</item>
+        <item name="statusBarScrim">@null</item>
+        <item name="titleCollapseMode">fade</item>
+    </style>
+    <style name="SettingsLibCollapsingToolbarLayoutStyle.Expressive" parent="@style/SettingsLibCollapsingToolbarLayoutStyle">
+        <item name="contentScrim">@color/settingslib_materialColorSurfaceContainer</item>
+    </style>
+    <style name="SettingsLibCollapsingToolbarTitle.Collapsed" parent="@style/TextAppearance.SettingsLib.TitleLarge.Emphasized">
+        <item name="android:textSize">22.0dip</item>
+    </style>
+    <style name="SettingsLibCollapsingToolbarTitle.Expanded" parent="@style/TextAppearance.SettingsLib.DisplaySmall.Emphasized">
+        <item name="android:textSize">36.0dip</item>
+    </style>
+    <style name="SettingsLibPreference" parent="@style/SettingsPreference.SettingsLib" />
+    <style name="SettingsLibPreference.Category" parent="@style/SettingsCategoryPreference.SettingsLib" />
+    <style name="SettingsLibPreference.Category.Expressive" parent="@style/SettingsLibPreference.Category">
+        <item name="layout">@layout/settingslib_expressive_preference_category</item>
+    </style>
+    <style name="SettingsLibPreference.CheckBoxPreference" parent="@style/SettingsCheckBoxPreference.SettingsLib" />
+    <style name="SettingsLibPreference.CheckBoxPreference.Expressive" parent="@style/SettingsLibPreference.CheckBoxPreference">
+        <item name="layout">@layout/settingslib_expressive_preference</item>
+    </style>
+    <style name="SettingsLibPreference.DialogPreference" parent="@style/SettingsPreference.SettingsLib" />
+    <style name="SettingsLibPreference.DialogPreference.EditTextPreference" parent="@style/SettingsEditTextPreference.SettingsLib" />
+    <style name="SettingsLibPreference.DialogPreference.EditTextPreference.Expressive" parent="@style/SettingsLibPreference.DialogPreference.EditTextPreference">
+        <item name="dialogLayout">@layout/settingslib_preference_dialog_edittext</item>
+        <item name="layout">@layout/settingslib_expressive_preference</item>
+    </style>
+    <style name="SettingsLibPreference.DialogPreference.Expressive" parent="@style/SettingsLibPreference.DialogPreference">
+        <item name="layout">@layout/settingslib_expressive_preference</item>
+    </style>
+    <style name="SettingsLibPreference.DropDown" parent="@style/SettingsDropdownPreference.SettingsLib" />
+    <style name="SettingsLibPreference.DropDown.Expressive" parent="@style/SettingsLibPreference.DropDown">
+        <item name="layout">@layout/settingslib_expressive_preference_dropdown</item>
+    </style>
+    <style name="SettingsLibPreference.Expressive" parent="@style/SettingsLibPreference">
+        <item name="layout">@layout/settingslib_expressive_preference</item>
+    </style>
+    <style name="SettingsLibPreference.PreferenceScreen" parent="@style/SettingsPreferenceScreen.SettingsLib" />
+    <style name="SettingsLibPreference.PreferenceScreen.Expressive" parent="@style/SettingsLibPreference.PreferenceScreen">
+        <item name="layout">@layout/settingslib_expressive_preference</item>
+    </style>
+    <style name="SettingsLibPreference.SeekBarPreference" parent="@style/SettingsSeekbarPreference.SettingsLib" />
+    <style name="SettingsLibPreference.SeekBarPreference.Expressive" parent="@style/SettingsLibPreference.SeekBarPreference" />
+    <style name="SettingsLibPreference.SwitchPreferenceCompat" parent="@style/SettingsSwitchPreferenceCompat.SettingsLib" />
+    <style name="SettingsLibPreference.SwitchPreferenceCompat.Expressive" parent="@style/SettingsLibPreference.SwitchPreferenceCompat">
+        <item name="android:widgetLayout">@layout/settingslib_expressive_preference_switch</item>
+        <item name="layout">@layout/settingslib_expressive_preference</item>
+    </style>
+    <style name="SettingsLibTheme.CollapsingToolbar.Expressive" parent="@style/Theme.MaterialComponents.DayNight" />
+    <style name="SettingslibMainSwitchStyle.Expressive" parent="@style/SettingslibSwitchStyle.Expressive">
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="SettingslibSliderStyle.Expressive" parent="">
+        <item name="haloColor">@color/settingslib_expressive_color_slider_halo</item>
+        <item name="thumbColor">@color/settingslib_expressive_color_slider_thumb</item>
+        <item name="tickColorActive">@color/settingslib_expressive_color_slider_track_inactive</item>
+        <item name="tickColorInactive">@color/settingslib_expressive_color_slider_track_active</item>
+        <item name="trackColorActive">@color/settingslib_expressive_color_slider_track_active</item>
+        <item name="trackColorInactive">@color/settingslib_expressive_color_slider_track_inactive</item>
+    </style>
+    <style name="SettingslibSpinnerStyle.Expressive" parent="@android:style/Widget.Material.Spinner">
+        <item name="android:background">@drawable/settingslib_expressive_spinner_background</item>
+        <item name="android:popupBackground">@drawable/settingslib_expressive_spinner_dropdown_background</item>
+        <item name="android:dropDownVerticalOffset">@dimen/settingslib_expressive_space_large3</item>
+    </style>
+    <style name="SettingslibSwitchStyle.Expressive" parent="">
+        <item name="android:background">@null</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">@dimen/settingslib_expressive_space_medium4</item>
+        <item name="thumbIcon">@drawable/settingslib_expressive_switch_thumb_icon</item>
+        <item name="thumbIconTint">@color/settingslib_expressive_color_switch_thumb_icon</item>
+        <item name="thumbTint">@color/settingslib_expressive_color_switch_thumb</item>
+        <item name="trackTint">@color/settingslib_expressive_color_switch_track</item>
+    </style>
+    <style name="TextAppearance.SettingsLib.PreferenceSummary" parent="@style/TextAppearance.SettingsLib.BodyMedium">
+        <item name="android:textColor">@color/settingslib_text_color_secondary</item>
+    </style>
+    <style name="TextAppearance.SettingsLib.PreferenceTitle" parent="@style/TextAppearance.SettingsLib.TitleMedium">
+        <item name="android:textColor">@color/settingslib_text_color_primary</item>
+    </style>
+    <style name="Theme.AlertDialog.SettingsLib.Expressive" parent="@style/Theme.AlertDialog.SettingsLib">
+        <item name="android:colorBackground">@color/settingslib_materialColorSurfaceContainerHigh</item>
+        <item name="android:windowTitleStyle">@style/Widget.SettingsLib.DialogWindowTitle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.SettingsLib.DialogButton.Outline</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Widget.SettingsLib.DialogButton</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.SettingsLib.DialogButton.Filled</item>
+        <item name="buttonBarStyle">@style/Widget.SettingsLib.ButtonBar</item>
+        <item name="colorAccent">@color/settingslib_materialColorPrimary</item>
+        <item name="dialogPreferredPadding">@dimen/settingslib_expressive_space_small4</item>
+    </style>
+    <style name="Theme.DeviceDefault.AlertDialog.SettingsLib.Expressive" parent="@style/Theme.DeviceDefault.Dialog.Alert.DayNight">
+        <item name="android:windowTitleStyle">@style/Widget.SettingsLib.DialogWindowTitle</item>
+        <item name="android:buttonBarStyle">@style/Widget.SettingsLib.ButtonBar</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/Widget.SettingsLib.DialogButton.Filled</item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/Widget.SettingsLib.DialogButton</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/Widget.SettingsLib.DialogButton.Outline</item>
+        <item name="dialogPreferredPadding">@dimen/settingslib_expressive_space_small4</item>
+    </style>
+    <style name="Theme.DeviceDefault.Dialog.Alert.DayNight" parent="@android:style/Theme.DeviceDefault.Light.Dialog.Alert" />
+    <style name="Theme.SettingsBase.Expressive" parent="@style/Theme.SettingsBase">
+        <item name="android:spinnerStyle">@style/SettingslibSpinnerStyle.Expressive</item>
+        <item name="android:clipChildren">false</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:listPreferredItemHeightSmall">@dimen/settingslib_expressive_space_large3</item>
+        <item name="android:textAppearanceListItem">@style/TextAppearance.SettingsLib.PreferenceTitle</item>
+        <item name="android:listPreferredItemPaddingLeft">@dimen/settingslib_expressive_space_small1</item>
+        <item name="android:listPreferredItemPaddingRight">@dimen/settingslib_expressive_space_small1</item>
+        <item name="android:listPreferredItemPaddingStart">@dimen/settingslib_expressive_space_small1</item>
+        <item name="android:listPreferredItemPaddingEnd">@dimen/settingslib_expressive_space_small1</item>
+        <item name="android:textAppearanceListItemSecondary">@style/TextAppearance.SettingsLib.PreferenceSummary</item>
+        <item name="preferenceTheme">@style/PreferenceTheme.SettingsLib.Expressive</item>
+    </style>
+    <style name="Theme.SettingsBase_v36" parent="@style/Theme.SettingsBase_v33">
+        <item name="android:colorBackground">@color/settingslib_materialColorSurfaceContainer</item>
+        <item name="android:textColorPrimary">@color/settingslib_materialColorOnSurface</item>
+        <item name="android:textColorSecondary">@color/settingslib_text_color_secondary</item>
+        <item name="android:seekBarStyle">@style/Seekbar.SettingsLib</item>
+        <item name="android:clipChildren">false</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:textColorTertiary">@color/settingslib_materialColorOutline</item>
+        <item name="android:colorAccent">@color/settingslib_materialColorPrimary</item>
+    </style>
+    <style name="Theme.SubSettingsBase.Expressive" parent="@style/Theme.SettingsBase.Expressive">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:alertDialogTheme">@style/Theme.DeviceDefault.AlertDialog.SettingsLib.Expressive</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="alertDialogTheme">@style/Theme.AlertDialog.SettingsLib.Expressive</item>
+        <item name="colorControlNormal">?android:colorControlNormal</item>
+    </style>
+    <style name="Widget.SettingsLib.ButtonBar" parent="@style/Widget.AppCompat.ButtonBar.AlertDialog">
+        <item name="android:paddingBottom">@dimen/settingslib_expressive_space_small1</item>
+        <item name="android:minHeight">@dimen/settingslib_expressive_space_large2</item>
+    </style>
+    <style name="Widget.SettingsLib.DialogButton" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textAppearance">@style/TextAppearance.SettingsLib.LabelLarge</item>
+        <item name="android:textColor">@color/settingslib_materialColorPrimary</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/settingslib_expressive_space_extrasmall4</item>
+        <item name="android:minWidth">0.0dip</item>
+        <item name="android:minHeight">@dimen/settingslib_expressive_space_medium4</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:paddingHorizontal">@dimen/settingslib_expressive_space_small1</item>
+        <item name="android:paddingVertical">@dimen/settingslib_expressive_space_extrasmall5</item>
+        <item name="textAllCaps">false</item>
+    </style>
+    <style name="Widget.SettingsLib.DialogButton.Filled" parent="@style/Widget.SettingsLib.DialogButton">
+        <item name="android:textColor">@color/settingslib_materialColorOnPrimary</item>
+        <item name="android:background">@drawable/settingslib_expressive_button_background_filled</item>
+        <item name="android:layout_marginEnd">@dimen/settingslib_expressive_space_extrasmall6</item>
+        <item name="backgroundTint">@color/settingslib_materialColorPrimary</item>
+    </style>
+    <style name="Widget.SettingsLib.DialogButton.Outline" parent="@style/Widget.SettingsLib.DialogButton">
+        <item name="android:background">@drawable/settingslib_expressive_button_background_outline</item>
+        <item name="android:layout_marginEnd">@dimen/settingslib_expressive_space_extrasmall4</item>
+        <item name="backgroundTint">@color/settingslib_materialColorOutlineVariant</item>
+    </style>
+    <style name="Widget.SettingsLib.DialogWindowTitle" parent="">
+        <item name="android:textAppearance">@style/TextAppearance.SettingsLib.HeadlineSmall</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:scrollHorizontally">false</item>
+    </style>
+    <style name="Widget.SettingsLib.Material3Expressive.FloatingToolbar" parent="@style/Base.Widget.Material3.FloatingToolbar">
+        <item name="android:layout_gravity">bottom|center</item>
+        <item name="android:paddingTop">@dimen/settingslib_expressive_space_extrasmall6</item>
+        <item name="android:paddingBottom">@dimen/settingslib_expressive_space_extrasmall6</item>
+        <item name="android:paddingStart">@dimen/settingslib_expressive_space_extrasmall6</item>
+        <item name="android:paddingEnd">@dimen/settingslib_expressive_space_extrasmall6</item>
+        <item name="backgroundTint">@color/settingslib_materialColorSurfaceContainerHighest</item>
+    </style>
+</resources>

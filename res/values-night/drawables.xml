@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="google_g_logo">@drawable/googleg_light_color_24</item>
+</resources>

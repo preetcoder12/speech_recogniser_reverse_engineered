@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <layer-list>
+        <item
+            android:height="@dimen/onboarding_list_item_icon_size"
+            android:width="@dimen/onboarding_list_item_icon_size"
+            android:drawable="@drawable/ic_material_shape_multioval_background" />
+        <item
+            android:gravity="center"
+            android:height="@dimen/onboarding_list_item_icon_foreground_size"
+            android:width="@dimen/onboarding_list_item_icon_foreground_size"
+            android:drawable="@drawable/ic_coffee_maker_24dp_tinted" />
+    </layer-list>
+</inset>

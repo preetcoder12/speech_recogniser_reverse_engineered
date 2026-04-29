@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bias_custom_name_summary">
+        <item quantity="other">%d imen</item>
+        <item quantity="one">%d ime</item>
+        <item quantity="two">%d imeni</item>
+        <item quantity="few">%d imena</item>
+    </plurals>
+    <plurals name="bias_custom_word_summary">
+        <item quantity="other">%d besed</item>
+        <item quantity="one">%d beseda</item>
+        <item quantity="two">%d besedi</item>
+        <item quantity="few">%d besede</item>
+    </plurals>
+    <plurals name="dolphin_notification_title_sound_event_information">
+        <item quantity="other">%1$d zvokov je bilo prepoznanih v zadnjih %2$d urah</item>
+        <item quantity="one">%1$d zvok je bil prepoznan v zadnjih %2$d urah</item>
+        <item quantity="two">%1$d zvoka sta bila prepoznana v zadnjih %2$d urah</item>
+        <item quantity="few">%1$d zvoki so bili prepoznani v zadnjih %2$d urah</item>
+    </plurals>
+    <plurals name="dolphin_service_detecting">
+        <item quantity="other">Zaznavanje {0,number,integer} zvokov …</item>
+        <item quantity="one">Zaznavanje {0,number,integer} zvoka …</item>
+        <item quantity="two">Zaznavanje {0,number,integer} zvokov …</item>
+        <item quantity="few">Zaznavanje {0,number,integer} zvokov …</item>
+    </plurals>
+    <plurals name="survey_star_rating">
+        <item quantity="other">%1$d zvezdic od %2$d</item>
+        <item quantity="one">%1$d zvezdica od %2$d</item>
+        <item quantity="two">%1$d zvezdici od %2$d</item>
+        <item quantity="few">%1$d zvezdice od %2$d</item>
+    </plurals>
+    <plurals name="tts_settings_language_unavailable">
+        <item quantity="other">izbranih jezikih</item>
+        <item quantity="one">izbranih jezikih</item>
+        <item quantity="two">izbranih jezikih</item>
+        <item quantity="few">izbranih jezikih</item>
+    </plurals>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-shortcut-target
+    android:summary="@string/scribe_summary"
+    android:animatedImageDrawable="@raw/live_transcribe_animation"
+    android:htmlDescription="@string/live_transcribe_html_description"
+    android:tileService="com.google.audio.hearing.visualization.accessibility.scribe.service.ScribeTileService"
+    android:intro="@string/scribe_intro"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

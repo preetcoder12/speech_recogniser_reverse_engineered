@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.materialswitch.MaterialSwitch
+    android:textSize="@dimen/switch_text_size"
+    android:textColor="@color/dolphin_text_color_primary_on_accent"
+    android:id="@id/switch_button"
+    android:background="@drawable/dolphin_rounded_switch_bg"
+    android:focusable="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/switch_margin_bottom"
+    android:checked="false"
+    android:minHeight="@dimen/switch_height"
+    android:switchMinWidth="@dimen/switch_min_width"
+    android:paddingHorizontal="@dimen/switch_padding_hz"
+    style="?dolphinMainSwitchStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

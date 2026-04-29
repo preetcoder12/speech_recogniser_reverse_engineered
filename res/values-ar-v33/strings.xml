@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">لا يتم إرسال الصوت أو المحادثات في الخلفية إلى Google إلّا إذا اختَرت إرسال ملاحظات حول جودة الصوت</string>
+    <string name="live_transcribe_html_description">عند استخدام تطبيق \"الكتابة المباشرة\"، يمكنك:&lt;br/> &lt;ol> &lt;li> كتابة ردود على النصوص التي تظهر أمامك على الشاشة&lt;/li> &lt;li> تلقّي تنبيهات إذا قال أحدٌ اسمك&lt;/li> &lt;li> البحث في النصوص&lt;/li> &lt;/ol>&lt;br/> تُعالِج Google محادثاتك، ولكنها لا تخزّنها مطلقًا</string>
+    <string name="dolphin_intro">يمكنك تلقّي إشعارات بشأن الأصوات المُهمّة المحيطة بك، مثلاً عند انطلاق إنذار الدخان أو بكاء طفل صغير.</string>
+    <string name="scribe_intro">يَعرِض تطبيق \"الكتابة المباشرة\" الكلام كنص على الشاشة لتتمكَّن من المشاركة بسهولة في المحادثات حولك</string>
+</resources>

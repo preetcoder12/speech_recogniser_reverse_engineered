@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">"Səs keyfiyyəti ilə bağlı rəy göndərməyi seçməsəniz, audio və arxa fon söhbətləri Google'a göndərilməyəcək"</string>
+    <string name="live_transcribe_html_description">Canlı Transkripsiyadan istifadə edərkən bunları edə bilərsiniz:&lt;br/> &lt;ol> &lt;li> Ekranda gördüyünüz transkripsiyaya cavabları yazmaq&lt;/li> &lt;li> Adınız çəkiləndə xəbərdarlıq almaq&lt;/li> &lt;li> Transkripsiya daxilində axtarış&lt;/li> &lt;/ol>&lt;br/> Google söhbətlərinizi emal edir, lakin onları heç vaxt saxlamır</string>
+    <string name="dolphin_intro">Tüstü siqnalı və ya ağlayan uşaq səsi kimi ətrafdakı vacib səslər barədə bildiriş alın</string>
+    <string name="scribe_intro">Canlı Transkripsiya nitqi ekranda mətn kimi göstərir, beləliklə də siz asanlıqla söhbətlərdə iştirak edə bilərsiniz.</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bias_custom_name_summary">
+        <item quantity="other">%d emra</item>
+        <item quantity="one">%d emër</item>
+    </plurals>
+    <plurals name="bias_custom_word_summary">
+        <item quantity="other">%d fjalë</item>
+        <item quantity="one">%d fjalë</item>
+    </plurals>
+    <plurals name="dolphin_notification_title_sound_event_information">
+        <item quantity="other">Janë zbuluar %1$d tinguj në %2$d orët e fundit</item>
+        <item quantity="one">Është zbuluar %1$d tingull në %2$d orët e fundit</item>
+    </plurals>
+    <plurals name="dolphin_service_detecting">
+        <item quantity="other">Po dëgjon për {0,number,integer} tinguj…</item>
+        <item quantity="one">Po dëgjon për {0,number,integer} tingull…</item>
+    </plurals>
+    <plurals name="survey_star_rating">
+        <item quantity="other">%1$d yje nga %2$d</item>
+        <item quantity="one">%1$d yll nga %2$d</item>
+    </plurals>
+    <plurals name="tts_settings_language_unavailable">
+        <item quantity="other">gjuhët e zgjedhura</item>
+        <item quantity="one">gjuhën e zgjedhur</item>
+    </plurals>
+</resources>

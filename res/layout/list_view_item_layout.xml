@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:id="@id/sound_list_view_item_layout"
+    android:focusable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/list_view_item_tooltip_padding_top"
+    android:paddingHorizontal="@dimen/main_context_frag_list_view_item_margin_hz"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@id/sound_category_icon"
+        android:focusable="false"
+        android:src="@drawable/ic_circle_bg_priority"
+        android:contentDescription="@null"
+        style="@style/PrimaryImageIconStyle" />
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:focusable="false"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:layout_marginHorizontal="@dimen/main_context_frag_list_view_item_margin_hz">
+        <TextView
+            android:id="@id/sound_title"
+            android:focusable="false"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/PrimaryTitleTextStyle" />
+        <TextView
+            android:id="@id/sound_sub_title"
+            android:focusable="false"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/SecondaryTitleTextStyle" />
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@id/save_icon_btn"
+        android:focusable="true"
+        android:layout_width="@dimen/main_context_frag_list_view_icon_button_size"
+        android:layout_height="@dimen/main_context_frag_list_view_icon_button_size"
+        android:contentDescription="@string/dolphin_save_sound"
+        app:icon="@drawable/gs_save_vd_theme_24"
+        style="@style/IconButtonStyle" />
+    <com.google.audio.hearing.visualization.accessibility.dolphin.common.ui.recording.AudioToggleButton
+        android:id="@id/playback_icon_btn"
+        android:focusable="true"
+        android:layout_width="@dimen/main_context_frag_list_view_icon_button_size"
+        android:layout_height="@dimen/main_context_frag_list_view_icon_button_size"
+        style="@style/IconButtonStyle" />
+</LinearLayout>

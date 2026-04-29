@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    android:height="60.0dip"
+    android:width="60.0dip"
+    android:viewportWidth="60.0"
+    android:viewportHeight="60.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <path
+        android:fillColor="@color/dolphin_color_surface_variant"
+        android:pathData="M1.33,21.701C-4.267,8.813 8.813,-4.267 21.701,1.33L23.832,2.256C27.766,3.964 32.234,3.964 36.168,2.256L38.299,1.33C51.187,-4.267 64.267,8.813 58.67,21.701L57.744,23.832C56.036,27.766 56.036,32.234 57.744,36.168L58.67,38.299C64.267,51.187 51.187,64.267 38.299,58.67L36.168,57.744C32.234,56.036 27.766,56.036 23.832,57.744L21.701,58.67C8.813,64.267 -4.267,51.187 1.33,38.299L2.256,36.168C3.964,32.234 3.964,27.766 2.256,23.832L1.33,21.701Z" />
+</vector>

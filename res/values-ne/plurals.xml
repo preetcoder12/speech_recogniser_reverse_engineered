@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bias_custom_name_summary">
+        <item quantity="other">%d नामहरू</item>
+        <item quantity="one">%d नाम</item>
+    </plurals>
+    <plurals name="bias_custom_word_summary">
+        <item quantity="other">%d शब्दहरू</item>
+        <item quantity="one">%d शब्द</item>
+    </plurals>
+    <plurals name="dolphin_notification_title_sound_event_information">
+        <item quantity="other">पछिल्लो %2$d घण्टामा %1$d पटक साउन्ड पत्ता लागेको थियो</item>
+        <item quantity="one">पछिल्लो %2$d घण्टामा %1$d पटक साउन्ड पत्ता लागेको थियो</item>
+    </plurals>
+    <plurals name="dolphin_service_detecting">
+        <item quantity="other">{0,number,integer} वटा आवाज सुनिँदै छ…</item>
+        <item quantity="one">{0,number,integer} वटा आवाज सुनिँदै छ…</item>
+    </plurals>
+    <plurals name="survey_star_rating">
+        <item quantity="other">%2$d मध्ये %1$d तारा</item>
+        <item quantity="one">%2$d मध्ये %1$d तारा</item>
+    </plurals>
+    <plurals name="tts_settings_language_unavailable">
+        <item quantity="other">भाषाहरू</item>
+        <item quantity="one">भाषा</item>
+    </plurals>
+</resources>

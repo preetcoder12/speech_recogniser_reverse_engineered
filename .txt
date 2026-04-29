@@ -1,0 +1,1 @@
+adb -s adb-90ddb76e-MWUOnp._adb-tls-connect._tcp install -r app/build/outputs/apk/debug/app-debug.apk

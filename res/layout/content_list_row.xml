@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.audio.hearing.visualization.accessibility.textflow.TimestampStringView
+        android:id="@id/timeString"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" />
+    <TextView
+        android:textSize="32.0sp"
+        android:id="@id/content"
+        android:clickable="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true"
+        android:fontFamily="@font/google_sans" />
+</LinearLayout>

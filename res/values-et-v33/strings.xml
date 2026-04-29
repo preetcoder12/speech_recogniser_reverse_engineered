@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">"Heli ega taustal kõlavaid vestlusi ei saadeta Google'ile, kui te ei otsusta heli kvaliteedi kohta tagasisidet saata."</string>
+    <string name="live_transcribe_html_description">Reaalajas transkriptsiooni kasutades saate teha järgmist.&lt;br/> &lt;ol> &lt;li> Sisestada vastuseid ekraanil kuvatud transkriptsioonile&lt;/li> &lt;li> Hankida märguandeid, kui lausutakse teie nimi&lt;/li> &lt;li> Transkriptsioonidest otsida&lt;/li> &lt;/ol>&lt;br/> Google töötleb teie vestlusi, kuid ei talleta neid kunagi.</string>
+    <string name="dolphin_intro">Saate märguandeid teile oluliste helide kohta (nt suitsuanduri piiksumine või lapse nutt).</string>
+    <string name="scribe_intro">Reaalajas transkriptsioon kuvab kõne ekraanikuval tekstina, et saaksite hõlpsamini osaleda teie ümber toimuvates vestlustes.</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bias_custom_name_summary">
+        <item quantity="other">%d பெயர்கள்</item>
+        <item quantity="one">%d பெயர்</item>
+    </plurals>
+    <plurals name="bias_custom_word_summary">
+        <item quantity="other">%d சொற்கள்</item>
+        <item quantity="one">%d சொல்</item>
+    </plurals>
+    <plurals name="dolphin_notification_title_sound_event_information">
+        <item quantity="other">கடந்த %2$d மணிநேரத்தில் %1$d ஒலிகள் கண்டறியப்பட்டன</item>
+        <item quantity="one">கடந்த %2$d மணிநேரத்தில் %1$d ஒலி கண்டறியப்பட்டது</item>
+    </plurals>
+    <plurals name="dolphin_service_detecting">
+        <item quantity="other">{0,number,integer} ஒலிகளைக் கேட்கிறது…</item>
+        <item quantity="one">{0,number,integer} ஒலியைக் கேட்கிறது…</item>
+    </plurals>
+    <plurals name="survey_star_rating">
+        <item quantity="other">%1$d/%2$d நட்சத்திரங்கள் வழங்கப்பட்டுள்ளன</item>
+        <item quantity="one">%1$d/%2$d நட்சத்திரம் வழங்கப்பட்டுள்ளது</item>
+    </plurals>
+    <plurals name="tts_settings_language_unavailable">
+        <item quantity="other">மொழிகள்</item>
+        <item quantity="one">மொழி</item>
+    </plurals>
+</resources>

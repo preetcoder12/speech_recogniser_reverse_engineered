@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/save_tooltip_container"
+    android:focusable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/list_view_item_tooltip_min_height"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@id/save_tooltip_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_up_bg"
+        android:contentDescription="@null" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/rounded_tooltip_bg"
+        android:paddingTop="@dimen/list_view_item_tooltip_padding_top"
+        android:paddingBottom="@dimen/list_view_item_tooltip_padding_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/list_view_item_tooltip_padding_start"
+        android:paddingEnd="@dimen/list_view_item_tooltip_padding_end">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/list_view_item_tooltip_icon_margin_bottom">
+            <ImageView
+                android:src="@drawable/gs_lightbulb_tips_vd_theme_24"
+                android:tint="@color/dolphin_color_accent_primary_variant"
+                android:layout_centerInParent="true"
+                android:contentDescription="@null"
+                android:layout_alignParentStart="true"
+                style="@style/SecondaryImageIconStyle" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@id/save_tooltip_cancel_btn"
+                android:layout_width="@dimen/accessibility_min_tap_size"
+                android:layout_height="@dimen/accessibility_min_tap_size"
+                android:tint="@color/dolphin_color_accent_primary_variant"
+                android:layout_alignParentEnd="true"
+                app:icon="@drawable/gs_close_vd_theme_24"
+                style="@style/IconButtonStyle" />
+        </RelativeLayout>
+        <TextView
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/list_view_item_tooltip_text_margin_bottom"
+            android:text="@string/dolphin_save_sound_tooltip_title"
+            style="@style/PrimaryTitleTextStyle" />
+        <TextView
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dolphin_save_sound_tooltip_context"
+            style="@style/SecondaryTitleTextStyle" />
+    </LinearLayout>
+</LinearLayout>

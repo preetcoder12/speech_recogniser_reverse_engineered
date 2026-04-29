@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.android.settingslib.widget.TopIntroPreference
+        android:title="@string/tts_settings_subtitle"
+        android:key="@string/tts_settings_title"
+        app:iconSpaceReserved="false" />
+    <com.android.settingslib.widget.BannerMessagePreference
+        android:icon="@drawable/gs_cancel_vd_theme_24"
+        android:textSize="@dimen/tts_banner_text_size"
+        android:key="@string/pref_tts_language_unavailable"
+        app:isPreferenceVisible="false" />
+    <PreferenceCategory
+        android:title="@string/primary_language_title"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:key="@string/pref_tts_primary_language"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/secondary_language_title"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:key="@string/pref_tts_secondary_language"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

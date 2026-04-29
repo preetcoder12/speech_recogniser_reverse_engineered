@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:id="@id/select_sound_type_btn"
+    android:background="@drawable/rounded_button_bg"
+    android:focusable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/main_context_frag_btn_height"
+    android:paddingHorizontal="@dimen/main_context_frag_btn_padding_hz"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:focusable="false"
+        android:src="@drawable/gs_sound_sensing_vd_theme_24"
+        android:tint="@color/icon_color"
+        android:contentDescription="@null"
+        style="@style/SecondaryImageIconStyle" />
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:focusable="false"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:layout_marginHorizontal="@dimen/main_context_frag_btn_layout_margin_hz">
+        <TextView
+            android:layout_gravity="start"
+            android:id="@id/select_sound_type_title"
+            android:focusable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dolphin_select_sound_types_button_text"
+            style="@style/PrimaryTitleTextStyle" />
+        <TextView
+            android:layout_gravity="start"
+            android:id="@id/select_sound_type_subtitle"
+            android:focusable="false"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dolphin_select_sound_types_button_text"
+            style="@style/SecondaryTitleTextStyle" />
+    </LinearLayout>
+    <ImageView
+        android:focusable="false"
+        android:src="@drawable/gs_navigate_next_vd_theme_24"
+        android:tint="@color/icon_color"
+        android:contentDescription="@null"
+        style="@style/SecondaryImageIconStyle" />
+</LinearLayout>

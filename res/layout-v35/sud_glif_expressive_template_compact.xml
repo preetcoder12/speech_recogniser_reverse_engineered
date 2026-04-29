@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.view.insets.ProtectionLayout
+    android:id="@id/sud_layout_protection"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.setupcompat.view.StatusBarBackgroundLayout
+        android:id="@id/suc_layout_status"
+        android:clipChildren="?sudClipChildren"
+        android:clipToPadding="?sudClipToPadding"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:filterTouchesWhenObscured="true">
+        <include
+            layout="@layout/sud_glif_expressive_template_content_layout" />
+    </com.google.android.setupcompat.view.StatusBarBackgroundLayout>
+</androidx.core.view.insets.ProtectionLayout>

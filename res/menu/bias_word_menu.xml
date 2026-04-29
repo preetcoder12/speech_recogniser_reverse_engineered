@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/quantum_gm_ic_create_white_24"
+        android:id="@id/bias_word_edit_button"
+        android:visible="false"
+        android:title="@string/bias_delete_custom_word_menu_option"
+        app:iconTint="?android:actionMenuTextColor"
+        app:showAsAction="always" />
+    <item
+        android:icon="@drawable/gs_delete_vd_theme_24"
+        android:id="@id/bias_word_delete_button"
+        android:visible="false"
+        android:title="@string/bias_delete_custom_word_menu_option"
+        app:iconTint="?android:actionMenuTextColor"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">Дыбыс сапасы туралы пікір білдіруге келісім бермесеңіз, аудио және фондағы әңгімелер Google-ға жіберілмейді.</string>
+    <string name="live_transcribe_html_description">Live Transcribe қолданбасын пайдалану арқылы келесі әрекеттерді орындай аласыз:&lt;br/> &lt;ol> &lt;li> экранда көрген транскрипцияға жауап жазу;&lt;/li> &lt;li> атыңыз аталған кезде, хабарландыру алу;&lt;/li> &lt;li> транскрипциялар ішінен іздеу.&lt;/li> &lt;/ol>&lt;br/> Google әңгімелерді өңдегенімен, ешқашан сақтамайды.</string>
+    <string name="dolphin_intro">Түтін датчигінің дыбыс сигналы немесе баланың жылағаны сияқты маңызды дыбыстардан хабардар болып отырыңыз.</string>
+    <string name="scribe_intro">Live Transcribe айтылған сөзді экраныңызда мәтін ретінде көрсетеді. Осылайша айналадағы әңгімелерге оп-оңай қосыла аласыз.</string>
+</resources>

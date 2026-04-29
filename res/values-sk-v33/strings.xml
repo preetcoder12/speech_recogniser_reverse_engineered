@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">Zvuk ani konverzácie na pozadí sa Googlu neposielajú, pokiaľ nezvolíte odosielanie spätnej väzby ku kvalite zvuku</string>
+    <string name="live_transcribe_html_description">Keď používate Okamžitý prepis, môžete:&lt;br/> &lt;ol> &lt;li> písať odpovede do prepisu na obrazovke;&lt;/li> &lt;li> dostávať upozornenia, keď niekto vysloví vaše meno;&lt;/li> &lt;li> vyhľadávať v rámci prepisov.&lt;/li> &lt;/ol>&lt;br/> Google spracúva vaše konverzácie, ale nikdy ich neukladá.</string>
+    <string name="dolphin_intro">Dostávajte upozornenia na dôležité zvuky v okolí, ako je pípanie signalizácie dymu alebo plač dieťaťa</string>
+    <string name="scribe_intro">Okamžitý prepis zobrazuje reč na obrazovke vo forme textu, čím uľahčuje účasť na konverzáciách v okolí</string>
+</resources>

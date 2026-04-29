@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bias_custom_name_summary">
+        <item quantity="other">%d имена</item>
+        <item quantity="one">%d име</item>
+    </plurals>
+    <plurals name="bias_custom_word_summary">
+        <item quantity="other">%d думи</item>
+        <item quantity="one">%d дума</item>
+    </plurals>
+    <plurals name="dolphin_notification_title_sound_event_information">
+        <item quantity="other">През последните %2$d часа са разпознати %1$d звука</item>
+        <item quantity="one">През последните %2$d часа е разпознат %1$d звук</item>
+    </plurals>
+    <plurals name="dolphin_service_detecting">
+        <item quantity="other">Слуша се за {0,number,integer} звука…</item>
+        <item quantity="one">Слуша се за {0,number,integer} звук…</item>
+    </plurals>
+    <plurals name="survey_star_rating">
+        <item quantity="other">%1$d от %2$d звезди</item>
+        <item quantity="one">%1$d от %2$d звезди</item>
+    </plurals>
+    <plurals name="tts_settings_language_unavailable">
+        <item quantity="other">избраните езици</item>
+        <item quantity="one">избрания език</item>
+    </plurals>
+</resources>

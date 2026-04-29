@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="layout" name="sud_glif_embedded_template">@layout/sud_glif_embedded_template_compact</item>
+    <item type="layout" name="sud_glif_template">@layout/sud_glif_template_compact</item>
+    <item type="layout" name="sud_glif_template_two_pane">@layout/sud_glif_template_compact</item>
+</resources>

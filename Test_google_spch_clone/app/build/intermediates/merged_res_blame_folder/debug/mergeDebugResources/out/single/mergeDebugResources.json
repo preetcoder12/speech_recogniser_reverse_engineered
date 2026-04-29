@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/officebox/.gradle/daemon/9.3.0/com.google.audio.hearing.visualization.accessibility.scribe.clone.app-debug-35:/drawable_status_circle_green.xml.flat",
+        "source": "/Users/officebox/.gradle/daemon/9.3.0/com.google.audio.hearing.visualization.accessibility.scribe.clone.app-main-37:/drawable/status_circle_green.xml"
+    },
+    {
+        "merged": "/Users/officebox/.gradle/daemon/9.3.0/com.google.audio.hearing.visualization.accessibility.scribe.clone.app-debug-35:/xml_accessibility_service_config.xml.flat",
+        "source": "/Users/officebox/.gradle/daemon/9.3.0/com.google.audio.hearing.visualization.accessibility.scribe.clone.app-main-37:/xml/accessibility_service_config.xml"
+    },
+    {
+        "merged": "/Users/officebox/.gradle/daemon/9.3.0/com.google.audio.hearing.visualization.accessibility.scribe.clone.app-debug-35:/layout_item_language.xml.flat",
+        "source": "/Users/officebox/.gradle/daemon/9.3.0/com.google.audio.hearing.visualization.accessibility.scribe.clone.app-main-37:/layout/item_language.xml"
+    },
+    {
+        "merged": "/Users/officebox/.gradle/daemon/9.3.0/com.google.audio.hearing.visualization.accessibility.scribe.clone.app-debug-35:/layout_activity_main.xml.flat",
+        "source": "/Users/officebox/.gradle/daemon/9.3.0/com.google.audio.hearing.visualization.accessibility.scribe.clone.app-main-37:/layout/activity_main.xml"
+    }
+]

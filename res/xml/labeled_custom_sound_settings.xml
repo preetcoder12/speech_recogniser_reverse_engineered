@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference
+        android:title="@string/labeled_custom_sound_timestamp"
+        android:selectable="false"
+        android:key="@string/pref_labeled_custom_sound_timestamp"
+        app:iconSpaceReserved="false" />
+    <Preference
+        android:icon="@drawable/quantum_gm_ic_play_circle_outline_googblue_24"
+        android:title="@string/custom_sound_recording_play_sound"
+        android:selectable="true"
+        android:key="@string/pref_labeled_sound_settings_play_sound"
+        app:iconSpaceReserved="true" />
+    <Preference
+        android:icon="@drawable/gs_delete_vd_theme_24"
+        android:title="@string/custom_sound_processing_dialog_negative_button"
+        android:selectable="true"
+        android:key="@string/pref_recorded_sound_settings_delete_sound"
+        app:iconSpaceReserved="true"
+        app:iconTint="@color/dolphin_accent_color" />
+</PreferenceScreen>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.android.settingslib.widget.TopIntroPreference
+        android:title="@string/custom_sounds_settings_information"
+        android:key="@string/pref_custom_sounds_settings_information"
+        app:iconSpaceReserved="false" />
+    <com.android.settingslib.widget.ButtonPreference
+        android:title="@string/custom_sounds_settings_start_recording"
+        android:key="@string/pref_start_recording"
+        app:iconSpaceReserved="false" />
+    <PreferenceCategory
+        android:title="@string/custom_sounds_settings_sounds_category"
+        android:key="@string/pref_sounds_category"
+        app:iconSpaceReserved="false"
+        app:isPreferenceVisible="false" />
+    <com.android.settingslib.widget.FooterPreference
+        android:title="@string/custom_sounds_settings_information_footer"
+        android:selectable="false"
+        app:iconSpaceReserved="false" />
+</PreferenceScreen>

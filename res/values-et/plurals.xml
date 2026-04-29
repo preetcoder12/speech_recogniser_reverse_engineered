@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bias_custom_name_summary">
+        <item quantity="other">%d nime</item>
+        <item quantity="one">%d nimi</item>
+    </plurals>
+    <plurals name="bias_custom_word_summary">
+        <item quantity="other">%d sõna</item>
+        <item quantity="one">%d sõna</item>
+    </plurals>
+    <plurals name="dolphin_notification_title_sound_event_information">
+        <item quantity="other">Viimase %2$d tunni jooksul tuvastati %1$d heli</item>
+        <item quantity="one">Viimase %2$d tunni jooksul tuvastati %1$d heli</item>
+    </plurals>
+    <plurals name="dolphin_service_detecting">
+        <item quantity="other">Helide [{0,number,integer}] kuulamine…</item>
+        <item quantity="one">Heli [{0,number,integer}] kuulamine…</item>
+    </plurals>
+    <plurals name="survey_star_rating">
+        <item quantity="other">%1$d tärni %2$d-st</item>
+        <item quantity="one">%1$d tärn %2$d-st</item>
+    </plurals>
+    <plurals name="tts_settings_language_unavailable">
+        <item quantity="other">keelt</item>
+        <item quantity="one">keel</item>
+    </plurals>
+</resources>

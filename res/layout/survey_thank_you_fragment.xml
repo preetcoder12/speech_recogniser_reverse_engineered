@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:paddingBottom="8.0dip"
+    android:focusable="false"
+    android:descendantFocusability="afterDescendants"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include
+        layout="@layout/survey_question_header" />
+    <TextView
+        android:textSize="16.0sp"
+        android:textColor="@color/survey_accent_color"
+        android:id="@id/survey_follow_up_url"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16.0dip"
+        android:minWidth="48.0dip"
+        android:minHeight="48.0dip"
+        style="@style/SurveyFollowUpUrlStyle" />
+</LinearLayout>

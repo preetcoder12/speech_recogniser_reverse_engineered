@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bias_custom_name_summary">
+        <item quantity="other">%d імя</item>
+        <item quantity="one">%d імя</item>
+        <item quantity="few">%d імя</item>
+        <item quantity="many">%d імён</item>
+    </plurals>
+    <plurals name="bias_custom_word_summary">
+        <item quantity="other">%d слова</item>
+        <item quantity="one">%d слова</item>
+        <item quantity="few">%d словы</item>
+        <item quantity="many">%d слоў</item>
+    </plurals>
+    <plurals name="dolphin_notification_title_sound_event_information">
+        <item quantity="other">За апошнія %2$d гадз выяўлены %1$d гукавога сігналу</item>
+        <item quantity="one">За апошнія %2$d гадз выяўлены %1$d гукавы сігнал</item>
+        <item quantity="few">За апошнія %2$d гадз выяўлены %1$d гукавыя сігналы</item>
+        <item quantity="many">За апошнія %2$d гадз выяўлены %1$d гукавых сігналаў</item>
+    </plurals>
+    <plurals name="dolphin_service_detecting">
+        <item quantity="other">Ажыццяўляецца выяўленне {0,number,integer} гуку…</item>
+        <item quantity="one">Ажыццяўляецца выяўленне {0,number,integer} гуку…</item>
+        <item quantity="few">Ажыццяўляецца выяўленне {0,number,integer} гукаў…</item>
+        <item quantity="many">Ажыццяўляецца выяўленне {0,number,integer} гукаў…</item>
+    </plurals>
+    <plurals name="tts_settings_language_unavailable">
+        <item quantity="other">выбраных мовах</item>
+        <item quantity="one">выбраных мовах</item>
+        <item quantity="few">выбраных мовах</item>
+        <item quantity="many">выбраных мовах</item>
+    </plurals>
+</resources>

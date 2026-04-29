@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BaseAlertDialog" parent="@style/ThemeOverlay.GoogleMaterial.Dialog.Alert.Framework" />
+    <style name="SudDynamicColorTheme.DayNight" parent="@style/SudDynamicColorTheme" />
+    <style name="SudFullDynamicColorTheme.DayNight" parent="@style/SudFullDynamicColorTheme" />
+    <style name="SudThemeGlif.DayNight" parent="@style/SudThemeGlif" />
+    <style name="SudThemeGlifExpressive.DayNight" parent="@style/SudThemeGlifExpressive" />
+    <style name="SudThemeGlifV2.DayNight" parent="@style/SudThemeGlifV2" />
+    <style name="SudThemeGlifV3.DayNight" parent="@style/SudThemeGlifV3" />
+    <style name="SudThemeGlifV4.DayNight" parent="@style/SudThemeGlifV4" />
+    <style name="SudThemeMaterial.DayNight" parent="@style/SudThemeMaterial" />
+    <style name="SudThemeModalGlifExpressive.DayNight" parent="@style/SudThemeModalGlifExpressive" />
+    <style name="SurveyTheme" parent="@style/Theme.GoogleMaterial.Dark.NoActionBar">
+        <item name="checkboxStyle">@style/SurveyCheckBoxStyle</item>
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert" parent="@style/Theme.AppCompat.Dialog.Alert" />
+    <style name="Theme.AppCompat.DayNight.NoActionBar" parent="@style/Theme.AppCompat.NoActionBar" />
+    <style name="Theme.CollapsingToolbar.Settings" parent="@style/Theme.MaterialComponents.DayNight">
+        <item name="colorAccent">@color/settingslib_accent_device_default_dark</item>
+        <item name="colorPrimary">@color/settingslib_primary_dark_device_default_settings</item>
+        <item name="elevationOverlayColor">?colorPrimary</item>
+        <item name="elevationOverlayEnabled">true</item>
+    </style>
+    <style name="Theme.GoogleMaterial.DayNight.NoActionBar" parent="@style/Theme.GoogleMaterial.Dark.NoActionBar" />
+    <style name="Theme.GoogleMaterial3.DayNight" parent="@style/Theme.GoogleMaterial3.Dark" />
+    <style name="Theme.GoogleMaterial3.DayNight.NoActionBar" parent="@style/Theme.GoogleMaterial3.Dark.NoActionBar" />
+    <style name="Theme.Material3.DynamicColors.DayNight" parent="@style/Theme.Material3.DynamicColors.Dark" />
+    <style name="Theme.MaterialComponents.DayNight" parent="@style/Theme.MaterialComponents" />
+    <style name="SurveyCheckBoxStyle" parent="@style/Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="buttonTint">@color/google_selection_control_button_tint</item>
+        <item name="useMaterialThemeColors">true</item>
+    </style>
+</resources>

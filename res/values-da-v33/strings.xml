@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">Lyd og samtaler i baggrunden sendes ikke til Google, medmindre du vælger at sende feedback om lydkvalitet</string>
+    <string name="live_transcribe_html_description">Når du bruger Livetransskribering, kan du:&lt;br/> &lt;ol> &lt;li> Reagere på den transskription, du ser på skærmen&lt;/li> &lt;li> Blive underrettet, når dit navn bliver nævnt&lt;/li> &lt;li> Søge i transskriptioner&lt;/li> &lt;/ol>&lt;br/> Google behandler dine samtaler, men gemmer dem aldrig</string>
+    <string name="dolphin_intro">Bliv underrettet om vigtige lyde omkring dig, f.eks. når en røgalarm bipper, eller en baby græder</string>
+    <string name="scribe_intro">Livetransskribering viser tale som tekst på din skærm, så du nemmere kan deltage i samtaler omkring dig</string>
+</resources>

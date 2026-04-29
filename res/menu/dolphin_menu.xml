@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/gs_feedback_vd_theme_24"
+        android:id="@id/feedback"
+        android:visible="true"
+        android:title="@string/dolphin_notification_action_send_feedback"
+        app:iconTint="@color/icon_color" />
+    <item
+        android:icon="@drawable/gs_settings_vd_theme_24"
+        android:id="@id/settings"
+        android:visible="true"
+        android:title="@string/settings_title"
+        app:iconTint="@color/icon_color" />
+</menu>

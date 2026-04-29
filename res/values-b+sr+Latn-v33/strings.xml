@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">Audio konverzacije i konverzacije u pozadini se ne šalju Google-u ako ne odaberete da šaljete povratne informacije o kvalitetu zvuka</string>
+    <string name="live_transcribe_html_description">Kada koristite Transkripciju uživo, možete:&lt;br/> &lt;ol> &lt;li> da unosite odgovore na transkripciju koju vidite na ekranu&lt;/li> &lt;li> da dobijate obaveštenja kada se izgovori vaše ime&lt;/li> &lt;li> da pretražujete transkripciju&lt;/li> &lt;/ol>&lt;br/> Google obrađuje vaše razgovore, ali ih nikad ne čuva</string>
+    <string name="dolphin_intro">Dobijajte obaveštenja o važnim zvukovima u okruženju, na primer, kada se oglasi alarm za dim ili beba plače</string>
+    <string name="scribe_intro">Transkripcija uživo prikazuje govor kao tekst na ekranu, pa možete lakše da učestvujete u razgovorima koji se odvijaju oko vas</string>
+</resources>

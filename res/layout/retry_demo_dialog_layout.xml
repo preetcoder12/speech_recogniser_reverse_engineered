@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="@dimen/retry_demo_dialog_padding"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="@dimen/retry_demo_icon_size"
+            android:layout_height="@dimen/retry_demo_icon_size"
+            android:src="@drawable/gs_detector_alarm_vd_theme_24"
+            android:scaleType="fitCenter"
+            android:tint="@color/dolphin_color_accent_primary_variant"
+            android:contentDescription="@null" />
+        <TextView
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/retry_demo_text_padding"
+            android:paddingBottom="@dimen/retry_demo_text_padding"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dolphin_usage_try_a_demo"
+            android:singleLine="false"
+            style="@style/DialogTitleTextTheme" />
+        <TextView
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dolphin_usage_try_a_demo_message"
+            android:singleLine="false"
+            style="@style/DialogMessageTextTheme" />
+    </LinearLayout>
+</ScrollView>

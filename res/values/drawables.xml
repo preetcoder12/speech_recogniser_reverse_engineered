@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="dissatisfied">@drawable/quantum_ic_sentiment_dissatisfied_grey600_36</item>
+    <item type="drawable" name="google_g_logo">@drawable/googleg_standard_color_24</item>
+    <item type="drawable" name="neutral">@drawable/quantum_ic_sentiment_neutral_grey600_36</item>
+    <item type="drawable" name="satisfied">@drawable/quantum_ic_sentiment_satisfied_grey600_36</item>
+    <item type="drawable" name="survey_close_button_icon">@drawable/quantum_ic_close_grey600_24</item>
+    <item type="drawable" name="survey_rating_image_rounded_button_background">@drawable/survey_rounded_button_background</item>
+    <item type="drawable" name="very_dissatisfied">@drawable/quantum_ic_sentiment_very_dissatisfied_grey600_36</item>
+    <item type="drawable" name="very_satisfied">@drawable/quantum_ic_sentiment_very_satisfied_grey600_36</item>
+</resources>

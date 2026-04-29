@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.android.settingslib.widget.TopIntroPreference
+        android:title="@string/tts_settings_subtitle"
+        android:key="@string/tts_settings_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceCategory
+        android:key="@string/pref_tts_voice_category"
+        app:iconSpaceReserved="false" />
+</PreferenceScreen>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/demo_container_layout"
+    android:background="@drawable/rounded_demo_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/main_context_frag_list_view_margin_top"
+    android:paddingHorizontal="@dimen/main_context_frag_btn_padding_hz"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/demo_animation_container"
+        android:focusable="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@id/demo_animation"
+            android:focusable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null" />
+        <TextView
+            android:gravity="center_horizontal"
+            android:id="@id/demo_animation_message"
+            android:focusable="false"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/onboarding_demo_description_margin_bottom" />
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:layout_gravity="center_horizontal"
+        android:id="@id/demo_try_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/onboarding_demo_description_margin_bottom"
+        android:text="@string/dolphin_usage_try_a_demo"
+        app:icon="@drawable/gs_play_arrow_vd_theme_24"
+        style="@style/OutlinedRoundedButtonStyle" />
+</LinearLayout>

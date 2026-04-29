@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    android:height="80.0dip"
+    android:width="80.0dip"
+    android:viewportWidth="80.0"
+    android:viewportHeight="80.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <path
+        android:name="small_bubble_left"
+        android:fillColor="@color/scribe_microphone_bubble_color"
+        android:pathData="M4.5,22.5m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0"
+        android:strokeWidth="0.313529"
+        android:fillAlpha="0.0" />
+    <path
+        android:name="big_bubble_left"
+        android:fillColor="@color/scribe_microphone_bubble_color"
+        android:pathData="M18,22m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0"
+        android:strokeWidth="0.836072"
+        android:fillAlpha="0.0" />
+    <path
+        android:name="big_bubble_right"
+        android:fillColor="@color/scribe_microphone_bubble_color"
+        android:pathData="M62,22m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0"
+        android:strokeWidth="0.836072"
+        android:fillAlpha="0.0" />
+    <path
+        android:name="small_bubble_right"
+        android:fillColor="@color/scribe_microphone_bubble_color"
+        android:pathData="M75.5,22.5m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0"
+        android:strokeWidth="0.313529"
+        android:fillAlpha="0.0" />
+    <path
+        android:fillColor="#ff5f6368"
+        android:pathData="m57.048,39.368l0,-2.345l0.574,0c0.689,0 1.263,-0.558 1.263,-1.228 0,-0.67 -0.574,-1.228 -1.263,-1.228l-0.574,0l0,-1.898l-1.952,0l0,1.898L25.133,34.567l0,-1.898l-1.952,0l0,1.898l-0.918,0c-0.689,0 -1.263,0.558 -1.263,1.228 0,0.67 0.574,1.228 1.263,1.228l0.918,0l0,2.345l-1.952,0l0,1.563c0,9.492 7.233,17.308 16.647,18.313l0,13.958l-5.051,0c-2.181,0 -3.903,1.675 -3.903,3.797l22.042,0c0,-2.122 -1.722,-3.797 -3.903,-3.797L42.353,73.203l0,-13.958c9.414,-1.117 16.647,-8.933 16.647,-18.313l0,-1.563zM40.057,55.56c-8.266,0 -15.039,-6.588 -15.039,-14.74l0,-4.02L54.982,36.8l0,4.02c0.115,8.263 -6.544,14.74 -14.924,14.74z"
+        android:fillType="evenOdd" />
+    <group
+        android:name="microphone_head"
+        android:pivotX="40.0"
+        android:pivotY="40.0"
+        android:scaleX="1.0"
+        android:scaleY="1.0">
+        <path
+            android:fillColor="@color/scribe_microphone_color_accent"
+            android:pathData="m40.057,10c-5.855,0 -10.562,4.578 -10.562,10.273l0,21.328c0,5.695 4.707,10.273 10.562,10.273 5.855,0 10.562,-4.578 10.562,-10.273l0,-21.328c-0.115,-5.583 -4.822,-10.273 -10.562,-10.273zM31.447,32.668l0,-12.395c0,-4.69 3.903,-8.375 8.61,-8.375 4.707,0 8.61,3.797 8.61,8.375l0,12.395z"
+            android:fillType="evenOdd" />
+        <path
+            android:fillColor="#ffffffff"
+            android:pathData="M38.68,38.363a1.563,1.492 90,1 0,2.985 0a1.563,1.492 90,1 0,-2.985 0z" />
+    </group>
+</vector>

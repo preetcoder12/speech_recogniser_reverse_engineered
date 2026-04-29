@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bias_custom_name_summary">
+        <item quantity="other">%d имени</item>
+        <item quantity="one">%d имя</item>
+        <item quantity="few">%d имени</item>
+        <item quantity="many">%d имен</item>
+    </plurals>
+    <plurals name="bias_custom_word_summary">
+        <item quantity="other">%d слова</item>
+        <item quantity="one">%d слово</item>
+        <item quantity="few">%d слова</item>
+        <item quantity="many">%d слов</item>
+    </plurals>
+    <plurals name="dolphin_notification_title_sound_event_information">
+        <item quantity="other">За последние %2$d ч. распознано %1$d звука</item>
+        <item quantity="one">За последние %2$d ч. распознан %1$d звук</item>
+        <item quantity="few">За последние %2$d ч. распознано %1$d звука</item>
+        <item quantity="many">За последние %2$d ч. распознано %1$d звуков</item>
+    </plurals>
+    <plurals name="dolphin_service_detecting">
+        <item quantity="other">Распознается {0,number,integer} звука…</item>
+        <item quantity="one">Распознается {0,number,integer} звук…</item>
+        <item quantity="few">Распознается {0,number,integer} звука…</item>
+        <item quantity="many">Распознается {0,number,integer} звуков…</item>
+    </plurals>
+    <plurals name="survey_star_rating">
+        <item quantity="other">%1$d звезды из %2$d</item>
+        <item quantity="one">%1$d звезда из %2$d</item>
+        <item quantity="few">%1$d звезды из %2$d</item>
+        <item quantity="many">%1$d звезд из %2$d</item>
+    </plurals>
+    <plurals name="tts_settings_language_unavailable">
+        <item quantity="other">выбранные языки</item>
+        <item quantity="one">выбранные языки</item>
+        <item quantity="few">выбранные языки</item>
+        <item quantity="many">выбранные языки</item>
+    </plurals>
+</resources>

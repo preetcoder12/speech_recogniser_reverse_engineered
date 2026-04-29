@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">Fona skaņas un sarunas netiek nosūtītas uzņēmumam Google, ja vien neizvēlaties sūtīt atsauksmes par skaņas kvalitāti.</string>
+    <string name="live_transcribe_html_description">Izmantojot lietotni “Tieša transkripcija”, jums ir pieejamas tālāk norādītās iespējas.&lt;br/> &lt;ol> &lt;li> Rakstiet atbildes uz ekrānā redzamo transkripciju.&lt;/li> &lt;li> Saņemiet paziņojumus, kad tiek izrunāts jūsu vārds.&lt;/li> &lt;li> Veiciet meklēšanu transkripcijās.&lt;/li> &lt;/ol>&lt;br/> Google apstrādā jūsu sarunas, taču neuzglabā tās.</string>
+    <string name="dolphin_intro">Varat saņemt paziņojumus par svarīgām skaņām ap jums, piemēram, dūmu detektora pīkstieniem vai mazuļa raudām.</string>
+    <string name="scribe_intro">Lietotne “Tieša transkripcija” rāda runu kā tekstu ekrānā, lai jums būtu vieglāk piedalīties sarunās.</string>
+</resources>

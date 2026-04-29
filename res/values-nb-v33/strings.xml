@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">Lyd og bakgrunnssamtaler blir ikke sendt til Google – med mindre du velger å sende tilbakemelding om lydkvalitet</string>
+    <string name="live_transcribe_html_description">Når du bruker Transkribering, kan du&lt;br/> &lt;ol> &lt;li> skrive svar på transkripsjonen du ser på skjermen&lt;/li> &lt;li> motta varsler når noen sier navnet ditt&lt;/li> &lt;li> søke i transkripsjoner&lt;/li> &lt;/ol>&lt;br/> Google behandler samtalene dine, men lagrer dem aldri</string>
+    <string name="dolphin_intro">Bli varslet om viktige lyder rundt deg, for eksempel pip fra røykvarslere eller babygråt</string>
+    <string name="scribe_intro">Med Transkribering vises tale som tekst på skjermen, slik at det blir enklere for deg å delta i samtaler.</string>
+</resources>

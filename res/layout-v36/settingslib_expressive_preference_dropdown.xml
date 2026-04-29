@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Spinner
+        android:id="@id/spinner"
+        android:visibility="invisible"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/settingslib_expressive_space_large3"
+        android:layout_marginStart="@dimen/settingslib_expressive_space_large3" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:minHeight="@dimen/settingslib_expressive_space_large3"
+        android:filterTouchesWhenObscured="false">
+        <include
+            layout="@layout/settingslib_expressive_preference_icon_frame" />
+        <include
+            layout="@layout/settingslib_expressive_preference_text_frame" />
+        <LinearLayout
+            android:gravity="end|center"
+            android:orientation="vertical"
+            android:id="@android:id/widget_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingStart="@dimen/settingslib_expressive_space_small1"
+            android:paddingEnd="0.0dip" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">除非您选择发送声音质量方面的反馈，否则该功能不会将音频和背景对话声发送给 Google</string>
+    <string name="live_transcribe_html_description">使用实时转写时，您可以：&lt;br/> &lt;ol> &lt;li> 针对您在屏幕上看到的转写内容输入回复&lt;/li> &lt;li> 让系统在检测到有人提及您的名字时提醒您&lt;/li> &lt;li> 在转写内容中进行搜索&lt;/li> &lt;/ol>&lt;br/> Google 会处理您的对话，但不会存储对话内容</string>
+    <string name="dolphin_intro">在您周围出现重要的声音（例如烟雾警报器发出的哔哔声或婴儿啼哭声）时通知您</string>
+    <string name="scribe_intro">“实时转写”可将语音内容以文本形式显示在屏幕上，让您更轻松地参与周围的对话</string>
+</resources>

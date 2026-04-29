@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:paddingTop="@dimen/main_context_frag_list_view_margin_top"
+    android:focusable="false"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/main_context_frag_list_view_item_min_height"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include
+        layout="@layout/list_view_item_layout" />
+    <include
+        layout="@layout/save_tooltip_layout" />
+</LinearLayout>

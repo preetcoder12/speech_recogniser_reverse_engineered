@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="0.0dip"
+    android:layout_height="wrap_content"
+    android:layout_weight="1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:layout_gravity="end"
+        android:id="@id/survey_rating_image_layout"
+        android:background="@drawable/survey_rating_image_rounded_button_background"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="48.0dip"
+        android:minHeight="48.0dip">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@id/survey_rating_image_icon"
+            style="@style/SurveyRatingImageStyle" />
+    </FrameLayout>
+</FrameLayout>

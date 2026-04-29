@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">Zvok in pogovori, ki potekajo v ozadju, niso poslani Googlu, razen če izberete pošiljanje povratnih informacij o kakovosti zaznavanja zvokov.</string>
+    <string name="live_transcribe_html_description">Pri uporabi aplikacije Sproten prepis lahko:&lt;br/> &lt;ol> &lt;li> z vnašanjem odgovarjate na prepis, ki je prikazan na zaslonu;&lt;/li> &lt;li> prejemate opozorila ob omembi vašega imena;&lt;/li> &lt;li> iščete po prepisih.&lt;/li> &lt;/ol>&lt;br/> Google pogovore obdela, vendar jih nikoli ne shrani.</string>
+    <string name="dolphin_intro">Prejemajte obvestila o pomembnih zvokih okoli vas, na primer ko zapiska javljalnik dima ali ko zajoka dojenček.</string>
+    <string name="scribe_intro">Aplikacija Sproten prepis prikazuje govor v obliki besedila na zaslonu, kar vam omogoča, da lažje sodelujete v pogovorih, ki se odvijajo v vaši bližini.</string>
+</resources>

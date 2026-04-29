@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/main_container"
+    android:background="@color/scribe_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <View
+        android:background="?android:listDivider"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/search_divider_size" />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0">
+        <android.support.v7.widget.RecyclerView
+            android:gravity="center_vertical"
+            android:id="@id/search_result_recycler_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/recent_search_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="@dimen/recent_search_padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="@string/search_recent"
+                    android:layout_weight="1.0" />
+                <Button
+                    android:textColor="?colorAccent"
+                    android:id="@id/clear_recent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="@string/search_clear_recent" />
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:gravity="center_vertical"
+                android:id="@id/recent_search_recycler_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="?android:listDivider"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/search_divider_size" />
+        </LinearLayout>
+    </FrameLayout>
+    <TextView
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/search_reminder_padding"
+        android:paddingBottom="@dimen/search_reminder_padding"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/search_reminder_height"
+        android:text="@string/search_reminder"
+        android:drawableTop="@drawable/quantum_ic_query_builder_grey600_24"
+        android:drawablePadding="@dimen/search_reminder_padding" />
+</LinearLayout>

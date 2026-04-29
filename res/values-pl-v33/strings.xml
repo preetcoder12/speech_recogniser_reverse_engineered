@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">Nagrania dźwiękowe ani rozmowy w tle nie są wysyłane do Google, chyba że zechcesz przesłać opinię na temat jakości dźwięku</string>
+    <string name="live_transcribe_html_description">Transkrypcja na żywo umożliwia:&lt;br/> &lt;ol> &lt;li> wpisywanie odpowiedzi na transkrypcję widoczną na ekranie;&lt;/li> &lt;li> otrzymywanie alertów, gdy ktoś wypowie Twoje imię;&lt;/li> &lt;li> wyszukiwanie w transkrypcjach.&lt;/li> &lt;/ol>&lt;br/> Google przetwarza rozmowy, ale ich nie przechowuje.</string>
+    <string name="dolphin_intro">Otrzymuj powiadomienia o ważnych dźwiękach wokół siebie, takich jak alarm z czujnika dymu lub płacz dziecka</string>
+    <string name="scribe_intro">Transkrypcja na żywo prezentuje mowę jako tekst na ekranie, więc możesz łatwiej uczestniczyć w rozmowach</string>
+</resources>

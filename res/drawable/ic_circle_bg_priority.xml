@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="oval">
+            <solid
+                android:color="@color/dolphin_priority_icon_bg_color" />
+            <size
+                android:height="@dimen/main_context_frag_list_view_icon_primary_size"
+                android:width="@dimen/main_context_frag_list_view_icon_primary_size" />
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:height="@dimen/main_context_frag_list_view_icon_secondary_size"
+        android:width="@dimen/main_context_frag_list_view_icon_secondary_size"
+        android:drawable="@drawable/ic_material_priority" />
+</layer-list>

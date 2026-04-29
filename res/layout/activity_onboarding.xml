@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.setupdesign.GlifLayout
+    android:icon="@drawable/ic_sound_sensing_48dp_tinted"
+    android:id="@id/glif_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:sucHeaderText="@string/dolphin_welcome_title_text"
+    app:sucUsePartnerResource="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:gravity="center_horizontal"
+        android:id="@id/main_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</com.google.android.setupdesign.GlifLayout>

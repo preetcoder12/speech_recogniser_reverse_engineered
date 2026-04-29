@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">"L'audio et les conversations en fond sonore ne sont pas envoyées à Google, sauf si vous choisissez d'envoyer des commentaires sur la qualité audio"</string>
+    <string name="live_transcribe_html_description">"Quand vous utilisez l'appli Transcription instantanée, vous pouvez :&lt;br/> &lt;ol> &lt;li> saisir des réponses aux transcriptions affichées à l'écran ;&lt;/li> &lt;li> recevoir des alertes quand votre nom est prononcé ;&lt;/li> &lt;li> faire des recherches dans les transcriptions.&lt;/li> &lt;/ol>&lt;br/> Google traite les conversations, mais ne les conserve jamais"</string>
+    <string name="dolphin_intro">"Recevez une notification lorsque des sons importants sont détectés autour de vous, tels que le bip d'un détecteur de fumée ou les pleurs de votre bébé"</string>
+    <string name="scribe_intro">"L'appli Transcription instantanée convertit les conversations orales en texte sur votre écran pour vous permettre de discuter plus facilement"</string>
+</resources>

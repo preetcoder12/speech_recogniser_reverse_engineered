@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">音質に関するフィードバックを送信することを選択しない限り、音声や周囲の会話が Google に送信されることは一切ありません。</string>
+    <string name="live_transcribe_html_description">音声文字変換を使用すると、以下を行えます。&lt;br/> &lt;ol> &lt;li> 起こされた文字を読んで返事を画面に入力する&lt;/li> &lt;li> 自分の名前を言われたときに通知を受け取る&lt;/li> &lt;li> 起こされた文字を検索する&lt;/li> &lt;/ol>&lt;br/> Google は会話の処理を行いますが、保存することは一切ありません</string>
+    <string name="dolphin_intro">煙警報の音や赤ちゃんの泣き声など、周囲の重要な音に関する通知を受け取ります</string>
+    <string name="scribe_intro">音声文字変換は音声を文字に起こして画面に表示し、周囲の会話に参加しやすくする機能です</string>
+</resources>

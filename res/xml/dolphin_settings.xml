@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="@string/dolphin_preferences_category_title"
+        android:key="@string/pref_category_preferences"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:title="@string/dolphin_sound_types_preference_title"
+            android:key="@string/pref_sound_types"
+            app:iconSpaceReserved="false" />
+        <Preference
+            android:title="@string/dolphin_notification_preference_title"
+            android:key="@string/pref_notification_settings_preferences"
+            android:summary="%s"
+            app:iconSpaceReserved="false" />
+        <Preference
+            android:title="@string/dolphin_custom_sounds_title"
+            android:key="@string/pref_custom_sounds"
+            android:summary="@string/dolphin_custom_sounds_summary"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/dolphin_display_category_title"
+        android:key="@string/pref_category_display"
+        app:iconSpaceReserved="false">
+        <ListPreference
+            android:entries="@array/theme_options"
+            android:title="@string/theme_options_title"
+            android:key="@string/pref_theme_options"
+            android:summary="%s"
+            android:defaultValue="@string/pref_system_default_theme"
+            android:entryValues="@array/theme_options_values"
+            app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat
+            android:title="@string/dolphin_preference_title_show_app_icon"
+            android:key="@string/pref_show_dolphin_app_icon"
+            android:defaultValue="@bool/pref_default_show_app_icon"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/dolphin_support_category_title"
+        android:key="@string/pref_category_support"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:title="@string/dolphin_try_demo_preference_title"
+            android:key="@string/pref_try_demo"
+            android:summary="@string/dolphin_usage_try_a_demo_message"
+            app:iconSpaceReserved="false" />
+        <Preference
+            android:title="@string/send_feedback"
+            android:key="@string/pref_send_feedback"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/dolphin_transcription_category_title"
+        android:key="@string/pref_category_mode"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:title="@string/dolphin_preference_title_open_live_transcribe"
+            android:key="@string/pref_go_to_scribe"
+            android:summary="@string/dolphin_preference_summary_open_live_transcribe"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/experimental_category_title"
+        android:key="@string/pref_experimental_category"
+        app:iconSpaceReserved="false"
+        app:isPreferenceVisible="false">
+        <ListPreference
+            android:entries="@array/dolphin_custom_sounds_detection_mode_entries"
+            android:title="@string/dolphin_custom_sounds_detection_mode_title"
+            android:key="@string/pref_custom_sounds_detection_mode"
+            android:summary="%s"
+            android:entryValues="@array/dolphin_custom_sounds_detection_mode_entry_values" />
+    </PreferenceCategory>
+</PreferenceScreen>

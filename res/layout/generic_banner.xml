@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/generic_banner"
+    android:background="@color/scribe_background"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textDirection="locale"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/generic_banner_margin"
+        android:layout_marginEnd="@dimen/generic_banner_margin"
+        app:flexDirection="row"
+        app:flexWrap="wrap"
+        app:justifyContent="flex_end">
+        <LinearLayout
+            android:layout_width="@integer/banner_text_line_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/generic_banner_margin"
+            app:layout_flexGrow="1.0">
+            <ImageView
+                android:id="@id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textAppearance="?textAppearanceBody1"
+                android:textSize="@dimen/generic_banner_text_size"
+                android:id="@id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/generic_banner_content_margin" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/generic_banner_margin"
+            app:layout_flexGrow="0.0">
+            <Button
+                android:textAppearance="?textAppearanceButton"
+                android:id="@id/secondary_action_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/abc_action_button_min_height_material"
+                android:layout_marginEnd="@dimen/generic_banner_button_margin"
+                style="@style/BannerSecondaryActionButtonTheme" />
+            <Button
+                android:textAppearance="?textAppearanceButton"
+                android:id="@id/action_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/abc_action_button_min_height_material"
+                style="@style/BannerActionButtonTheme" />
+        </LinearLayout>
+    </com.google.android.flexbox.FlexboxLayout>
+    <View
+        android:background="?genericBannerDividerColor"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="@dimen/generic_banner_divider_margin" />
+</LinearLayout>

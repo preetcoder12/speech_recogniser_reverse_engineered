@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    android:height="@dimen/main_context_frag_list_view_icon_secondary_size"
+    android:width="@dimen/main_context_frag_list_view_icon_secondary_size"
+    android:viewportWidth="12.0"
+    android:viewportHeight="12.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <path
+        android:fillColor="@color/dolphin_appliance_and_other_icon_color"
+        android:pathData="M11.3327,4L5.9994,0L0.666,4V12H11.3327V4ZM5.9994,1.6667L1.9993,4.6667V10.6667H9.9993V4.6667L5.9994,1.6667ZM7.9994,6.44V8H8.666V8.6667H3.3327V8H3.9994V6.44C3.9994,5.4133 4.546,4.56 5.4994,4.3333V4.1667C5.4994,3.8933 5.726,3.6667 5.9994,3.6667C6.2727,3.6667 6.4994,3.8933 6.4994,4.1667V4.3333C7.4594,4.56 7.9994,5.4133 7.9994,6.44ZM5.9994,9.6667C6.366,9.6667 6.666,9.3667 6.666,9H5.3327C5.3327,9.3667 5.6327,9.6667 5.9994,9.6667Z"
+        android:fillType="evenOdd" />
+</vector>

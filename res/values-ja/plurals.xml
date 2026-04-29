@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bias_custom_name_summary">
+        <item quantity="other">%d 件の名前</item>
+        <item quantity="one">%d 件の名前</item>
+    </plurals>
+    <plurals name="bias_custom_word_summary">
+        <item quantity="other">%d 件の単語</item>
+        <item quantity="one">%d 件の単語</item>
+    </plurals>
+    <plurals name="dolphin_notification_title_sound_event_information">
+        <item quantity="other">過去 %2$d 時間に %1$d 件の音が検知されました</item>
+        <item quantity="one">過去 %2$d 時間に %1$d 件の音が検知されました</item>
+    </plurals>
+    <plurals name="dolphin_service_detecting">
+        <item quantity="other">{0,number,integer} 件の音を聞いています…</item>
+        <item quantity="one">{0,number,integer} 件の音を聞いています…</item>
+    </plurals>
+    <plurals name="survey_star_rating">
+        <item quantity="other">星 %2$d 個中 %1$d 個</item>
+        <item quantity="one">星 %2$d 個中 %1$d 個</item>
+    </plurals>
+    <plurals name="tts_settings_language_unavailable">
+        <item quantity="other">言語</item>
+        <item quantity="one">言語</item>
+    </plurals>
+</resources>

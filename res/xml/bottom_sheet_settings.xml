@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:key="@string/pref_quick_settings">
+        <SwitchPreferenceCompat
+            android:title="@string/transcription_history_title"
+            android:key="@string/pref_transcription_history"
+            android:summary="%s"
+            app:iconSpaceReserved="false" />
+        <Preference
+            android:title="@string/open_dolphin_settings_title"
+            android:key="@string/pref_open_dolphin_page"
+            android:summary="@string/open_dolphin_settings_description"
+            app:iconSpaceReserved="false" />
+        <Preference
+            android:title="@string/broadcast_mode_title"
+            android:key="@string/pref_broadcast_mode"
+            app:iconSpaceReserved="false" />
+        <Preference
+            android:title="@string/export_all_transcription"
+            android:key="@string/pref_export_all_transcription"
+            app:iconSpaceReserved="false" />
+        <Preference
+            android:title="@string/more_options_title"
+            android:key="@string/pref_more_options"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

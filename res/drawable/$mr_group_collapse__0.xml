@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator
+        android:duration="@android:integer/config_shortAnimTime"
+        android:valueFrom="M480,432 L296,616l-56,-56 240,-240 240,240 -56,56 -184,-184Z"
+        android:valueTo="M480,616 L240,376l56,-56 184,184 184,-184 56,56 -240,240Z"
+        android:valueType="pathType"
+        android:propertyName="pathData" />
+</set>

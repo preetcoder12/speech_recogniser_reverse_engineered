@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bias_custom_name_summary">
+        <item quantity="other">%d namn</item>
+        <item quantity="one">%d namn</item>
+    </plurals>
+    <plurals name="bias_custom_word_summary">
+        <item quantity="other">%d ord</item>
+        <item quantity="one">%d ord</item>
+    </plurals>
+    <plurals name="dolphin_notification_title_sound_event_information">
+        <item quantity="other">%1$d ljud detekterades under de senaste %2$d timmarna</item>
+        <item quantity="one">%1$d ljud detekterades under de senaste %2$d timmarna</item>
+    </plurals>
+    <plurals name="dolphin_service_detecting">
+        <item quantity="other">Lyssnar efter {0,number,integer} ljud …</item>
+        <item quantity="one">Lyssnar efter {0,number,integer} ljud …</item>
+    </plurals>
+    <plurals name="survey_star_rating">
+        <item quantity="other">%1$d av %2$d stjärnor</item>
+        <item quantity="one">%1$d av %2$d stjärnor</item>
+    </plurals>
+    <plurals name="tts_settings_language_unavailable">
+        <item quantity="other">språken</item>
+        <item quantity="one">språket</item>
+    </plurals>
+</resources>

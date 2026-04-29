@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="@string/personal_speech_category"
+        android:key="@string/pref_category_personal_speech"
+        app:iconSpaceReserved="false"
+        app:isPreferenceVisible="false" />
+    <PreferenceCategory
+        android:title="@string/offline_languages_category"
+        android:key="@string/pref_category_offline_languages"
+        app:iconSpaceReserved="false"
+        app:isPreferenceVisible="false" />
+    <PreferenceCategory
+        android:title="@string/online_languages_category"
+        android:key="@string/pref_category_online_languages"
+        app:iconSpaceReserved="false" />
+</PreferenceScreen>

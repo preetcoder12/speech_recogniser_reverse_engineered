@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bias_custom_name_summary">
+        <item quantity="other">%d name</item>
+        <item quantity="one">%d naam</item>
+    </plurals>
+    <plurals name="bias_custom_word_summary">
+        <item quantity="other">%d woorde</item>
+        <item quantity="one">%d woord</item>
+    </plurals>
+    <plurals name="dolphin_notification_title_sound_event_information">
+        <item quantity="other">%1$d klanke is in die afgelope %2$d uur bespeur</item>
+        <item quantity="one">%1$d klank is in die afgelope %2$d uur bespeur</item>
+    </plurals>
+    <plurals name="dolphin_service_detecting">
+        <item quantity="other">Luister tans vir {0,number,integer} klanke …</item>
+        <item quantity="one">Luister tans vir {0,number,integer} klank …</item>
+    </plurals>
+    <plurals name="survey_star_rating">
+        <item quantity="other">%1$d sterre uit %2$d</item>
+        <item quantity="one">%1$d ster uit %2$d</item>
+    </plurals>
+    <plurals name="tts_settings_language_unavailable">
+        <item quantity="other">tale</item>
+        <item quantity="one">taal</item>
+    </plurals>
+</resources>

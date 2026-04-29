@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    android:ordering="together"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_no_vibration_flash_animation__21__0"
+        android:duration="3550"
+        android:startOffset="0"
+        android:valueFrom="1"
+        android:valueTo="1"
+        android:valueType="floatType"
+        android:propertyName="scaleX" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_no_vibration_flash_animation__21__1"
+        android:duration="3550"
+        android:startOffset="0"
+        android:valueFrom="1"
+        android:valueTo="1"
+        android:valueType="floatType"
+        android:propertyName="scaleY" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_no_vibration_flash_animation__21__2"
+        android:duration="167"
+        android:startOffset="3550"
+        android:valueFrom="1"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="scaleX" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_no_vibration_flash_animation__21__3"
+        android:duration="167"
+        android:startOffset="3550"
+        android:valueFrom="1"
+        android:valueTo="1"
+        android:valueType="floatType"
+        android:propertyName="scaleY" />
+</set>

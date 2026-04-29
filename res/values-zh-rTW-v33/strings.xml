@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">除非你選擇傳送音質相關意見回饋，否則系統不會將音訊和背景對話內容傳送給 Google</string>
+    <string name="live_transcribe_html_description">使用「即時轉錄」應用程式時，你可以：&lt;br/> &lt;ol> &lt;li> 輸入文字，回覆螢幕上的語音轉錄內容&lt;/li> &lt;li> 在有人提及你的名字時收到通知&lt;/li> &lt;li> 搜尋轉錄稿的內容&lt;/li> &lt;/ol>&lt;br/> Google 會處理你的對話，但不會儲存這些內容</string>
+    <string name="dolphin_intro">偵測到周圍出現重要聲響 (例如煙霧警報聲或嬰兒哭鬧聲) 時通知你</string>
+    <string name="scribe_intro">「即時轉錄」應用程式可將語音內容轉成螢幕上的文字，讓你能更輕鬆地參與周遭對話</string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SurveyMaterialAlertDialogStyle" parent="@style/Theme.AppCompat.DayNight.Dialog.Alert" />
+    <style name="SurveyTheme" parent="@style/Theme.GoogleMaterial.Dark.NoActionBar">
+        <item name="checkboxStyle">@style/SurveyCheckBoxStyle</item>
+    </style>
+    <style name="SurveysTransparentActivity" parent="@style/Theme.GoogleMaterial.Dark.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">adjustNothing|stateUnchanged</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="colorPrimaryGoogle">@color/survey_accent_color</item>
+        <item name="colorSurface">@color/survey_surface_color</item>
+    </style>
+    <style name="SurveyCheckBoxStyle" parent="@style/Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="buttonTint">@color/google_selection_control_button_tint</item>
+        <item name="useMaterialThemeColors">true</item>
+    </style>
+</resources>

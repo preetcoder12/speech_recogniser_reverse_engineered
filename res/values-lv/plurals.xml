@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bias_custom_name_summary">
+        <item quantity="other">%d vārdi</item>
+        <item quantity="zero">%d vārdi</item>
+        <item quantity="one">%d vārds</item>
+    </plurals>
+    <plurals name="bias_custom_word_summary">
+        <item quantity="other">%d vārdi</item>
+        <item quantity="zero">%d vārdi</item>
+        <item quantity="one">%d vārds</item>
+    </plurals>
+    <plurals name="dolphin_notification_title_sound_event_information">
+        <item quantity="other">Pēdējā laikā (%2$d h) noteiktas %1$d skaņas</item>
+        <item quantity="zero">Pēdējā laikā (%2$d h) noteiktas %1$d skaņas</item>
+        <item quantity="one">Pēdējā laikā (%2$d h) noteikta %1$d skaņa</item>
+    </plurals>
+    <plurals name="dolphin_service_detecting">
+        <item quantity="other">Notiek klausīšanās, lai uztvertu {0,number,integer} skaņas…</item>
+        <item quantity="zero">Notiek klausīšanās, lai uztvertu {0,number,integer} skaņas…</item>
+        <item quantity="one">Notiek klausīšanās, lai uztvertu {0,number,integer} skaņu…</item>
+    </plurals>
+    <plurals name="survey_star_rating">
+        <item quantity="other">Zvaigznīšu skaits: %1$d no %2$d</item>
+        <item quantity="zero">Zvaigznīšu skaits: %1$d no %2$d</item>
+        <item quantity="one">Zvaigznīšu skaits: %1$d no %2$d</item>
+    </plurals>
+    <plurals name="tts_settings_language_unavailable">
+        <item quantity="other">Atlasītajās valodās</item>
+        <item quantity="zero">Atlasītajās valodās</item>
+        <item quantity="one">Atlasītajās valodās</item>
+    </plurals>
+</resources>

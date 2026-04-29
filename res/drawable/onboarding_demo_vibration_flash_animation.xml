@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+    android:drawable="@drawable/onboarding_demo_vd"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <target
+        android:name="_R_G_L_22_G_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__0" />
+    <target
+        android:name="_R_G_L_21_G_D_0_P_0"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__1" />
+    <target
+        android:name="_R_G_L_21_G_D_0_P_0"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__2" />
+    <target
+        android:name="_R_G_L_21_G_N_26_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__3" />
+    <target
+        android:name="_R_G_L_21_G_N_26_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__4" />
+    <target
+        android:name="_R_G_L_21_G_N_26_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__5" />
+    <target
+        android:name="_R_G_L_20_G_D_0_P_0"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__6" />
+    <target
+        android:name="_R_G_L_20_G_D_0_P_0"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__7" />
+    <target
+        android:name="_R_G_L_20_G_N_26_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__8" />
+    <target
+        android:name="_R_G_L_20_G_N_26_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__9" />
+    <target
+        android:name="_R_G_L_20_G_N_26_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__10" />
+    <target
+        android:name="_R_G_L_19_G_D_0_P_0"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__11" />
+    <target
+        android:name="_R_G_L_19_G_D_0_P_0"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__12" />
+    <target
+        android:name="_R_G_L_19_G_N_26_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__13" />
+    <target
+        android:name="_R_G_L_19_G_N_26_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__14" />
+    <target
+        android:name="_R_G_L_19_G_N_26_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__15" />
+    <target
+        android:name="_R_G_L_18_G_D_0_P_0"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__16" />
+    <target
+        android:name="_R_G_L_18_G_D_0_P_0"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__17" />
+    <target
+        android:name="_R_G_L_18_G_N_26_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__18" />
+    <target
+        android:name="_R_G_L_18_G_N_26_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__19" />
+    <target
+        android:name="_R_G_L_18_G_N_26_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__20" />
+    <target
+        android:name="_R_G_L_16_G"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__21" />
+    <target
+        android:name="_R_G_L_15_G"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__22" />
+    <target
+        android:name="_R_G_L_15_G_M"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__23" />
+    <target
+        android:name="_R_G_L_14_G"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__24" />
+    <target
+        android:name="_R_G_L_14_G_N_18_T_0"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__25" />
+    <target
+        android:name="_R_G_L_14_G_N_18_T_0_M"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__26" />
+    <target
+        android:name="_R_G_L_13_G"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__27" />
+    <target
+        android:name="_R_G_L_13_G_M"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__28" />
+    <target
+        android:name="_R_G_L_12_G_D_0_P_0"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__29" />
+    <target
+        android:name="_R_G_L_12_G"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__30" />
+    <target
+        android:name="_R_G_L_12_G_N_15_T_0"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__31" />
+    <target
+        android:name="_R_G_L_12_G_N_15_T_0_M"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__32" />
+    <target
+        android:name="_R_G_L_11_G_D_0_P_0"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__33" />
+    <target
+        android:name="_R_G_L_11_G_D_1_P_0"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__34" />
+    <target
+        android:name="_R_G_L_11_G"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__35" />
+    <target
+        android:name="_R_G_L_10_G_N_8_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__36" />
+    <target
+        android:name="_R_G_L_10_G_N_8_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__37" />
+    <target
+        android:name="_R_G_L_9_G_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__38" />
+    <target
+        android:name="_R_G_L_9_G_N_8_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__39" />
+    <target
+        android:name="_R_G_L_9_G_N_8_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__40" />
+    <target
+        android:name="_R_G_L_9_G_N_8_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__41" />
+    <target
+        android:name="_R_G_L_8_G"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__42" />
+    <target
+        android:name="_R_G_L_7_G_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__43" />
+    <target
+        android:name="_R_G_L_7_G_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__44" />
+    <target
+        android:name="_R_G_L_6_G"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__45" />
+    <target
+        android:name="_R_G_L_6_G_N_8_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__46" />
+    <target
+        android:name="_R_G_L_6_G_N_8_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__47" />
+    <target
+        android:name="_R_G_L_5_G"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__48" />
+    <target
+        android:name="_R_G_L_5_G_N_7_T_0"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__49" />
+    <target
+        android:name="_R_G_L_5_G_N_7_N_8_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__50" />
+    <target
+        android:name="_R_G_L_5_G_N_7_N_8_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__51" />
+    <target
+        android:name="_R_G_L_4_G"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__52" />
+    <target
+        android:name="_R_G_L_4_G_N_8_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__53" />
+    <target
+        android:name="_R_G_L_4_G_N_8_T_1"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__54" />
+    <target
+        android:name="_R_G_L_1_G_D_0_P_0"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__55" />
+    <target
+        android:name="_R_G_L_0_G_D_0_P_0"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__56" />
+    <target
+        android:name="_R_G_L_0_G_D_1_P_0"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__57" />
+    <target
+        android:name="_R_G_L_0_G_D_2_P_0"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__58" />
+    <target
+        android:name="time_group"
+        android:animation="@drawable/$onboarding_demo_vibration_flash_animation__59" />
+</animated-vector>

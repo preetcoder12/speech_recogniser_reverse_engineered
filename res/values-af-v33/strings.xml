@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">Oudio- en agtergrondgesprekke word nie na Google toe gestuur nie, tensy jy kies om terugvoer oor klankgehalte te stuur</string>
+    <string name="live_transcribe_html_description">Wanneer jy Kitstranskripsie gebruik, kan jy:&lt;br/> &lt;ol> &lt;li> Antwoorde tik op die transkripsie wat jy op die skerm sien&lt;/li> &lt;li> Opletberigte ontvang wanneer jou naam gesê word&lt;/li> &lt;li> Binne transkripsies soek&lt;/li> &lt;/ol>&lt;br/> Google verwerk jou gesprekke, maar berg dit nooit nie</string>
+    <string name="dolphin_intro">Word in kennis gestel van belangrike klanke rondom jou, soos wanneer ’n rookalarm biep of ’n baba huil</string>
+    <string name="scribe_intro">Kitstranskripsie wys spraak as teks op jou skerm sodat jy makliker kan deelneem aan gesprekke wat rondom jou plaasvind.</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="join_broadcast_bottom_layout_padding_vertical">40.0dip</dimen>
+    <dimen name="join_broadcast_center_round_rect_size">268.0dip</dimen>
+    <dimen name="join_broadcast_center_space_view_size">268.0dip</dimen>
+    <dimen name="join_broadcast_layout_text_view_padding_bottom">80.0dip</dimen>
+    <dimen name="join_broadcast_upload_from_gallery_button_layout_margin_top">14.0dip</dimen>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:theme="@style/Theme.GoogleMaterial3.DayNight"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginStart="@dimen/downloaded_languages_dialog_margin"
+    android:layout_marginEnd="@dimen/downloaded_languages_dialog_margin"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/downloaded_languages_dialog_margin">
+        <com.google.android.material.button.MaterialButton
+            android:id="@id/download_primary_language_button"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/download_languages_dialog_download_language"
+            app:layout_constraintBottom_toTopOf="@id/download_secondary_language_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/DialogUpperButtonShapeAppearance"
+            style="@style/DownloadLanguagesDialogButtonTheme" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@id/download_secondary_language_button"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/download_languages_dialog_download_language"
+            app:layout_constraintBottom_toTopOf="@id/other_languages_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/download_primary_language_button"
+            app:shapeAppearance="@style/DialogUpperButtonShapeAppearance"
+            style="@style/DownloadLanguagesDialogButtonTheme" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@id/other_languages_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/download_languages_dialog_select_another_language"
+            app:layout_constraintBottom_toTopOf="@id/cancel_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/download_secondary_language_button"
+            app:shapeAppearance="@style/DialogMiddleButtonShapeAppearance"
+            style="@style/DownloadLanguagesDialogButtonTheme" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@id/cancel_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/downloaded_languages_dialog_title_margin"
+            android:text="@android:string/cancel"
+            app:layout_constraintBottom_toTopOf="@id/detail_message"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/other_languages_button"
+            app:shapeAppearance="@style/DialogLowerButtonShapeAppearance"
+            style="@style/DownloadLanguagesDialogButtonTheme" />
+        <TextView
+            android:textSize="@dimen/downloaded_languages_dialog_info_text_size"
+            android:textColor="?android:textColorSecondary"
+            android:gravity="center"
+            android:id="@id/detail_message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/downloaded_languages_dialog_margin"
+            android:layout_marginStart="@dimen/downloaded_languages_dialog_margin"
+            android:layout_marginEnd="@dimen/downloaded_languages_dialog_margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cancel_button" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

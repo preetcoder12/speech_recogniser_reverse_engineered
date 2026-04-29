@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:keepScreenOn="true"
+        android:paddingHorizontal="@dimen/dolphin_feedback_dialog_layout_padding"
+        android:paddingVertical="@dimen/dolphin_feedback_dialog_layout_padding">
+        <FrameLayout
+            android:focusable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/play_button"
+            android:layout_alignParentStart="true">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@id/select_sound_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="no"
+                style="@style/DropdownLayoutTheme">
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@id/select_sound_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dolphin_spinner_select_sound_text"
+                    android:inputType="none"
+                    android:importantForAccessibility="no" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </FrameLayout>
+        <com.google.audio.hearing.visualization.accessibility.dolphin.common.ui.recording.AudioToggleButton
+            android:enabled="false"
+            android:id="@id/play_button"
+            android:padding="0.0dip"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="@dimen/dolphin_feedback_dialog_layout_audio_toggle_icon_size"
+            android:layout_height="@dimen/dolphin_feedback_dialog_layout_audio_toggle_icon_size"
+            android:layout_centerVertical="true"
+            android:insetLeft="0.0dip"
+            android:insetRight="0.0dip"
+            android:insetTop="0.0dip"
+            android:insetBottom="0.0dip"
+            android:contentDescription="@string/dolphin_send_feedback_dialog_play_audio"
+            android:layout_marginStart="@dimen/dolphin_feedback_dialog_layout_audio_toggle_margin_start"
+            android:layout_alignParentEnd="true"
+            app:iconGravity="textStart"
+            app:iconPadding="0.0dip"
+            style="@style/Widget.MaterialComponents.Button.Icon" />
+    </RelativeLayout>
+</ScrollView>

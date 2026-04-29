@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">Audio en gesprekken op de achtergrond worden niet naar Google gestuurd, tenzij je ervoor kiest feedback over de geluidskwaliteit te sturen</string>
+    <string name="live_transcribe_html_description">Met Live transcriptie kun je:&lt;br/> &lt;ol> &lt;li> Reacties typen op de transcriptie die je op het scherm ziet&lt;/li> &lt;li> Meldingen krijgen als je naam wordt uitgesproken&lt;/li> &lt;li> Zoeken in transcripties&lt;/li> &lt;/ol>&lt;br/> Google verwerkt je gesprekken, maar slaat ze nooit op</string>
+    <string name="dolphin_intro">Krijg meldingen over belangrijke geluiden om je heen, bijvoorbeeld als een rookmelder piept of een baby huilt</string>
+    <string name="scribe_intro">Met Live transcriptie wordt spraak als tekst op je scherm getoond zodat je makkelijker kunt deelnemen aan gesprekken</string>
+</resources>

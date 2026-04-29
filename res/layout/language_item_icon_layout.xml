@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@color/google_transparent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:gravity="center_vertical"
+        android:id="@id/language_pack_icon"
+        android:background="@color/google_transparent"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:tint="@color/language_item_icon_color"
+        android:minWidth="@dimen/language_item_icon_size"
+        android:minHeight="@dimen/language_item_icon_size" />
+    <ProgressBar
+        android:gravity="center_vertical"
+        android:id="@id/language_downloading_spinner"
+        android:background="@color/google_transparent"
+        android:visibility="gone"
+        android:layout_width="@dimen/language_item_icon_size"
+        android:layout_height="@dimen/language_item_icon_size"
+        android:scaleType="centerInside"
+        android:tint="@color/language_item_icon_color"
+        android:indeterminate="true"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:paddingHorizontal="@dimen/language_item_icon_padding_start_end"
+        android:paddingVertical="@dimen/language_item_icon_padding_top_bottom" />
+</LinearLayout>

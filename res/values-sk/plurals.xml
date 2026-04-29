@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bias_custom_name_summary">
+        <item quantity="other">%d pomenovaní</item>
+        <item quantity="one">%d pomenovanie</item>
+        <item quantity="few">%d pomenovania</item>
+        <item quantity="many">%d names</item>
+    </plurals>
+    <plurals name="bias_custom_word_summary">
+        <item quantity="other">%d slov</item>
+        <item quantity="one">%d slovo</item>
+        <item quantity="few">%d slová</item>
+        <item quantity="many">%d slova</item>
+    </plurals>
+    <plurals name="dolphin_notification_title_sound_event_information">
+        <item quantity="other">V posledných %2$d hodinách bolo detegovaných %1$d zvukov</item>
+        <item quantity="one">V posledných %2$d hodinách bol detegovaný %1$d zvuk</item>
+        <item quantity="few">V posledných %2$d hodinách boli detegované %1$d zvuky</item>
+        <item quantity="many">%1$d sounds detected in the past %2$d hours</item>
+    </plurals>
+    <plurals name="dolphin_service_detecting">
+        <item quantity="other">Čaká na {0,number,integer} zvukov…</item>
+        <item quantity="one">Čaká na {0,number,integer} zvuk…</item>
+        <item quantity="few">Čaká na {0,number,integer} zvuky…</item>
+        <item quantity="many">Listening for {0,number,integer} sounds…</item>
+    </plurals>
+    <plurals name="survey_star_rating">
+        <item quantity="other">%1$d hviezdičiek z %2$d</item>
+        <item quantity="one">%1$d hviezdička z %2$d</item>
+        <item quantity="few">%1$d hviezdičky z %2$d</item>
+        <item quantity="many">%1$d stars out of %2$d</item>
+    </plurals>
+    <plurals name="tts_settings_language_unavailable">
+        <item quantity="other">jazyky</item>
+        <item quantity="one">jazyk</item>
+        <item quantity="few">jazyky</item>
+        <item quantity="many">jazyky</item>
+    </plurals>
+</resources>

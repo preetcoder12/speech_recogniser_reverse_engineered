@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bias_custom_name_summary">
+        <item quantity="other">%d de nume</item>
+        <item quantity="one">%d nume</item>
+        <item quantity="few">%d nume</item>
+    </plurals>
+    <plurals name="bias_custom_word_summary">
+        <item quantity="other">%d de cuvinte</item>
+        <item quantity="one">%d cuvânt</item>
+        <item quantity="few">%d cuvinte</item>
+    </plurals>
+    <plurals name="dolphin_notification_title_sound_event_information">
+        <item quantity="other">%1$d de sunete detectate în ultimele %2$d ore</item>
+        <item quantity="one">%1$d sunet detectat în ultimele %2$d ore</item>
+        <item quantity="few">%1$d sunete detectate în ultimele %2$d ore</item>
+    </plurals>
+    <plurals name="dolphin_service_detecting">
+        <item quantity="other">Se ascultă {0,number,integer} de sunete…</item>
+        <item quantity="one">Se ascultă {0,number,integer} sunet…</item>
+        <item quantity="few">Se ascultă {0,number,integer} sunete…</item>
+    </plurals>
+    <plurals name="survey_star_rating">
+        <item quantity="other">%1$d de stele din %2$d</item>
+        <item quantity="one">%1$d stea din %2$d</item>
+        <item quantity="few">%1$d stele din %2$d</item>
+    </plurals>
+    <plurals name="tts_settings_language_unavailable">
+        <item quantity="other">limbi</item>
+        <item quantity="one">limbă</item>
+        <item quantity="few">limbi</item>
+    </plurals>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:paddingTop="@dimen/tts_dialog_top_padding"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/tts_dialog_horizontal_padding"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:gravity="center_horizontal"
+        android:id="@id/tts_image_view"
+        android:layout_width="@dimen/tts_icon_size"
+        android:layout_height="@dimen/tts_icon_size"
+        android:src="@drawable/gs_warning_vd_theme_24"
+        android:tint="?android:colorAccent"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@id/tts_no_language_dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tts_secondary_language_empty_dialog_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tts_image_view"
+        style="?android:textAppearanceLarge" />
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@id/tts_no_language_dialog_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tts_secondary_language_empty_dialog_content"
+        android:paddingVertical="@dimen/tts_dialog_content_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tts_no_language_dialog_title"
+        style="?android:textAppearance" />
+</androidx.constraintlayout.widget.ConstraintLayout>

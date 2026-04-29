@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText
+        android:textSize="@dimen/survey_answer_text_size"
+        android:textColor="@color/survey_primary_text_color"
+        android:textColorHint="@color/survey_secondary_text_color"
+        android:gravity="start|center|top"
+        android:id="@id/survey_open_text"
+        android:background="@drawable/survey_open_text_border"
+        android:padding="16.0dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbars="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:hint="@string/survey_open_text_hint"
+        android:minLines="5"
+        android:lineSpacingMultiplier="1.25"
+        android:inputType="textAutoCorrect|textCapSentences|textMultiLine"
+        android:imeOptions="actionDone"
+        android:fontFamily="@string/survey_font_regular"
+        android:accessibilityTraversalBefore="@id/survey_open_text_personal_info"
+        android:importantForAutofill="no" />
+    <TextView
+        android:textSize="@dimen/survey_pii_text_size"
+        android:textColor="@color/survey_secondary_text_color"
+        android:id="@id/survey_open_text_personal_info"
+        android:paddingBottom="@dimen/survey_pii_text_padding_bottom"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28.0dip"
+        android:layout_marginTop="4.0dip"
+        android:layout_marginRight="28.0dip"
+        android:text="@string/survey_open_text_no_pii"
+        android:importantForAccessibility="no"
+        android:fontFamily="@string/survey_font_regular"
+        android:accessibilityTraversalAfter="@id/survey_open_text" />
+</merge>

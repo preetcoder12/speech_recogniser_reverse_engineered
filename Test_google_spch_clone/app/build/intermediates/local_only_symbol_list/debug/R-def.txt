@@ -1,0 +1,5 @@
+R_DEF: Internal format may change without notice
+local
+id transcript_text
+layout activity_main
+xml accessibility_service_config

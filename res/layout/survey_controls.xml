@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/survey_controls_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.button.MaterialButton
+        android:textSize="@dimen/survey_prompt_buttons_text_size"
+        android:id="@id/survey_next"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginBottom="12.0dip"
+        android:minWidth="@dimen/survey_button_min_width_size"
+        android:text="@string/survey_next"
+        app:enforceMaterialTheme="false"
+        style="@style/SurveyButtonStyle"
+        xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <include
+        android:id="@id/survey_controls_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/survey_divider_horizontal_margin"
+        android:layout_marginRight="@dimen/survey_divider_horizontal_margin"
+        layout="@layout/survey_divider" />
+    <include
+        android:id="@id/survey_controls_legal_text"
+        layout="@layout/survey_legal_text" />
+</LinearLayout>

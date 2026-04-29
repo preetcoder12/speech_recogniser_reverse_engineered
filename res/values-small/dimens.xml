@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dual_display_fab_margin">18.0dip</dimen>
+    <dimen name="dual_display_font_size_layout_horizontal_padding">12.0dip</dimen>
+    <dimen name="dual_display_font_size_layout_vertical_padding">8.0dip</dimen>
+    <dimen name="dual_display_text_size_default">16.0sp</dimen>
+    <dimen name="dual_display_text_size_large">18.0sp</dimen>
+    <dimen name="dual_display_text_size_larger">20.0sp</dimen>
+    <dimen name="dual_display_text_size_small">14.0sp</dimen>
+    <dimen name="dual_display_text_size_smaller">12.0sp</dimen>
+</resources>

@@ -1,0 +1,214 @@
+# MediaPipe Graph: Audio Pipeline
+# Matches: drishti_assets/audio_pipeline.binarypb
+# Orchestrates: Microphone → Resample → Feature Extraction → TFLite Inference
+
+input_stream: "microphone_input"
+output_stream: "transcription_output"
+output_stream: "sound_classification_output"
+
+# ============================================================
+# Node 1: Audio Capture with Opus Decoding
+# ============================================================
+node {
+  calculator: "AndroidMicrophoneCalculator"
+  input_stream: "AUDIO:microphone_input"
+  output_stream: "AUDIO:opus_encoded_audio"
+  node_options: {
+    [type.googleapis.com/mediapipe.AndroidMicrophoneCalculatorOptions] {
+      sample_rate: 16000
+      buffer_size_ms: 100
+      source: VOICE_RECOGNITION
+      codec: OPUS
+    }
+  }
+}
+
+# ============================================================
+# Node 2: Opus Decoder (libogg_opus_encoder.so)
+# ============================================================
+node {
+  calculator: "OpusDecoderCalculator"
+  input_stream: "ENCODED:opus_encoded_audio"
+  output_stream: "PCM:decoded_pcm_audio"
+  node_options: {
+    [type.googleapis.com/mediapipe.OpusDecoderCalculatorOptions] {
+      sample_rate: 16000
+      channels: MONO
+      frame_size: 960  # 60ms @ 16kHz
+    }
+  }
+}
+
+# ============================================================
+# Node 3: Sample Rate Converter (libresampler.so)
+# Ensures consistent 16kHz across all Android hardware
+# ============================================================
+node {
+  calculator: "AudioResamplerCalculator"
+  input_stream: "PCM:decoded_pcm_audio"
+  output_stream: "PCM:resampled_audio"
+  node_options: {
+    [type.googleapis.com/mediapipe.AudioResamplerCalculatorOptions] {
+      target_sample_rate: 16000
+      quality: HIGH
+    }
+  }
+}
+
+# ============================================================
+# Node 4: Background Level Detector (libbackground_level_detector.so)
+# ============================================================
+node {
+  calculator: "BackgroundLevelDetectorCalculator"
+  input_stream: "PCM:resampled_audio"
+  output_stream: "NOISE_LEVEL:ambient_noise_db"
+  output_stream: "PCM:calibrated_audio"
+  node_options: {
+    [type.googleapis.com/mediapipe.BackgroundLevelDetectorCalculatorOptions] {
+      window_size_ms: 3000
+      update_interval_ms: 1000
+    }
+  }
+}
+
+# ============================================================
+# Node 5: Feature Extraction (FFT → Mel-Spectrogram)
+# ============================================================
+node {
+  calculator: "AudioFeatureExtractorCalculator"
+  input_stream: "PCM:calibrated_audio"
+  output_stream: "FEATURES:mel_spectrogram"
+  node_options: {
+    [type.googleapis.com/mediapipe.AudioFeatureExtractorCalculatorOptions] {
+      num_mel_bins: 80
+      frame_length_ms: 25
+      frame_shift_ms: 10
+      window_type: HAMMING
+      fft_length: 512
+      dither: 0.0
+      preemphasis: 0.97
+    }
+  }
+}
+
+# ============================================================
+# Node 6: Feature Normalization
+# ============================================================
+node {
+  calculator: "AudioFeatureNormalizationCalculator"
+  input_stream: "FEATURES:mel_spectrogram"
+  output_stream: "FEATURES:normalized_features"
+  node_options: {
+    [type.googleapis.com/mediapipe.AudioFeatureNormalizationCalculatorOptions] {
+      normalization_type: CMVN
+      window_size: 300
+    }
+  }
+}
+
+# ============================================================
+# Node 7a: Streaming ASR (earsnet_streaming_model.tflite)
+# ============================================================
+node {
+  calculator: "TFLiteInferenceCalculator"
+  input_stream: "FEATURES:normalized_features"
+  output_stream: "TRANSCRIPT:asr_hypothesis"
+  input_side_packet: "MODEL:asr_model"
+  node_options: {
+    [type.googleapis.com/mediapipe.TFLiteInferenceCalculatorOptions] {
+      model_path: "models/earsnet_streaming_model.tflite"
+      delegate: GPU
+      # Streaming ASR with RNNT decoder
+      output_type: STRING
+      enable_quantization: true
+    }
+  }
+}
+
+# ============================================================
+# Node 7b: Sound Classification (audio_set_960ms.tflite)
+# ============================================================
+node {
+  calculator: "TFLiteInferenceCalculator"
+  input_stream: "FEATURES:normalized_features"
+  output_stream: "CLASSIFICATION:sound_event_labels"
+  input_side_packet: "MODEL:sound_model"
+  node_options: {
+    [type.googleapis.com/mediapipe.TFLiteInferenceCalculatorOptions] {
+      model_path: "models/audio_set_960ms.tflite"
+      delegate: GPU
+      # 960ms window, 521 AudioSet classes
+      output_type: FLOAT
+      top_k: 5
+    }
+  }
+}
+
+# ============================================================
+# Node 7c: Beep Embedding Detection (beep_embedding_model.tflite)
+# ============================================================
+node {
+  calculator: "TFLiteInferenceCalculator"
+  input_stream: "FEATURES:normalized_features"
+  output_stream: "EMBEDDING:beep_embedding"
+  input_side_packet: "MODEL:beep_model"
+  node_options: {
+    [type.googleapis.com/mediapipe.TFLiteInferenceCalculatorOptions] {
+      model_path: "models/beep_embedding_model.tflite"
+      delegate: GPU
+    }
+  }
+}
+
+# ============================================================
+# Node 8: Sound Discovery (sound_discovery_model.tflite)
+# Personalized novel sound detection
+# ============================================================
+node {
+  calculator: "TFLiteInferenceCalculator"
+  input_stream: "EMBEDDING:beep_embedding"
+  output_stream: "DISCOVERY:novel_sound_score"
+  input_side_packet: "MODEL:discovery_model"
+  node_options: {
+    [type.googleapis.com/mediapipe.TFLiteInferenceCalculatorOptions] {
+      model_path: "models/sound_discovery_model.tflite"
+      delegate: GPU
+    }
+  }
+}
+
+# ============================================================
+# Node 9: Transcript Post-Processing
+# ============================================================
+node {
+  calculator: "TranscriptPostProcessorCalculator"
+  input_stream: "TRANSCRIPT:asr_hypothesis"
+  output_stream: "TRANSCRIPT:final_transcript"
+  node_options: {
+    [type.googleapis.com/mediapipe.TranscriptPostProcessorCalculatorOptions] {
+      # Google's partial vs finalized logic
+      partial_update_interval_ms: 300
+      finalization_delay_ms: 400
+      confidence_threshold: 0.7
+      enable_punctuation: true
+      enable_capitalization: true
+    }
+  }
+}
+
+# ============================================================
+# Node 10: Text Flow Rendering
+# ============================================================
+node {
+  calculator: "TextFlowRendererCalculator"
+  input_stream: "TRANSCRIPT:final_transcript"
+  input_stream: "CLASSIFICATION:sound_event_labels"
+  output_stream: "DISPLAY:rendered_text"
+  node_options: {
+    [type.googleapis.com/mediapipe.TextFlowRendererCalculatorOptions] {
+      max_lines: 3
+      scroll_direction: VERTICAL
+      preserve_completed_lines: true
+    }
+  }
+}

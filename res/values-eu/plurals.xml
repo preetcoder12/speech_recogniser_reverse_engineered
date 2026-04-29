@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bias_custom_name_summary">
+        <item quantity="other">%d izen</item>
+        <item quantity="one">%d izen</item>
+    </plurals>
+    <plurals name="bias_custom_word_summary">
+        <item quantity="other">%d hitz</item>
+        <item quantity="one">%d hitz</item>
+    </plurals>
+    <plurals name="dolphin_notification_title_sound_event_information">
+        <item quantity="other">%1$d soinu hauteman dira azken %2$d orduetan</item>
+        <item quantity="one">%1$d soinu hauteman da azken %2$d orduetan</item>
+    </plurals>
+    <plurals name="dolphin_service_detecting">
+        <item quantity="other">{0,number,integer} soinu entzuten saiatzen…</item>
+        <item quantity="one">{0,number,integer} soinu entzuten saiatzen…</item>
+    </plurals>
+    <plurals name="tts_settings_language_unavailable">
+        <item quantity="other">hizkuntzetan</item>
+        <item quantity="one">hizkuntzan</item>
+    </plurals>
+</resources>

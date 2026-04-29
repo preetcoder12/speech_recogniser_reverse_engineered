@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.android.settingslib.widget.TopIntroPreference
+        android:title="@string/host_setup_broadcast_settings_preference_message"
+        android:selectable="false" />
+    <com.android.settingslib.widget.MainSwitchPreference
+        android:title="@string/switch_button_text_use_same_qr_code"
+        app:key="@string/perf_host_setup_broadcast_use_same_qr_code_switch" />
+    <EditTextPreference
+        app:iconSpaceReserved="false"
+        app:key="@string/perf_host_setup_broadcast_edit_text"
+        app:title="@string/host_setup_broadcast_settings_preference_input_layout_hint" />
+    <PreferenceCategory>
+        <com.android.settingslib.widget.ButtonPreference
+            android:title="@string/host_setup_broadcast_settings_preference_start_broadcast_live_preference"
+            app:buttonPreferenceSize="large"
+            app:buttonPreferenceType="filled"
+            app:key="@string/perf_host_setup_broadcast_start_broadcast_live" />
+    </PreferenceCategory>
+</PreferenceScreen>

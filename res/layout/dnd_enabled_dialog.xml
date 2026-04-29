@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="@dimen/dolphin_dnd_dialog_padding"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/dolphin_dnd_dialog_text_padding"
+            android:paddingBottom="@dimen/dolphin_dnd_dialog_text_padding"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dolphin_dnd_enabled_dialog_title"
+            android:singleLine="false"
+            style="@style/DialogTitleTextTheme" />
+        <TextView
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dolphin_dnd_enabled_dialog_message"
+            android:singleLine="false"
+            style="@style/DialogMessageTextTheme" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:theme="@style/Theme.GoogleMaterial3.DayNight"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/downloading_tips_background"
+    android:layout_width="@dimen/downloading_tips_background_width"
+    android:layout_height="@dimen/downloading_tips_background_height"
+    android:paddingStart="@dimen/downloading_tips_padding"
+    android:paddingEnd="@dimen/downloading_tips_padding"
+    android:elevation="@dimen/downloading_tips_elevation"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@id/tips_icon"
+        android:layout_width="@dimen/downloading_tips_icon_size"
+        android:layout_height="@dimen/downloading_tips_icon_size"
+        android:src="@drawable/quantum_ic_language_vd_theme_24"
+        android:tint="?android:textColorPrimary"
+        android:layout_marginEnd="@dimen/downloading_tips_margin" />
+    <TextView
+        android:textSize="@dimen/downloading_tips_text_size"
+        android:textColor="?android:textColorPrimary"
+        android:id="@id/tips_message"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:text="@string/download_languages_dialog_downloading"
+        android:layout_weight="1.0"
+        android:accessibilityLiveRegion="polite" />
+    <ProgressBar
+        android:id="@id/tips_progress"
+        android:layout_width="@dimen/downloading_tips_icon_size"
+        android:layout_height="@dimen/downloading_tips_icon_size"
+        android:layout_marginStart="@dimen/downloading_tips_margin" />
+</LinearLayout>

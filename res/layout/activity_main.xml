@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.audio.hearing.visualization.accessibility.scribe.ui.PtzConstraintLayout
+    android:id="@id/main_container"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:keepScreenOn="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        layout="@layout/start_speaking_layout" />
+    <include
+        layout="@layout/transcription_error_mic_layout" />
+    <include
+        layout="@layout/search_banner" />
+    <include
+        layout="@layout/open_shortcut_banner" />
+    <com.google.audio.hearing.visualization.accessibility.scribe.ui.broadcast.BroadcastToolbar
+        android:id="@id/broadcast_toolbar"
+        android:background="@color/scribe_background"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:contentInsetEnd="0.0dip"
+        app:contentInsetStart="0.0dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/open_shortcut" />
+    <com.google.audio.hearing.visualization.accessibility.scribe.ui.banner.ScribeBanner
+        android:id="@id/scribe_banner"
+        android:visibility="gone"
+        android:clickable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:elevation="1.0dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/broadcast_toolbar" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scribe_banner">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@id/text_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <com.google.audio.hearing.visualization.accessibility.textflow.ScrollTextFlowLayout
+                android:id="@id/transcript"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:elevation="0.0dip"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <com.google.audio.hearing.visualization.accessibility.scribe.common.ui.DraggableImageView
+                android:id="@id/drag_point"
+                android:visibility="gone"
+                android:clickable="true"
+                android:layout_width="@dimen/typeback_drag_point_touch_area_width"
+                android:layout_height="@dimen/typeback_drag_point_touch_area_height"
+                android:src="@drawable/typeback_drag_point"
+                android:scaleType="center"
+                android:contentDescription="@string/typeback_resizing_button_description"
+                android:elevation="10.0dip"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <include
+                layout="@layout/type_back_layout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.audio.hearing.visualization.accessibility.scribe.ui.soundevents.SoundEventRecyclerView
+            android:layout_gravity="bottom"
+            android:id="@id/sound_event_view"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/sound_event_chip_layout_margin_start"
+            android:paddingEnd="@dimen/sound_event_chip_margin"
+            app:layout_behavior="com.google.audio.hearing.visualization.accessibility.scribe.ui.ConstraintBottomToOthersTopBehavior" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_gravity="end"
+            android:id="@id/jump_to_end_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/mtrl_bottomappbar_fab_bottom_margin"
+            android:contentDescription="@string/title_go_to_bottom_button"
+            android:layout_marginEnd="@dimen/m3_bottomappbar_fab_end_margin"
+            app:backgroundTint="?bottomAppBarFabBackground"
+            app:fabSize="normal"
+            app:layout_behavior="com.google.audio.hearing.visualization.accessibility.scribe.ui.ConstraintBottomToOthersTopBehavior"
+            app:srcCompat="@drawable/quantum_ic_expand_more_grey600_24"
+            app:tint="?bottomAppBarFabTintColor"
+            style="?scribeFloatingActionButtonStyle" />
+        <include
+            android:id="@id/bottom_app_bar"
+            layout="@layout/bottom_app_bar_layout" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.google.audio.hearing.visualization.accessibility.scribe.ui.loudness.CircleView
+        android:id="@id/loudness_circle"
+        android:layout_width="@dimen/circleMaxWidth"
+        android:layout_height="@dimen/circleMaxWidth"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scribe_banner" />
+    <View
+        android:id="@id/circle_touch"
+        android:clickable="true"
+        android:layout_width="@dimen/abc_action_button_min_width_material"
+        android:layout_height="@dimen/abc_action_button_min_height_material"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scribe_banner" />
+    <include
+        layout="@layout/swipe_to_see_message" />
+</com.google.audio.hearing.visualization.accessibility.scribe.ui.PtzConstraintLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/survey_other_option_horizontal_padding"
+    android:paddingRight="@dimen/survey_other_option_horizontal_padding"
+    android:focusable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/SurveySingleSelectOtherOptionStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:textSize="@dimen/survey_answer_text_size"
+            android:textColor="@color/survey_primary_text_color"
+            android:textColorHint="@color/survey_primary_text_color"
+            android:gravity="start|bottom|center"
+            android:id="@id/survey_other_option"
+            android:background="@drawable/survey_other_edittext_border"
+            android:paddingBottom="10.0dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scrollbars="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/survey_option_tap_minheight"
+            android:hint="@string/survey_other_option_hint"
+            android:maxLines="1"
+            android:inputType="textAutoCorrect|textCapSentences"
+            android:imeOptions="actionDone"
+            android:fontFamily="@string/survey_font_regular"
+            android:accessibilityTraversalBefore="@id/survey_other_option_personal_info"
+            style="@style/SurveyOtherOptionEditTextStyle" />
+        <View
+            android:id="@id/survey_other_option_background"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:importantForAccessibility="no" />
+    </FrameLayout>
+    <TextView
+        android:textSize="@dimen/survey_pii_text_size"
+        android:textColor="@color/survey_secondary_text_color"
+        android:id="@id/survey_other_option_personal_info"
+        android:paddingBottom="@dimen/survey_pii_text_padding_bottom"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip"
+        android:text="@string/survey_open_text_no_pii"
+        android:importantForAccessibility="no"
+        android:fontFamily="@string/survey_font_regular"
+        android:accessibilityTraversalAfter="@id/survey_other_option"
+        style="@style/SurveyOtherOptionEditTextStyle" />
+</LinearLayout>

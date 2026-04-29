@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:gravity="center"
+        android:height="32.0dip"
+        android:width="32.0dip">
+        <shape
+            android:shape="oval" />
+    </item>
+    <item
+        android:gravity="center"
+        android:id="@id/dual_display_start_button_foreground"
+        android:height="24.0dip"
+        android:width="24.0dip"
+        android:drawable="@drawable/gs_dual_screen_vd_theme_24" />
+</layer-list>

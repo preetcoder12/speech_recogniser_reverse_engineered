@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">הקלטות האודיו והשיחות ברקע לא נשלחות ל-Google, אלא אם בחרת לשלוח משוב על איכות הצליל</string>
+    <string name="live_transcribe_html_description">בזמן השימוש ב\"תמלול בזמן אמת\", אפשר:&lt;br/> &lt;ol> &lt;li> להקליד תשובות לתמלול שמוצג במסך&lt;/li> &lt;li> לקבל התראות כשהשם שלך נאמר&lt;/li> &lt;li> לחפש בתוך התמלילים&lt;/li> &lt;/ol>&lt;br/> ‫Google מעבדת את השיחות שלך, אבל אף פעם לא שומרת אותן</string>
+    <string name="dolphin_intro">קבלת התראות על צלילים חשובים בסביבה, למשל כשגלאי עשן מצפצף או כשתינוק בוכה</string>
+    <string name="scribe_intro">האפליקציה \"תמלול בזמן אמת\" מציגה דיבור כטקסט במסך כדי להקל עליך להשתתף בשיחות בסביבתך</string>
+</resources>

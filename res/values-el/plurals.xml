@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bias_custom_name_summary">
+        <item quantity="other">%d ονόματα</item>
+        <item quantity="one">%d όνομα</item>
+    </plurals>
+    <plurals name="bias_custom_word_summary">
+        <item quantity="other">%d λέξεις</item>
+        <item quantity="one">%d λέξη</item>
+    </plurals>
+    <plurals name="dolphin_notification_title_sound_event_information">
+        <item quantity="other">Εντοπίστηκαν %1$d ήχοι τις %2$d τελευταίες ώρες</item>
+        <item quantity="one">Εντοπίστηκε %1$d ήχος τις %2$d τελευταίες ώρες</item>
+    </plurals>
+    <plurals name="dolphin_service_detecting">
+        <item quantity="other">Ακρόαση για ήχο {0,number,integer}…</item>
+        <item quantity="one">Ακρόαση για ήχο {0,number,integer}…</item>
+    </plurals>
+    <plurals name="survey_star_rating">
+        <item quantity="other">%1$d στα %2$d αστέρια</item>
+        <item quantity="one">%1$d στα %2$d αστέρια</item>
+    </plurals>
+    <plurals name="tts_settings_language_unavailable">
+        <item quantity="other">γλώσσες</item>
+        <item quantity="one">γλώσσα</item>
+    </plurals>
+</resources>

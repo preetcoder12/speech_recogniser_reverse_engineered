@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="survey_accent_color">@color/google_grey50</color>
+    <color name="survey_close_icon_color">@color/google_grey200</color>
+    <color name="survey_disabled_state_color">#61e8eaed</color>
+    <color name="survey_divider_color">@color/google_grey700</color>
+    <color name="survey_edit_text_border_color">@color/google_grey300</color>
+    <color name="survey_grey_icon_color">@color/google_grey500</color>
+    <color name="survey_hint_text_color">@color/survey_accent_color</color>
+    <color name="survey_hint_text_unfocused_color">@color/survey_secondary_text_color</color>
+    <color name="survey_multi_select_edit_text_color">@color/survey_accent_color</color>
+    <color name="survey_primary_text_color">@color/google_grey200</color>
+    <color name="survey_rounded_button_clicked_color">@color/ripple_material_dark</color>
+    <color name="survey_secondary_text_color">@color/google_grey500</color>
+    <color name="survey_surface_color">@color/google_grey900</color>
+    <color name="survey_surface_color_elevation_2">#ff2d2e30</color>
+    <color name="survey_surface_color_elevation_3">#ff36383a</color>
+</resources>

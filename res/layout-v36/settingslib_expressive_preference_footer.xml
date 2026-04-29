@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@id/settingslib_expressive_footer_container"
+    android:paddingBottom="@dimen/settingslib_expressive_space_extrasmall7"
+    android:visibility="gone"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@id/settingslib_footer_image"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true" />
+    <TextView
+        android:textAppearance="@style/TextAppearance.SettingsLib.TitleSmall"
+        android:textColor="@color/settingslib_materialColorPrimary"
+        android:id="@id/settingslib_footer_text"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:filterTouchesWhenObscured="true" />
+</LinearLayout>

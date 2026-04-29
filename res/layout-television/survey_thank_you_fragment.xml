@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:paddingBottom="8.0dip"
+    android:focusable="false"
+    android:descendantFocusability="afterDescendants"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/survey_question_header_logo_text"
+        android:paddingBottom="@dimen/survey_display_logo_margin_bottom"
+        android:focusable="true"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginRight="8.0dip"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <include
+            android:focusable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            layout="@layout/survey_display_logo" />
+        <TextView
+            android:textSize="@dimen/survey_question_text_size"
+            android:textColor="@color/survey_primary_text_color"
+            android:id="@id/survey_question_text"
+            android:focusable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="@dimen/survey_header_question_line_spacing_multiplier"
+            android:fontFamily="@font/google_sans_medium"
+            style="@style/SurveyQuestionTextStyle" />
+    </LinearLayout>
+    <TextView
+        android:textSize="16.0sp"
+        android:textColor="@color/survey_accent_color"
+        android:id="@id/survey_follow_up_url"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16.0dip"
+        android:minWidth="48.0dip"
+        android:minHeight="48.0dip"
+        style="@style/SurveyFollowUpUrlStyle" />
+</LinearLayout>

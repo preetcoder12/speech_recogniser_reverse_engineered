@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:filterTouchesWhenObscured="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.card.MaterialCardView
+        android:theme="@style/Theme.Material3.DynamicColors.DayNight"
+        style="@style/SettingsLibStatusBannerCardStyle">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/banner_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:paddingHorizontal="@dimen/settingslib_expressive_space_small1"
+            android:paddingVertical="@dimen/settingslib_expressive_space_small1">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/status_container"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:baselineAligned="false">
+                <FrameLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:id="@android:id/icon_frame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="@dimen/settingslib_expressive_space_large3"
+                    android:minHeight="@dimen/settingslib_expressive_space_large3">
+                    <ImageView
+                        android:id="@id/icon_background"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:id="@android:id/icon"
+                        android:layout_width="@dimen/settingslib_expressive_space_medium4"
+                        android:layout_height="@dimen/settingslib_expressive_space_medium4"
+                        android:scaleType="centerInside" />
+                    <com.google.android.material.progressindicator.CircularProgressIndicator
+                        android:theme="@style/Theme.Material3.DynamicColors.DayNight"
+                        android:layout_gravity="center"
+                        android:id="@id/progress_indicator"
+                        android:visibility="gone"
+                        android:layout_width="@dimen/settingslib_expressive_space_medium4"
+                        android:layout_height="@dimen/settingslib_expressive_space_medium4"
+                        android:scaleType="centerInside"
+                        android:max="100"
+                        android:progress="0"
+                        android:indeterminate="false"
+                        style="@style/Widget.GoogleMaterial3Expressive.CircularProgressIndicator.Wavy" />
+                    <com.google.android.material.loadingindicator.LoadingIndicator
+                        android:layout_gravity="center"
+                        android:id="@id/loading_indicator"
+                        android:visibility="gone"
+                        android:layout_width="@dimen/settingslib_expressive_space_medium4"
+                        android:layout_height="@dimen/settingslib_expressive_space_medium4"
+                        android:scaleType="centerInside"
+                        style="@style/Widget.Material3.LoadingIndicator" />
+                </FrameLayout>
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:id="@id/text_container"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:paddingHorizontal="@dimen/settingslib_expressive_space_extrasmall6"
+                    android:paddingVertical="@dimen/settingslib_expressive_space_extrasmall5">
+                    <TextView
+                        android:textAppearance="@style/TextAppearance.SettingsLib.TitleLarge.Emphasized"
+                        android:textColor="@color/settingslib_text_color_primary"
+                        android:id="@android:id/title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textAppearance="@style/TextAppearance.SettingsLib.BodyMedium"
+                        android:textColor="@color/settingslib_text_color_secondary"
+                        android:id="@android:id/summary"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="3" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@id/status_banner_button"
+                android:layout_marginTop="@dimen/settingslib_expressive_space_small1"
+                style="@style/SettingsLibButtonStyle.Expressive.Filled.Extra" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</FrameLayout>

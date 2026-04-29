@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/snooze_container"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dolphin_notification_snooze_view_title_height">
+        <TextView
+            android:ellipsize="marquee"
+            android:layout_gravity="start|center"
+            android:id="@id/snooze_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dolphin_notification_snooze_title"
+            android:singleLine="true"
+            android:paddingEnd="@dimen/dolphin_notification_snooze_view_padding_end"
+            style="@style/RemoteViewsTitleTheme" />
+        <TextView
+            android:textStyle="bold"
+            android:ellipsize="marquee"
+            android:layout_gravity="center_vertical"
+            android:id="@id/snooze_option_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dolphin_notification_snooze_option_3"
+            android:singleLine="true"
+            android:paddingEnd="@dimen/dolphin_notification_snooze_view_padding_end"
+            style="@style/RemoteViewsTitleTheme" />
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@id/snooze_expand_button"
+            android:paddingTop="@dimen/dolphin_notification_snooze_view_padding_top"
+            android:layout_width="@dimen/dolphin_notification_snooze_view_expand_button_height"
+            android:layout_height="@dimen/dolphin_notification_snooze_view_expand_button_height"
+            android:src="@drawable/quantum_gm_ic_expand_more_gm_grey_18"
+            android:tint="@color/dolphin_notification_snooze_view_border_color" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="end|center"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:id="@id/snooze_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dolphin_notification_snooze_view_action_button_height"
+            android:text="@string/dolphin_notification_snooze_cancel"
+            android:layout_marginEnd="@dimen/dolphin_notification_snooze_view_margin_end"
+            style="@style/RemoteViewsButtonTheme" />
+        <TextView
+            android:layout_gravity="end|center"
+            android:id="@id/snooze_done_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dolphin_notification_snooze_view_action_button_height"
+            android:text="@string/dolphin_notification_snooze_done"
+            style="@style/RemoteViewsButtonTheme" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/divider"
+        android:background="@color/dolphin_notification_snooze_view_border_color"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dolphin_notification_snooze_view_divider_height" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/snooze_options"
+        android:paddingBottom="@dimen/dolphin_notification_snooze_view_option_padding_bottom"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@id/snooze_option_15_minutes"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dolphin_notification_snooze_view_option_padding_height"
+            android:text="@string/dolphin_notification_snooze_option_1"
+            style="@style/RemoteViewsSubtitleTheme" />
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@id/snooze_option_30_minutes"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dolphin_notification_snooze_view_option_padding_height"
+            android:text="@string/dolphin_notification_snooze_option_2"
+            style="@style/RemoteViewsSubtitleTheme" />
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@id/snooze_option_1_hour"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dolphin_notification_snooze_view_option_padding_height"
+            android:text="@string/dolphin_notification_snooze_option_3"
+            style="@style/RemoteViewsSubtitleTheme" />
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@id/snooze_option_2_hours"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dolphin_notification_snooze_view_option_padding_height"
+            android:text="@string/dolphin_notification_snooze_option_4"
+            style="@style/RemoteViewsSubtitleTheme" />
+    </LinearLayout>
+</LinearLayout>

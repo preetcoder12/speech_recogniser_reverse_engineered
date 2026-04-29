@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:filterTouchesWhenObscured="true"
+    android:paddingStart="?android:listPreferredItemPaddingStart"
+    android:paddingEnd="?android:listPreferredItemPaddingEnd"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.android.settingslib.widget.CollapsableTextView
+        android:id="@id/collapsable_text_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minLines="2"
+        app:isCollapsable="false" />
+</RelativeLayout>

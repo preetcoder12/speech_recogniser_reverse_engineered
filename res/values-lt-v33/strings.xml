@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">Garso įrašai ir foniniai pokalbiai nesiunčiami „Google“, jei nepasirenkate siųsti atsiliepimų apie garso kokybę.</string>
+    <string name="live_transcribe_html_description">Naudodami Transkripciją realiuoju laiku galite atlikti toliau nurodytus veiksmus.&lt;br/> &lt;ol> &lt;li> Įvesti ekrane rodomos transkripcijos atsakymus&lt;/li> &lt;li> Gauti įspėjimus, kai ištariamas jūsų vardas&lt;/li> &lt;li> Ieškoti transkripcijose&lt;/li> &lt;/ol>&lt;br/> „Google“ apdoroja jūsų pokalbius, bet niekada jų nesaugo</string>
+    <string name="dolphin_intro">Gaukite pranešimus apie svarbius aplinkos garsus, pvz., įspėjamąjį signalą dėl dūmų ar vaiko verksmą</string>
+    <string name="scribe_intro">Transkripcijos realiuoju laiku programa kalbą rodo kaip tekstą ekrane, kad būtų lengviau dalyvauti aplink vykstančiuose pokalbiuose</string>
+</resources>

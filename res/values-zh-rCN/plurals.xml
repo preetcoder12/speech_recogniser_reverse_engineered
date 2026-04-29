@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bias_custom_name_summary">
+        <item quantity="other">%d 个名称</item>
+        <item quantity="one">%d 个名称</item>
+    </plurals>
+    <plurals name="bias_custom_word_summary">
+        <item quantity="other">%d 个字词</item>
+        <item quantity="one">%d 个字词</item>
+    </plurals>
+    <plurals name="dolphin_notification_title_sound_event_information">
+        <item quantity="other">过去 %2$d 小时内检测到了 %1$d 次声音</item>
+        <item quantity="one">过去 %2$d 小时内检测到了 %1$d 次声音</item>
+    </plurals>
+    <plurals name="dolphin_service_detecting">
+        <item quantity="other">正在监听 {0,number,integer} 种声音…</item>
+        <item quantity="one">正在监听 {0,number,integer} 种声音…</item>
+    </plurals>
+    <plurals name="survey_star_rating">
+        <item quantity="other">%1$d 星（最高 %2$d 星）</item>
+        <item quantity="one">%1$d 星（最高 %2$d 星）</item>
+    </plurals>
+    <plurals name="tts_settings_language_unavailable">
+        <item quantity="other">语言</item>
+        <item quantity="one">语言</item>
+    </plurals>
+</resources>

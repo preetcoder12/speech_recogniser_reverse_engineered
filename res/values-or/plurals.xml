@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bias_custom_name_summary">
+        <item quantity="other">%dଟି ନାମ</item>
+        <item quantity="one">%dଟି ନାମ</item>
+    </plurals>
+    <plurals name="bias_custom_word_summary">
+        <item quantity="other">%dଟି ଶବ୍ଦ</item>
+        <item quantity="one">%dଟି ଶବ୍ଦ</item>
+    </plurals>
+    <plurals name="dolphin_notification_title_sound_event_information">
+        <item quantity="other">ଗତ %2$d ଘଣ୍ଟାରେ %1$d ସାଉଣ୍ଡ ଚିହ୍ନଟ କରାଯାଇଛି</item>
+        <item quantity="one">ଗତ %2$d ଘଣ୍ଟାରେ %1$d ସାଉଣ୍ଡ ଚିହ୍ନଟ କରାଯାଇଛି</item>
+    </plurals>
+    <plurals name="dolphin_service_detecting">
+        <item quantity="other">{0,number,integer} ସାଉଣ୍ଡ ଶୁଣାଯାଉଛି…</item>
+        <item quantity="one">{0,number,integer} ସାଉଣ୍ଡ ଶୁଣାଯାଉଛି…</item>
+    </plurals>
+    <plurals name="tts_settings_language_unavailable">
+        <item quantity="other">ଭାଷାଗୁଡ଼ିକ</item>
+        <item quantity="one">ଭାଷା</item>
+    </plurals>
+</resources>

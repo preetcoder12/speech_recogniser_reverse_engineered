@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    android:key="@string/pref_screen_notification_settings"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.android.settingslib.widget.TopIntroPreference
+        android:title="@string/dolphin_notification_intro"
+        app:iconSpaceReserved="false" />
+    <PreferenceCategory
+        android:title="@string/dolphin_notification_group_title_of_emergency"
+        android:key="@string/pref_emergency_category"
+        android:summary="@string/dolphin_notification_category_summary_of_emergency"
+        app:iconSpaceReserved="false">
+        <com.google.audio.hearing.visualization.accessibility.dolphin.common.ui.widget.SwitchPreferenceWithContentDescription
+            android:title="@string/dolphin_notification_preference_title_of_vibration"
+            android:key="@string/pref_emergency_vibration"
+            android:defaultValue="@bool/pref_default_emergency_vibration"
+            app:iconSpaceReserved="false" />
+        <com.google.audio.hearing.visualization.accessibility.dolphin.common.ui.widget.SwitchPreferenceWithContentDescription
+            android:title="@string/dolphin_notification_preference_title_of_flash_light"
+            android:key="@string/pref_emergency_flash_light"
+            android:defaultValue="@bool/pref_default_emergency_flash_light"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/dolphin_notification_group_title_of_priority"
+        android:key="@string/pref_priority_category"
+        android:summary="@string/dolphin_notification_priority_category_summary"
+        app:iconSpaceReserved="false">
+        <com.google.audio.hearing.visualization.accessibility.dolphin.common.ui.widget.SwitchPreferenceWithContentDescription
+            android:title="@string/dolphin_notification_preference_title_of_vibration"
+            android:key="@string/pref_priority_vibration"
+            android:defaultValue="@bool/pref_default_priority_vibration"
+            app:iconSpaceReserved="false" />
+        <com.google.audio.hearing.visualization.accessibility.dolphin.common.ui.widget.SwitchPreferenceWithContentDescription
+            android:title="@string/dolphin_notification_preference_title_of_flash_light"
+            android:key="@string/pref_priority_flash_light"
+            android:defaultValue="@bool/pref_default_priority_flash_light"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/dolphin_notification_group_title_of_others"
+        android:key="@string/pref_others_category"
+        android:summary="@string/dolphin_notification_category_summary_of_others"
+        app:iconSpaceReserved="false">
+        <com.google.audio.hearing.visualization.accessibility.dolphin.common.ui.widget.SwitchPreferenceWithContentDescription
+            android:title="@string/dolphin_notification_preference_title_of_vibration"
+            android:key="@string/pref_others_vibration"
+            android:defaultValue="@bool/pref_default_others_vibration"
+            app:iconSpaceReserved="false" />
+        <com.google.audio.hearing.visualization.accessibility.dolphin.common.ui.widget.SwitchPreferenceWithContentDescription
+            android:title="@string/dolphin_notification_preference_title_of_flash_light"
+            android:key="@string/pref_others_flash_light"
+            android:defaultValue="@bool/pref_default_others_flash_light"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/dolphin_custom_sounds_title"
+        android:key="@string/pref_custom_sounds_category"
+        android:summary="@string/dolphin_notification_category_summary_of_custom_sounds"
+        app:iconSpaceReserved="false">
+        <com.google.audio.hearing.visualization.accessibility.dolphin.common.ui.widget.SwitchPreferenceWithContentDescription
+            android:title="@string/dolphin_notification_preference_title_of_vibration"
+            android:key="@string/pref_custom_sounds_vibration"
+            android:defaultValue="@bool/pref_default_custom_sounds_vibration"
+            app:iconSpaceReserved="false" />
+        <com.google.audio.hearing.visualization.accessibility.dolphin.common.ui.widget.SwitchPreferenceWithContentDescription
+            android:title="@string/dolphin_notification_preference_title_of_flash_light"
+            android:key="@string/pref_custom_sounds_flash_light"
+            android:defaultValue="@bool/pref_default_custom_sounds_flash_light"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

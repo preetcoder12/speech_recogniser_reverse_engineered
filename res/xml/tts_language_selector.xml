@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference
+        android:key="@string/pref_tts_language_summary"
+        app:iconSpaceReserved="false" />
+    <PreferenceCategory
+        android:title="@string/tts_voices_available_category"
+        android:key="@string/pref_category_voice_available_languages"
+        app:iconSpaceReserved="false" />
+    <PreferenceCategory
+        android:title="@string/tts_all_languages_category"
+        android:key="@string/pref_category_all_languages"
+        app:iconSpaceReserved="false" />
+</PreferenceScreen>

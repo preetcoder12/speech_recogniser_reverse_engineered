@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.android.settingslib.widget.TopIntroPreference
+        android:title="@string/dolphin_sound_type_intro"
+        android:key="@string/pref_sound_type_intro"
+        app:iconSpaceReserved="false" />
+    <PreferenceCategory
+        android:title="@string/dolphin_notification_group_title_of_emergency"
+        android:key="@string/pref_preference_category_emergency"
+        app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat
+            android:title="@string/dolphin_sound_event_alarm"
+            android:key="@string/pref_detect_alarm"
+            android:defaultValue="@bool/pref_default_detect_alarm"
+            app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat
+            android:title="@string/dolphin_sound_event_siren"
+            android:key="@string/pref_detect_siren"
+            android:defaultValue="@bool/pref_default_detect_siren"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/dolphin_notification_group_title_of_priority"
+        android:key="@string/pref_preference_category_priority"
+        app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat
+            android:title="@string/dolphin_sound_event_baby_sounds"
+            android:key="@string/pref_detect_baby_cry"
+            android:defaultValue="@bool/pref_default_detect_baby_cry"
+            app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat
+            android:title="@string/dolphin_sound_event_dog"
+            android:key="@string/pref_detect_dog"
+            android:defaultValue="@bool/pref_default_detect_dog"
+            app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat
+            android:title="@string/dolphin_sound_event_knock"
+            android:key="@string/pref_detect_knock"
+            android:defaultValue="@bool/pref_default_detect_knock"
+            app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat
+            android:title="@string/dolphin_sound_event_doorbell"
+            android:key="@string/pref_detect_doorbell"
+            android:defaultValue="@bool/pref_default_detect_doorbell"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/dolphin_notification_group_title_of_others"
+        android:key="@string/pref_preference_category_others"
+        app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat
+            android:title="@string/dolphin_sound_event_appliances_bleeping"
+            android:key="@string/pref_detect_beep"
+            android:defaultValue="@bool/pref_default_detect_beep"
+            app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat
+            android:title="@string/dolphin_sound_event_telephone_bell_ringing"
+            android:key="@string/pref_detect_landline_phone_ring"
+            android:defaultValue="@bool/pref_default_detect_landline_phone_ring"
+            app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat
+            android:title="@string/dolphin_sound_event_water"
+            android:key="@string/pref_detect_water"
+            android:defaultValue="@bool/pref_default_detect_water"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

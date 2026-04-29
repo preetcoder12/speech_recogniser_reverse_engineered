@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">"L'audio e le conversazioni in sottofondo non vengono inviati a Google, a meno che tu non decida di inviare feedback sulla qualità audio"</string>
+    <string name="live_transcribe_html_description">Quando usi Trascrizione Istantanea puoi:&lt;br/> &lt;ol> &lt;li> Digitare risposte per la trascrizione che vedi sullo schermo&lt;/li> &lt;li> Ricevere avvisi quando viene pronunciato il tuo nome&lt;/li> &lt;li> Eseguire ricerche nelle trascrizioni&lt;/li> &lt;/ol>&lt;br/> Google elabora le tue conversazioni, ma non le memorizza mai</string>
+    <string name="dolphin_intro">"Ricevi notifiche relative a suoni importanti vicino a te, ad esempio se si attiva l'allarme di un rilevatore di fumo o se tuo figlio piange"</string>
+    <string name="scribe_intro">"Trascrizione Istantanea mostra le parole pronunciate sotto forma di testo sullo schermo per consentirti di partecipare più facilmente alle conversazioni in corso nell'ambiente in cui ti trovi"</string>
+</resources>

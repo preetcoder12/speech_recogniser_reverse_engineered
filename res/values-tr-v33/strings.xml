@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">"Ses kalitesiyle ilgili geri bildirim göndermeyi seçmediğiniz sürece sesler ve arka plandaki konuşmalar Google'a gönderilmez"</string>
+    <string name="live_transcribe_html_description">"Canlı Transkript'i kullanırken şunları yapabilirsiniz:&lt;br/> &lt;ol> &lt;li> Ekranda gördüğünüz transkriptlere yanıt yazmak&lt;/li> &lt;li> Adınız söylendiğinde uyarı almak&lt;/li> &lt;li> Transkriptlerde arama yapmak&lt;/li> &lt;/ol>&lt;br/> Google, görüşmelerinizi işler ancak asla kaydetmez"</string>
+    <string name="dolphin_intro">Duman alarmının çalması veya bebek ağlaması gibi etrafınızdaki önemli seslerle ilgili bildirim alın</string>
+    <string name="scribe_intro">Canlı Transkript, konuşmaları ekranınızda metin olarak gösterir. Böylece çevrenizdeki sohbetlere daha kolay bir şekilde katılabilirsiniz.</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">Zvuk a konverzace na pozadí se do Googlu odešlou pouze v případě, že se rozhodnete odeslat zpětnou vazbu ohledně kvality zvuku, jinak ne.</string>
+    <string name="live_transcribe_html_description">Okamžitý přepis umožňuje:&lt;br/> &lt;ol> &lt;li> psát odpovědi na přepsaný text na obrazovce,&lt;/li> &lt;li> dostávat upozornění, když někdo vysloví vaše jméno,&lt;/li> &lt;li> vyhledávat v přepisech.&lt;/li> &lt;/ol>&lt;br/> Google konverzace zpracovává, ale neukládá je.</string>
+    <string name="dolphin_intro">Nechte se informovat o důležitých zvucích v okolí, jako je poplach detektoru kouře nebo dětský pláč.</string>
+    <string name="scribe_intro">Okamžitý přepis zobrazuje řeč formou textu na obrazovce, a tím usnadňuje komunikaci.</string>
+</resources>

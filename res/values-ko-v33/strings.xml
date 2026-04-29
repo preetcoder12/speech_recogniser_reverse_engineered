@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">오디오 및 주변 대화는 Google에 전송되지 않습니다. 단, 사용자가 음질에 관한 의견을 보내도록 선택하는 경우에는 전송됩니다.</string>
+    <string name="live_transcribe_html_description">음성 자막 변환을 사용하면 다음과 같이 할 수 있습니다.&lt;br/> &lt;ol> &lt;li> 화면에 표시된 스크립트를 보고 응답을 입력합니다.&lt;/li> &lt;li> 누군가 내 이름을 말하면 알림을 받습니다.&lt;/li> &lt;li> 스크립트의 내용을 검색합니다.&lt;/li> &lt;/ol>&lt;br/> Google에서는 대화의 오디오를 처리하지만 저장하지는 않습니다.</string>
+    <string name="dolphin_intro">연기 경보기 소리나 아기 울음소리와 같이 주변에서 발생하는 중요한 소리에 관한 알림을 받습니다.</string>
+    <string name="scribe_intro">음성 자막 변환은 주변에서 이루어지는 대화에 더 쉽게 참여할 수 있도록 음성을 화면에 텍스트로 표시해 줍니다.</string>
+</resources>

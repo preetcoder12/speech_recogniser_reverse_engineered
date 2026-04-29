@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">Sauti na mazungumzo ya chinichini hayatumwi kwa Google, isipokuwa ukichagua kutuma maoni kuhusu ubora wa sauti</string>
+    <string name="live_transcribe_html_description">Unapotumia Nukuu Papo Hapo, unaweza:&lt;br/> &lt;ol> &lt;li> Kuandika majibu ya manukuu unayoyaona kwenye skrini&lt;/li> &lt;li> Kupata arifa wakati jina lako linatamkwa&lt;/li> &lt;li> Kutafuta katika manukuu&lt;/li> &lt;/ol>&lt;br/> Google huchakata mazungumzo yako, lakini haiyahifadhi kamwe</string>
+    <string name="dolphin_intro">Pata arifa kuhusu sauti muhimu karibu nawe, kama vile king’ora cha moshi kinapolia au mtoto anapolia</string>
+    <string name="scribe_intro">Nukuu Papo Hapo huonyesha matamshi yakiwa maandishi kwenye skrini yako ili uweze kushiriki katika mazungumzo yanayoendelea mahali ulipo kwa urahisi zaidi</string>
+</resources>

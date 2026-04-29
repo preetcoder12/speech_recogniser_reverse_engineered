@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    android:ordering="together"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_flash_animation__39__0"
+        android:duration="4250"
+        android:startOffset="0"
+        android:valueFrom="206.29"
+        android:valueTo="206.29"
+        android:valueType="floatType"
+        android:propertyName="translateX" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_flash_animation__39__1"
+        android:duration="50"
+        android:startOffset="4250"
+        android:valueFrom="206.29"
+        android:valueTo="205.29"
+        android:valueType="floatType"
+        android:propertyName="translateX" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_flash_animation__39__2"
+        android:duration="50"
+        android:startOffset="4300"
+        android:valueFrom="205.29"
+        android:valueTo="207.29"
+        android:valueType="floatType"
+        android:propertyName="translateX" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_flash_animation__39__3"
+        android:duration="50"
+        android:startOffset="4350"
+        android:valueFrom="207.29"
+        android:valueTo="205.29"
+        android:valueType="floatType"
+        android:propertyName="translateX" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_flash_animation__39__4"
+        android:duration="50"
+        android:startOffset="4400"
+        android:valueFrom="205.29"
+        android:valueTo="207.29"
+        android:valueType="floatType"
+        android:propertyName="translateX" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_flash_animation__39__5"
+        android:duration="50"
+        android:startOffset="4450"
+        android:valueFrom="207.29"
+        android:valueTo="206.29"
+        android:valueType="floatType"
+        android:propertyName="translateX" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_flash_animation__39__6"
+        android:duration="250"
+        android:startOffset="4500"
+        android:valueFrom="206.29"
+        android:valueTo="206.29"
+        android:valueType="floatType"
+        android:propertyName="translateX" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_flash_animation__39__7"
+        android:duration="50"
+        android:startOffset="4750"
+        android:valueFrom="206.29"
+        android:valueTo="205.29"
+        android:valueType="floatType"
+        android:propertyName="translateX" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_flash_animation__39__8"
+        android:duration="50"
+        android:startOffset="4800"
+        android:valueFrom="205.29"
+        android:valueTo="207.29"
+        android:valueType="floatType"
+        android:propertyName="translateX" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_flash_animation__39__9"
+        android:duration="50"
+        android:startOffset="4850"
+        android:valueFrom="207.29"
+        android:valueTo="205.29"
+        android:valueType="floatType"
+        android:propertyName="translateX" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_flash_animation__39__10"
+        android:duration="50"
+        android:startOffset="4900"
+        android:valueFrom="205.29"
+        android:valueTo="207.29"
+        android:valueType="floatType"
+        android:propertyName="translateX" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_flash_animation__39__11"
+        android:duration="50"
+        android:startOffset="4950"
+        android:valueFrom="207.29"
+        android:valueTo="206.29"
+        android:valueType="floatType"
+        android:propertyName="translateX" />
+</set>

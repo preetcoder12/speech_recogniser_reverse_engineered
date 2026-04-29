@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="layout" name="sud_glif_expressive_template_content_layout">@layout/sud_glif_expressive_template_content_wide</item>
+</resources>

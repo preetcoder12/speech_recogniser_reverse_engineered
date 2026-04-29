@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:paddingBottom="?dialogPreferredPadding"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="?dialogPreferredPadding"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText
+        android:id="@id/session_name_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:autofillHints="" />
+    <CheckBox
+        android:id="@id/use_previous_url_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/use_same_qr_code" />
+</LinearLayout>

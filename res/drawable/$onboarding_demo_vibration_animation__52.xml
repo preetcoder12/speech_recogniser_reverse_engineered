@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    android:ordering="together"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_animation__52__0"
+        android:duration="1167"
+        android:startOffset="0"
+        android:valueFrom="0"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="strokeAlpha" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_animation__52__1"
+        android:duration="417"
+        android:startOffset="1167"
+        android:valueFrom="0"
+        android:valueTo="1"
+        android:valueType="floatType"
+        android:propertyName="strokeAlpha" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_animation__52__2"
+        android:duration="417"
+        android:startOffset="1583"
+        android:valueFrom="1"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="strokeAlpha" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_animation__52__3"
+        android:duration="500"
+        android:startOffset="2000"
+        android:valueFrom="0"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="strokeAlpha" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_animation__52__4"
+        android:duration="417"
+        android:startOffset="2500"
+        android:valueFrom="0"
+        android:valueTo="1"
+        android:valueType="floatType"
+        android:propertyName="strokeAlpha" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_animation__52__5"
+        android:duration="417"
+        android:startOffset="2917"
+        android:valueFrom="1"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="strokeAlpha" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_animation__52__6"
+        android:duration="500"
+        android:startOffset="3333"
+        android:valueFrom="0"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="strokeAlpha" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_animation__52__7"
+        android:duration="417"
+        android:startOffset="3833"
+        android:valueFrom="0"
+        android:valueTo="1"
+        android:valueType="floatType"
+        android:propertyName="strokeAlpha" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_animation__52__8"
+        android:duration="417"
+        android:startOffset="4250"
+        android:valueFrom="1"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="strokeAlpha" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_animation__52__9"
+        android:duration="500"
+        android:startOffset="4667"
+        android:valueFrom="0"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="strokeAlpha" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_animation__52__10"
+        android:duration="417"
+        android:startOffset="5167"
+        android:valueFrom="0"
+        android:valueTo="1"
+        android:valueType="floatType"
+        android:propertyName="strokeAlpha" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_animation__52__11"
+        android:duration="417"
+        android:startOffset="5583"
+        android:valueFrom="1"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="strokeAlpha" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_animation__52__12"
+        android:duration="500"
+        android:startOffset="6000"
+        android:valueFrom="0"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="strokeAlpha" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_animation__52__13"
+        android:duration="417"
+        android:startOffset="6500"
+        android:valueFrom="0"
+        android:valueTo="1"
+        android:valueType="floatType"
+        android:propertyName="strokeAlpha" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_animation__52__14"
+        android:duration="417"
+        android:startOffset="6917"
+        android:valueFrom="1"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="strokeAlpha" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_animation__52__15"
+        android:duration="500"
+        android:startOffset="7333"
+        android:valueFrom="0"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="strokeAlpha" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_animation__52__16"
+        android:duration="417"
+        android:startOffset="7833"
+        android:valueFrom="0"
+        android:valueTo="1"
+        android:valueType="floatType"
+        android:propertyName="strokeAlpha" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_vibration_animation__52__17"
+        android:duration="417"
+        android:startOffset="8250"
+        android:valueFrom="1"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="strokeAlpha" />
+</set>

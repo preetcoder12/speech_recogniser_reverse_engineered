@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="@string/text_display_category_title"
+        android:key="@string/pref_category_display"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:title="@string/text_size_and_color_title"
+            android:key="@string/pref_text_size_screen"
+            app:iconSpaceReserved="false">
+            <intent
+                android:targetPackage="com.google.audio.hearing.visualization.accessibility.scribe"
+                android:action=".TextSizeAndColorPreferencesActivity"
+                android:targetClass="com.google.audio.hearing.visualization.accessibility.scribe.ui.settings.TextSizeAndColorPreferencesActivity" />
+        </Preference>
+        <ListPreference
+            android:entries="@array/theme_options"
+            android:title="@string/theme_options_title"
+            android:key="@string/pref_theme_options"
+            android:summary="%s"
+            android:defaultValue="@string/pref_system_default_theme"
+            android:entryValues="@array/theme_options_values"
+            app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat
+            android:title="@string/show_app_icon"
+            android:key="@string/pref_show_app_icon"
+            android:defaultValue="@bool/pref_default_show_app_icon"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/audio_and_language_category_title"
+        android:key="@string/pref_category_audio_and_language"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:title="@string/tts_settings_title"
+            android:key="@string/pref_tts_voice"
+            android:order="@integer/tts_voice_order_number"
+            app:iconSpaceReserved="false" />
+        <com.google.audio.hearing.visualization.accessibility.scribe.ui.settings.MicrophoneListPreference
+            android:title="@string/preferred_microphone_title"
+            android:key="@string/pref_audio_input"
+            android:summary="%s"
+            android:order="@integer/audio_input_order_number"
+            android:defaultValue="@string/built_in_mic_name"
+            android:negativeButtonText="@null"
+            app:iconSpaceReserved="false" />
+        <Preference
+            android:title="@string/bias_custom_word_title"
+            android:key="@string/pref_bias_custom_word"
+            android:order="@integer/custom_word_order_number"
+            app:iconSpaceReserved="false">
+            <intent
+                android:targetPackage="com.google.audio.hearing.visualization.accessibility.scribe"
+                android:action=".ui.bias.BiasWordActivity"
+                android:targetClass="com.google.audio.hearing.visualization.accessibility.scribe.ui.bias.BiasWordActivity">
+                <extra
+                    android:name="type"
+                    android:value="CUSTOM_WORD" />
+            </intent>
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/saving_category_title"
+        android:key="@string/pref_saving"
+        app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat
+            android:title="@string/transcription_history_title"
+            android:key="@string/pref_transcription_history"
+            app:iconSpaceReserved="false" />
+        <Preference
+            android:title="@string/delete_history_title"
+            android:key="@string/pref_delete_history"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/events_category_title"
+        android:key="pref_events_category"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:title="@string/bias_custom_name_title"
+            android:key="@string/pref_bias_custom_name"
+            android:summary="%s"
+            android:negativeButtonText="@null"
+            app:iconSpaceReserved="false">
+            <intent
+                android:targetPackage="com.google.audio.hearing.visualization.accessibility.scribe"
+                android:action=".ui.bias.BiasWordActivity"
+                android:targetClass="com.google.audio.hearing.visualization.accessibility.scribe.ui.bias.BiasWordActivity">
+                <extra
+                    android:name="type"
+                    android:value="CUSTOM_NAME" />
+            </intent>
+        </Preference>
+        <SwitchPreferenceCompat
+            android:title="@string/vibrate_notification"
+            android:key="@string/pref_vibrate_switch"
+            android:summary="@string/vibrate_summary"
+            android:defaultValue="@bool/pref_default_vibrate"
+            app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat
+            android:title="@string/sound_events_title"
+            android:key="@string/pref_sound_events"
+            android:summary="@string/sound_events_summary"
+            android:defaultValue="@bool/pref_default_sound_events"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/about_category_title"
+        android:key="about_category"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:title="@string/contact_us"
+            android:key="@string/pref_contact_us"
+            app:iconSpaceReserved="false"
+            app:isPreferenceVisible="false" />
+        <Preference
+            android:title="@string/send_feedback"
+            android:key="@string/pref_send_feedback"
+            app:iconSpaceReserved="false" />
+        <Preference
+            android:title="@string/open_source_licenses_title"
+            android:key="@string/pref_open_source_licenses"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/advanced_category_title"
+        app:iconSpaceReserved="false"
+        app:initialExpandedChildrenCount="0">
+        <SwitchPreferenceCompat
+            android:title="@string/hide_profanity"
+            android:key="@string/pref_hide_profanity"
+            android:defaultValue="@bool/pref_default_hide_profanity"
+            app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat
+            android:title="@string/show_hold_button"
+            android:key="@string/pref_show_hold_button"
+            android:summary="@string/show_hold_button_summary"
+            android:defaultValue="@bool/pref_default_show_hold_button"
+            app:iconSpaceReserved="false" />
+        <Preference
+            android:title="@string/downloaded_languages_settings_title"
+            android:key="@string/pref_offline_transcription"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:layout="@layout/empty_layout"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:title="@string/contributors_description"
+            android:selectable="false"
+            android:key="@string/pref_contributors_description"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/experimental_category_title"
+        android:key="@string/pref_experimental_category"
+        app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat
+            android:title="@string/enable_audio_gemini_asr"
+            android:key="@string/pref_enable_audio_gemini_asr"
+            android:defaultValue="@bool/pref_default_enable_audio_gemini_asr"
+            app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat
+            android:title="@string/speaker_diarization_title"
+            android:key="@string/pref_speaker_diarization"
+            android:defaultValue="@bool/pref_default_speaker_diarization"
+            app:iconSpaceReserved="false" />
+        <ListPreference
+            android:entries="@array/speaker_diarization_style_entries"
+            android:title="@string/speaker_diarization_style_title"
+            android:key="@string/pref_speaker_diarization_style"
+            android:summary="%s"
+            android:defaultValue="@string/pref_speaker_diarization_style_none"
+            android:entryValues="@array/speaker_diarization_style_values"
+            app:iconSpaceReserved="false" />
+        <ListPreference
+            android:entries="@array/line_breaks_style_entries"
+            android:title="@string/line_break_style_title"
+            android:key="@string/pref_line_break_style"
+            android:summary="%s"
+            android:defaultValue="@string/pref_line_break_none"
+            android:entryValues="@array/line_breaks_style_values"
+            app:iconSpaceReserved="false" />
+        <ListPreference
+            android:entries="@array/compress_audio_options"
+            android:title="@string/compress_audio_title"
+            android:key="@string/pref_compress_audio"
+            android:summary="@string/compress_audio_summary"
+            android:defaultValue="@string/pref_compress_audio_opus_32kbps"
+            android:entryValues="@array/compress_audio_values"
+            app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat
+            android:title="@string/filter_unstable_text_title"
+            android:key="@string/pref_filter_unstable_text"
+            android:summary="@string/filter_unstable_text_summary"
+            android:defaultValue="@bool/pref_default_filter_unstable_text"
+            app:iconSpaceReserved="false" />
+        <ListPreference
+            android:entries="@array/stable_text_strategy_options"
+            android:title="@string/stable_text_strategy_title"
+            android:key="@string/pref_stable_text_strategy"
+            android:summary="@string/stable_text_strategy_summary"
+            android:defaultValue="@string/pref_stable_text_strategy_stable"
+            android:entryValues="@array/stable_text_strategy_values"
+            app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat
+            android:title="@string/smart_segment"
+            android:key="@string/pref_smart_segment"
+            android:summary="@string/smart_segment_summary"
+            android:defaultValue="@bool/pref_default_smart_segment"
+            app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat
+            android:title="@string/braille_mode"
+            android:key="@string/pref_braille_mode"
+            android:summary="@string/braille_mode_summary"
+            android:defaultValue="@bool/pref_default_braille_mode"
+            app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat
+            android:title="@string/vibro_integration"
+            android:key="@string/pref_vibro_integration"
+            android:defaultValue="@bool/pref_default_vibro_integration"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

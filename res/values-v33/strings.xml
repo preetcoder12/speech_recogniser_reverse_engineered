@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">"Audio and background conversations aren't sent to Google, unless you choose to send feedback about sound quality"</string>
+    <string name="live_transcribe_html_description">When using Live Transcribe, you can:&lt;br/> &lt;ol> &lt;li> Type responses to the transcription you see on screen&lt;/li> &lt;li> Get alerts when your name is spoken&lt;/li> &lt;li> Search within transcriptions&lt;/li> &lt;/ol>&lt;br/> Google processes your conversations, but never stores them</string>
+    <string name="dolphin_intro">Get notified about important sounds around you, like when a smoke alarm beeps or baby cries</string>
+    <string name="scribe_intro">Live Transcribe shows speech as text on your screen so you can participate in conversations around you more easily</string>
+</resources>

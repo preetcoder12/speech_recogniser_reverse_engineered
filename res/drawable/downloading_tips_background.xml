@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="rectangle">
+            <solid
+                android:color="?colorSurfaceContainerHigh" />
+            <corners
+                android:radius="@dimen/downloading_tips_background_radius" />
+            <size
+                android:height="@dimen/downloading_tips_background_height"
+                android:width="@dimen/downloading_tips_background_width" />
+        </shape>
+    </item>
+</layer-list>

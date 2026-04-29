@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    android:ordering="together"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_flash_animation__30__0"
+        android:duration="8567"
+        android:startOffset="0"
+        android:valueFrom="1"
+        android:valueTo="1"
+        android:valueType="floatType"
+        android:propertyName="scaleX" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_flash_animation__30__1"
+        android:duration="8567"
+        android:startOffset="0"
+        android:valueFrom="1"
+        android:valueTo="1"
+        android:valueType="floatType"
+        android:propertyName="scaleY" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_flash_animation__30__2"
+        android:duration="250"
+        android:startOffset="8567"
+        android:valueFrom="1"
+        android:valueTo="1.08"
+        android:valueType="floatType"
+        android:propertyName="scaleX" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_flash_animation__30__3"
+        android:duration="250"
+        android:startOffset="8567"
+        android:valueFrom="1"
+        android:valueTo="1.08"
+        android:valueType="floatType"
+        android:propertyName="scaleY" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_flash_animation__30__4"
+        android:duration="167"
+        android:startOffset="8817"
+        android:valueFrom="1.08"
+        android:valueTo="1"
+        android:valueType="floatType"
+        android:propertyName="scaleX" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_flash_animation__30__5"
+        android:duration="167"
+        android:startOffset="8817"
+        android:valueFrom="1.08"
+        android:valueTo="1"
+        android:valueType="floatType"
+        android:propertyName="scaleY" />
+</set>

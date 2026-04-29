@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">ระบบจะไม่ส่งข้อมูลเสียงและการสนทนาที่ดังอยู่เบื้องหลังไปยัง Google เว้นแต่คุณจะเลือกส่งความคิดเห็นเกี่ยวกับคุณภาพของเสียง</string>
+    <string name="live_transcribe_html_description">คุณสามารถใช้ Live Transcribe ในการทำสิ่งต่อไปนี้&lt;br/> &lt;ol> &lt;li> พิมพ์ตอบกลับข้อความถอดเสียงที่คุณเห็นบนหน้าจอ&lt;/li> &lt;li> รับการแจ้งเตือนเมื่อมีการพูดชื่อของคุณ&lt;/li> &lt;li> ค้นหาภายในข้อความถอดเสียง&lt;/li> &lt;/ol>&lt;br/> Google จะประมวลผลการสนทนาของคุณแต่จะไม่เก็บไว้</string>
+    <string name="dolphin_intro">รับการแจ้งเตือนเกี่ยวกับเสียงที่สำคัญรอบตัวคุณ เช่น เมื่อสัญญาณเตือนควันดังขึ้นหรือเสียงทารกร้องไห้</string>
+    <string name="scribe_intro">Live Transcribe จะแสดงคำพูดเป็นข้อความขึ้นบนหน้าจอเพื่อให้คุณร่วมสนทนากับผู้คนรอบตัวได้ง่ายยิ่งขึ้น</string>
+</resources>

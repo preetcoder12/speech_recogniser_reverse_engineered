@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">Ljud eller konversationer i bakgrunden skickas inte till Google, såvida du inte väljer att skicka feedback om ljudkvalitet</string>
+    <string name="live_transcribe_html_description">När du använder Transkribering kan du&lt;br/> &lt;ol> &lt;li> skriva svar på transkriptionen du ser på skärmen&lt;/li> &lt;li> få aviseringar när ditt namn nämns&lt;/li> &lt;li> söka i transkriptioner.&lt;/li> &lt;/ol>&lt;br/> Google bearbetar dina konversationer men lagrar dem aldrig</string>
+    <string name="dolphin_intro">Få aviseringar om viktiga ljud i din omgivning, till exempel när ett röklarm piper eller en bebis gråter</string>
+    <string name="scribe_intro">Med Transkribering visas tal som text på skärmen så att du lättare kan delta i samtal som pågår omkring dig</string>
+</resources>

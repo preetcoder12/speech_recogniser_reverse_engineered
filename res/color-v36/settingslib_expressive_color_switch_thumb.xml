@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="false"
+        android:state_checked="false"
+        android:color="@color/settingslib_materialColorOutline"
+        android:alpha="0.38" />
+    <item
+        android:state_enabled="false"
+        android:state_checked="true"
+        android:color="@color/settingslib_materialColorSurface"
+        android:alpha="0.38" />
+    <item
+        android:state_checked="true"
+        android:color="@color/settingslib_materialColorOnPrimary" />
+    <item
+        android:state_checked="false"
+        android:color="@color/settingslib_materialColorOutline"
+        android:state_hovered="true" />
+    <item
+        android:state_focused="true"
+        android:state_checked="false"
+        android:color="@color/settingslib_materialColorOutline" />
+    <item
+        android:state_checked="false"
+        android:state_pressed="true"
+        android:color="@color/settingslib_materialColorOutline" />
+    <item
+        android:state_checked="false"
+        android:color="@color/settingslib_materialColorOutline" />
+</selector>

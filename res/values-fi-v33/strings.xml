@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">Audiota ja taustalla kuuluvia keskusteluja ei lähetetä Googlelle, ellet halua lähettää palautetta äänenlaadusta</string>
+    <string name="live_transcribe_html_description">Kun käytät Live Transcribea, voit&lt;br/> &lt;ol> &lt;li> kirjoittaa vastauksia näytöllä näkemääsi transkriptioon&lt;/li> &lt;li> saada ilmoituksia, kun nimesi mainitaan&lt;/li> &lt;li> tehdä hakuja transkriptioista.&lt;/li> &lt;/ol>&lt;br/> Google käsittelee keskustelut mutta ei koskaan tallenna niitä</string>
+    <string name="dolphin_intro">Saat ilmoituksen ympärilläsi havaituista äänistä, joihin pitää reagoida, esimerkiksi savuvaroittimen piippauksesta tai vauvan itkusta</string>
+    <string name="scribe_intro">Live Transcribe näyttää puheen tekstinä, jotta voit helpommin osallistua ympärilläsi käytäviin keskusteluihin</string>
+</resources>

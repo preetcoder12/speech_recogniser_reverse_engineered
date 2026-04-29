@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/downloaded_languages_dialog_title_padding"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/downloaded_languages_dialog_title_padding"
+    android:paddingEnd="@dimen/downloaded_languages_dialog_title_padding"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@id/dialog_icon"
+        android:layout_width="@dimen/downloaded_languages_dialog_icon_size"
+        android:layout_height="@dimen/downloaded_languages_dialog_icon_size"
+        android:src="@drawable/quantum_ic_language_vd_theme_24" />
+    <TextView
+        android:gravity="center"
+        android:id="@id/dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/downloaded_languages_dialog_title_margin"
+        android:text="@string/download_languages_dialog_title"
+        style="?android:textAppearanceLarge" />
+</LinearLayout>

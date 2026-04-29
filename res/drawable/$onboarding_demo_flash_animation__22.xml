@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    android:ordering="together"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_flash_animation__22__0"
+        android:duration="@integer/demo_flash_animation_start_time"
+        android:startOffset="0"
+        android:valueFrom="0.6"
+        android:valueTo="0.6"
+        android:valueType="floatType"
+        android:propertyName="scaleX" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_flash_animation__22__1"
+        android:duration="@integer/demo_flash_animation_start_time"
+        android:startOffset="0"
+        android:valueFrom="0.6"
+        android:valueTo="0.6"
+        android:valueType="floatType"
+        android:propertyName="scaleY" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_flash_animation__22__2"
+        android:duration="650"
+        android:startOffset="@integer/demo_flash_animation_start_time"
+        android:valueFrom="0.6"
+        android:valueTo="1"
+        android:valueType="floatType"
+        android:propertyName="scaleX" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_flash_animation__22__3"
+        android:duration="650"
+        android:startOffset="@integer/demo_flash_animation_start_time"
+        android:valueFrom="0.6"
+        android:valueTo="1"
+        android:valueType="floatType"
+        android:propertyName="scaleY" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_flash_animation__22__4"
+        android:duration="750"
+        android:startOffset="7750"
+        android:valueFrom="1"
+        android:valueTo="1"
+        android:valueType="floatType"
+        android:propertyName="scaleX" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_flash_animation__22__5"
+        android:duration="750"
+        android:startOffset="7750"
+        android:valueFrom="1"
+        android:valueTo="1"
+        android:valueType="floatType"
+        android:propertyName="scaleY" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_flash_animation__22__6"
+        android:duration="267"
+        android:startOffset="8500"
+        android:valueFrom="1"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="scaleX" />
+    <objectAnimator
+        android:interpolator="@drawable/$$onboarding_demo_flash_animation__22__7"
+        android:duration="267"
+        android:startOffset="8500"
+        android:valueFrom="1"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="scaleY" />
+</set>

@@ -1,0 +1,11 @@
+R_DEF: Internal format may change without notice
+local
+drawable status_circle_green
+id bottom_bar
+id settings_icon
+id status_indicator
+id status_text
+id transcript_scroll
+id transcript_text
+layout activity_main
+xml accessibility_service_config

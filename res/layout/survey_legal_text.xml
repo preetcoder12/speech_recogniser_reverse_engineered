@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:textSize="@dimen/survey_legal_text_size"
+    android:textColor="@color/survey_secondary_text_color"
+    android:textColorLink="@color/survey_accent_color"
+    android:linksClickable="true"
+    android:id="@id/survey_legal_text"
+    android:padding="8.0dip"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="48.0dip"
+    style="@style/SurveyLegalTextStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-shortcut-target
+    android:summary="@string/dolphin_summary"
+    android:animatedImageDrawable="@drawable/onboarding_welcome"
+    android:htmlDescription="@string/dolphin_html_description"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

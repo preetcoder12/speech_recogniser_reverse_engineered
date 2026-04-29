@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Toolbar
+    android:theme="?android:actionBarTheme"
+    android:id="@id/search_banner"
+    android:background="@color/scribe_background"
+    android:visibility="gone"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:contentInsetStart="@dimen/searchbar_content_inset"
+    android:contentInsetEnd="@dimen/searchbar_content_inset"
+    android:contentInsetStartWithNavigation="@dimen/searchbar_content_inset_start_with_navigation"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    style="?android:actionBarSplitStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize">
+            <ImageButton
+                android:id="@id/back_to_search"
+                android:background="?android:actionBarItemBackground"
+                android:layout_width="?actionBarSize"
+                android:layout_height="fill_parent"
+                android:src="@drawable/quantum_ic_arrow_back_grey600_24"
+                android:tint="?android:actionMenuTextColor"
+                android:contentDescription="@string/abc_action_bar_up_description" />
+            <include
+                layout="@layout/search_action_bar" />
+        </LinearLayout>
+        <View
+            android:background="?scribeDividerColor"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/search_divider_size" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize">
+            <TextView
+                android:textSize="@dimen/searchbar_hint_text_size"
+                android:gravity="center_vertical"
+                android:id="@id/result_position"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:paddingStart="@dimen/search_list_item_padding_start" />
+            <ImageButton
+                android:id="@id/previous_result"
+                android:background="?android:actionBarItemBackground"
+                android:layout_width="?actionBarSize"
+                android:layout_height="fill_parent"
+                android:src="@drawable/quantum_ic_chevron_left_grey600_24"
+                android:tint="?android:actionMenuTextColor"
+                android:contentDescription="@string/search_previous_content_description" />
+            <ImageButton
+                android:id="@id/next_result"
+                android:background="?android:actionBarItemBackground"
+                android:layout_width="?actionBarSize"
+                android:layout_height="fill_parent"
+                android:src="@drawable/quantum_ic_chevron_right_grey600_24"
+                android:tint="?android:actionMenuTextColor"
+                android:contentDescription="@string/search_next_content_description" />
+        </LinearLayout>
+        <View
+            android:background="?scribeDividerColor"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/search_divider_size" />
+    </LinearLayout>
+</Toolbar>

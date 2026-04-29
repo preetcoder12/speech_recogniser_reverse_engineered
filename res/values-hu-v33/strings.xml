@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">A hangokat és a háttérben hallható beszélgetéseket a rendszer csak akkor küldi el a Google-nak, ha Ön úgy dönt, hogy visszajelzést küld a hangminőségről.</string>
+    <string name="live_transcribe_html_description">Az Azonnali átírás használatakor a következőkre nyílik lehetősége:&lt;br/> &lt;ol> &lt;li> Begépelheti válaszait a képernyőn megjelenő átiratra.&lt;/li> &lt;li> Értesítést kaphat, amikor valaki kimondja az Ön nevét.&lt;/li> &lt;li> Kereshet az átiratokban.&lt;/li> &lt;/ol>&lt;br/> A Google feldolgozza az Ön beszélgetéseit, de nem tárolja őket.</string>
+    <string name="dolphin_intro">Értesítést kérhet a környezetében észlelt fontos hangokról – például amikor sípol a füstjelző, vagy kisbaba sír.</string>
+    <string name="scribe_intro">Az Azonnali átírás szöveges formában jeleníti meg a beszédet a képernyőn, így Ön is könnyebben részt vehet a környezetében zajló beszélgetésekben.</string>
+</resources>

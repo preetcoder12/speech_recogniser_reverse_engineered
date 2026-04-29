@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bias_custom_name_summary">
+        <item quantity="other">%d vardų</item>
+        <item quantity="one">%d vardas</item>
+        <item quantity="few">%d vardai</item>
+        <item quantity="many">%d vardo</item>
+    </plurals>
+    <plurals name="bias_custom_word_summary">
+        <item quantity="other">%d žodžių</item>
+        <item quantity="one">%d žodis</item>
+        <item quantity="few">%d žodžiai</item>
+        <item quantity="many">%d žodžio</item>
+    </plurals>
+    <plurals name="dolphin_notification_title_sound_event_information">
+        <item quantity="other">Per pastar. %2$d val. aptikta %1$d garsų</item>
+        <item quantity="one">Per pastar. %2$d val. aptiktas %1$d garsas</item>
+        <item quantity="few">Per pastar. %2$d val. aptikti %1$d garsai</item>
+        <item quantity="many">Per pastar. %2$d val. aptikta %1$d garso</item>
+    </plurals>
+    <plurals name="dolphin_service_detecting">
+        <item quantity="other">Klausomasi for {0,number,integer} garsų…</item>
+        <item quantity="one">Klausomasi for {0,number,integer} garso…</item>
+        <item quantity="few">Klausomasi for {0,number,integer} garsų…</item>
+        <item quantity="many">Klausomasi for {0,number,integer} garso…</item>
+    </plurals>
+    <plurals name="survey_star_rating">
+        <item quantity="other">%1$d žvaigždučių iš %2$d</item>
+        <item quantity="one">%1$d žvaigždutė iš %2$d</item>
+        <item quantity="few">%1$d žvaigždutės iš %2$d</item>
+        <item quantity="many">%1$d žvaigždutės iš %2$d</item>
+    </plurals>
+    <plurals name="tts_settings_language_unavailable">
+        <item quantity="other">kalbos</item>
+        <item quantity="one">kalbos</item>
+        <item quantity="few">kalbos</item>
+        <item quantity="many">kalbos</item>
+    </plurals>
+</resources>

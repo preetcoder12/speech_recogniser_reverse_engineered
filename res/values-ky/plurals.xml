@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bias_custom_name_summary">
+        <item quantity="other">%d аталыш</item>
+        <item quantity="one">%d аталыш</item>
+    </plurals>
+    <plurals name="bias_custom_word_summary">
+        <item quantity="other">%d сөз</item>
+        <item quantity="one">%d сөз</item>
+    </plurals>
+    <plurals name="dolphin_notification_title_sound_event_information">
+        <item quantity="other">Акыркы %2$d сааттын ичинде %1$d үн аныкталды</item>
+        <item quantity="one">Акыркы %2$d сааттын ичинде %1$d үн аныкталды</item>
+    </plurals>
+    <plurals name="dolphin_service_detecting">
+        <item quantity="other">{0,number,integer} үн угулууда…</item>
+        <item quantity="one">{0,number,integer} үн угулууда…</item>
+    </plurals>
+    <plurals name="survey_star_rating">
+        <item quantity="other">%2$d ичинен %1$d жылдызча</item>
+        <item quantity="one">%2$d ичинен %1$d жылдызча</item>
+    </plurals>
+    <plurals name="tts_settings_language_unavailable">
+        <item quantity="other">тил</item>
+        <item quantity="one">тил</item>
+    </plurals>
+</resources>

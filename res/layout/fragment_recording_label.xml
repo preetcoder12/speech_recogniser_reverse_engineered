@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.setupdesign.GlifLayout
+    android:icon="@drawable/ic_custom_sound_recording"
+    android:id="@id/glif_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:sucUsePartnerResource="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="?sudMarginStart"
+        android:layout_marginEnd="?sudMarginEnd">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_gravity="center"
+            android:paddingTop="?sudContentFramePaddingTop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextInputLayoutTheme">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@id/label_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:imeOptions="flagNoExtractUi"
+                android:paddingStart="@dimen/sud_edit_text_corner_radius"
+                android:paddingEnd="@dimen/sud_edit_text_corner_radius"
+                style="@style/SudItemTitle" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:textColor="?android:textColorPrimary"
+            android:id="@id/label_information_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/custom_sound_recording_label_hint"
+            android:paddingStart="@dimen/sud_edit_text_corner_radius"
+            android:paddingEnd="@dimen/sud_edit_text_corner_radius"
+            android:accessibilityLiveRegion="polite"
+            style="?android:textAppearanceSmall" />
+    </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>

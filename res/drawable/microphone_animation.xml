@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+    android:drawable="@drawable/$microphone_animation__0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <target
+        android:name="big_bubble_left"
+        android:animation="@drawable/$microphone_animation__1" />
+    <target
+        android:name="big_bubble_left"
+        android:animation="@drawable/$microphone_animation__2" />
+    <target
+        android:name="small_bubble_left"
+        android:animation="@drawable/$microphone_animation__3" />
+    <target
+        android:name="small_bubble_left"
+        android:animation="@drawable/$microphone_animation__4" />
+    <target
+        android:name="big_bubble_right"
+        android:animation="@drawable/$microphone_animation__5" />
+    <target
+        android:name="big_bubble_right"
+        android:animation="@drawable/$microphone_animation__6" />
+    <target
+        android:name="small_bubble_right"
+        android:animation="@drawable/$microphone_animation__7" />
+    <target
+        android:name="small_bubble_right"
+        android:animation="@drawable/$microphone_animation__8" />
+    <target
+        android:name="microphone_head"
+        android:animation="@drawable/$microphone_animation__9" />
+    <target
+        android:name="microphone_head"
+        android:animation="@drawable/$microphone_animation__10" />
+</animated-vector>

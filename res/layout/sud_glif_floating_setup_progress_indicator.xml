@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_gravity="end|center|top"
+    android:id="@id/sud_layout_floating_setup_progress_indicator_container"
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/SudGlifSetupProgressContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub
+        android:id="@id/sud_floating_setup_progress_indicator_stub"
+        android:layout="@layout/sud_setup_progress_indicator"
+        android:inflatedId="@id/sud_floating_setup_progress_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:filterTouchesWhenObscured="true" />
+</FrameLayout>

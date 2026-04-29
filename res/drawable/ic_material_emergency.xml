@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    android:height="@dimen/main_context_frag_list_view_icon_secondary_size"
+    android:width="@dimen/main_context_frag_list_view_icon_secondary_size"
+    android:viewportWidth="16.0"
+    android:viewportHeight="16.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <path
+        android:fillColor="@color/dolphin_emergency_icon_color"
+        android:pathData="m10.286,8.0776c-0.1733,-0.5667 -0.6866,-0.9533 -1.28,-0.9533L6.9927,7.1243c-0.5867,0 -1.1067,0.3867 -1.28,0.9533L4.3994,12.4576L3.3327,12.4576v1.3333L12.666,13.7909v-1.3333h-1.0667zM5.7927,12.4576 L6.9927,8.4576L9.006,8.4576L10.206,12.4576Z" />
+    <path
+        android:fillColor="@color/dolphin_emergency_icon_color"
+        android:pathData="M8.666,2.4576H7.3327v3.3333h1.3333z" />
+    <path
+        android:fillColor="@color/dolphin_emergency_icon_color"
+        android:pathData="m12.7132,4.1346 l-2.357,2.357 0.9428,0.9428 2.357,-2.357z" />
+    <path
+        android:fillColor="@color/dolphin_emergency_icon_color"
+        android:pathData="m15.3327,9.1243h-3.3334v1.3333h3.3334z" />
+    <path
+        android:fillColor="@color/dolphin_emergency_icon_color"
+        android:pathData="m3.2856,4.1341 l-0.9428,0.9428 2.357,2.357 0.9428,-0.9428z" />
+    <path
+        android:fillColor="@color/dolphin_emergency_icon_color"
+        android:pathData="M3.9994,9.1243H0.666v1.3333H3.9994Z" />
+</vector>

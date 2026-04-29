@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">O audio e as conversas de fondo nunca se lle envían a Google, a non ser que envíes comentarios sobre a calidade de son</string>
+    <string name="live_transcribe_html_description">Ao utilizar Transcrición instantánea, podes:&lt;br/> &lt;ol> &lt;li> Escribir respostas á transcrición que se mostre na pantalla.&lt;/li> &lt;li> Recibir alertas cando se pronuncie o teu nome.&lt;/li> &lt;li> Facer buscas nas transcricións.&lt;/li> &lt;/ol>&lt;br/> Google procesa as túas conversas, pero nunca as almacena</string>
+    <string name="dolphin_intro">Recibe notificacións no caso de que se detecten sons importantes ao teu redor (o chío dunha alarma de fume, un bebé chorando…)</string>
+    <string name="scribe_intro">Transcrición instantánea converte a voz en texto na túa pantalla para que participes en conversas máis facilmente</string>
+</resources>

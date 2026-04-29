@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">Fișierele audio și conversațiile de fundal nu se trimit la Google decât dacă alegi să trimiți feedback despre calitatea sunetului</string>
+    <string name="live_transcribe_html_description">Când folosești Transcrierea live, poți:&lt;br/> &lt;ol> &lt;li> să tastezi răspunsuri la transcrierea pe care o vezi pe ecran;&lt;/li> &lt;li> să primești alerte când ți se rostește numele;&lt;/li> &lt;li> să cauți în transcrieri.&lt;/li> &lt;/ol>&lt;br/> Google procesează conversațiile, dar nu le stochează niciodată.</string>
+    <string name="dolphin_intro">Primește notificări privind sunetele importante din jur, de exemplu, când se declanșează o alarmă de fum sau plânge un bebeluș</string>
+    <string name="scribe_intro">Transcrierea live afișează vorbirea ca text pe ecran, ca să poți participa mai ușor la conversațiile din jurul tău</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">Các cuộc trò chuyện âm thanh và nền sẽ không được gửi tới Google, trừ phi bạn chọn gửi ý kiến phản hồi về chất lượng âm thanh</string>
+    <string name="live_transcribe_html_description">Khi sử dụng tính năng Chép lời trực tiếp, bạn có thể:&lt;br/> &lt;ol> &lt;li> Nhập nội dung trả lời cho bản chép lời bạn thấy trên màn hình&lt;/li> &lt;li> Nhận thông báo khi tên của bạn được nhắc đến&lt;/li> &lt;li> Tìm kiếm trong bản chép lời&lt;/li> &lt;/ol>&lt;br/> Google xử lý các cuộc trò chuyện của bạn nhưng không bao giờ lưu trữ chúng</string>
+    <string name="dolphin_intro">Nhận thông báo về những âm thanh quan trọng xung quanh bạn, chẳng hạn như khi chuông báo khói kêu hoặc khi trẻ nhỏ khóc</string>
+    <string name="scribe_intro">Tính năng Chép lời trực tiếp hiển thị lời nói ở dạng văn bản trên màn hình để bạn có thể dễ dàng tham gia các cuộc trò chuyện xung quanh mình hơn.</string>
+</resources>

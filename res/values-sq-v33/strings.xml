@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dolphin_html_description">Audioja dhe bisedat në sfond nuk dërgohen te Google, përveçse nëse ti zgjedh të dërgosh komente rreth cilësisë së zërit</string>
+    <string name="live_transcribe_html_description">Kur përdor \"Transkriptimin në çast\", ti mund:&lt;br/> &lt;ol> &lt;li> Të shkruash përgjigje për transkriptimin që shikon në ekran&lt;/li> &lt;li> Të marrësh sinjalizime kur thuhet emri yt&lt;/li> &lt;li> Të kërkosh brenda transkriptimeve&lt;/li> &lt;/ol>&lt;br/> Google i përpunon bisedat e tua, por nuk i ruan asnjëherë ato</string>
+    <string name="dolphin_intro">Merr njoftime për tingujt e rëndësishëm rreth teje, si p.sh. kur bie një alarm tymi ose kur qan një foshnjë</string>
+    <string name="scribe_intro">\"Transkriptimi në çast\" e shfaq ligjërimin si tekst në ekranin tënd në mënyrë që ti të mund të marrësh pjesë më me lehtësi në bisedat rreth teje</string>
+</resources>
