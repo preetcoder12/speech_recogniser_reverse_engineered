@@ -19,8 +19,11 @@ import android.graphics.Color
  */
 class TextFlowEngine {
     
-    private val completedSegments = mutableListOf<String>()
-    private var partialText = ""
+    companion object {
+        private val completedSegments = mutableListOf<String>()
+        private var partialText = ""
+        private const val TAG = "TextFlowEngine"
+    }
     
     fun updatePartial(text: String): SpannableStringBuilder {
         partialText = text
@@ -29,16 +32,20 @@ class TextFlowEngine {
     
     fun finalizeSegment(text: String): SpannableStringBuilder {
         if (text.isNotBlank()) {
-            android.util.Log.i("TextFlowEngine", "Finalizing segment: '$text'")
+            android.util.Log.i(TAG, "Finalizing segment: '$text'")
             
-            // Simplified: ALWAYS APPEND to verify list growth
-            completedSegments.add(text)
+            // Avoid duplicate final results if the engine sends cumulative text
+            if (completedSegments.isNotEmpty() && text.startsWith(completedSegments.last(), ignoreCase = true)) {
+                completedSegments[completedSegments.size - 1] = text
+            } else {
+                completedSegments.add(text)
+            }
             
-            if (completedSegments.size > 200) {
+            if (completedSegments.size > 500) {
                 completedSegments.removeAt(0)
             }
             
-            android.util.Log.i("TextFlowEngine", "Segments count: ${completedSegments.size}")
+            android.util.Log.i(TAG, "Segments count: ${completedSegments.size}")
         }
         partialText = ""
         return buildDisplay()
@@ -52,25 +59,27 @@ class TextFlowEngine {
     private fun buildDisplay(): SpannableStringBuilder {
         val builder = SpannableStringBuilder()
         
-        for (segment in completedSegments) {
-            val start = builder.length
-            builder.append(segment)
-            
-            if (segment.startsWith("[") && segment.endsWith("]")) {
-                builder.setSpan(ForegroundColorSpan(Color.parseColor("#FFA726")), start, builder.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
-                builder.setSpan(StyleSpan(Typeface.BOLD), start, builder.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
-                builder.append(" ")
-            } else {
-                builder.setSpan(ForegroundColorSpan(Color.parseColor("#E0E0E0")), start, builder.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
-                builder.append("\n\n")
+        synchronized(completedSegments) {
+            for (segment in completedSegments) {
+                val start = builder.length
+                builder.append(segment)
+                
+                if (segment.startsWith("[") && segment.endsWith("]")) {
+                    builder.setSpan(ForegroundColorSpan(Color.parseColor("#FFA726")), start, builder.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+                    builder.setSpan(StyleSpan(Typeface.BOLD), start, builder.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+                    builder.append(" ")
+                } else {
+                    builder.setSpan(ForegroundColorSpan(Color.parseColor("#E0E0E0")), start, builder.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+                    builder.append("\n\n")
+                }
             }
-        }
-        
-        if (partialText.isNotBlank()) {
-            val start = builder.length
-            builder.append(partialText)
-            builder.setSpan(ForegroundColorSpan(Color.parseColor("#90FFFFFF")), start, builder.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
-            builder.setSpan(StyleSpan(Typeface.ITALIC), start, builder.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+            
+            if (partialText.isNotBlank()) {
+                val start = builder.length
+                builder.append(partialText)
+                builder.setSpan(ForegroundColorSpan(Color.parseColor("#90FFFFFF")), start, builder.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+                builder.setSpan(StyleSpan(Typeface.ITALIC), start, builder.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+            }
         }
         
         return builder

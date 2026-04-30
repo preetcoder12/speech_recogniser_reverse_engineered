@@ -154,29 +154,31 @@ class AsrBridge(private val context: Context) : AudioObserver {
         if (!isRecognitionActive) return
         
         try {
-            // 1. Clean up old pipe
-            pipeOut?.close()
-            pipe?.forEach { it.close() }
+            // 1. Create the "Exact" audio pipe if it doesn't exist
+            if (pipe == null) {
+                val pfd = ParcelFileDescriptor.createPipe()
+                pipe = pfd
+                pipeOut = ParcelFileDescriptor.AutoCloseOutputStream(pfd[1])
+                
+                // 2. Register as an observer of the infinite microphone stream
+                DolphinForegroundService.instance?.addAudioObserver(this)
+            }
             
-            // 2. Create the "Exact" audio pipe
-            val pfd = ParcelFileDescriptor.createPipe()
-            pipe = pfd
-            pipeOut = ParcelFileDescriptor.AutoCloseOutputStream(pfd[1])
-            
-            // 3. Register as an observer of the infinite microphone stream
-            DolphinForegroundService.instance?.addAudioObserver(this)
-            
-            // 4. Configure the intent with hidden Google extras for segmented streaming
+            // 3. Configure the intent with hidden Google extras for segmented streaming
             val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
                 putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
                 putExtra(RecognizerIntent.EXTRA_PARTIAL_RESULTS, true)
                 putExtra(RecognizerIntent.EXTRA_PREFER_OFFLINE, true)
                 
                 // MIRRORING ORIGINAL APP: Use Pipe instead of hardware MIC
-                putExtra("android.speech.extra.AUDIO_SOURCE", pfd[0])
+                putExtra("android.speech.extra.AUDIO_SOURCE", pipe!![0])
                 putExtra("android.speech.extra.SEGMENTED_SESSION", "android.speech.extra.AUDIO_SOURCE")
                 putExtra("android.speech.extra.AUDIO_SOURCE_SAMPLING_RATE", 16000)
                 putExtra("android.speech.extra.AUDIO_SOURCE_CHANNEL_COUNT", 1)
+                
+                // Extended timeouts to prevent early "Final" results
+                putExtra("android.speech.extra.SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS", 10000L)
+                putExtra("android.speech.extra.SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS", 5000L)
             }
             
             speechRecognizer?.startListening(intent)

@@ -28,7 +28,11 @@ class MicManager(
     companion object {
         private const val TAG = "MicManager"
         private const val RECOVERY_DELAY_MS = 500L
-        private const val ENERGY_CHECK_INTERVAL_MS = 5000L
+        
+        // VAD Parameters
+        private const val MIN_VOICE_RMS = 500.0 // Base sensitivity threshold
+        private const val NOISE_FLOOR_ADAPT_RATE = 0.01 // How fast we learn the background noise
+        private const val HANGTIME_MS = 800L // Keep gate open after speech stops
     }
 
     private var audioRecord: AudioRecord? = null
@@ -37,7 +41,10 @@ class MicManager(
     private val executor = Executors.newSingleThreadExecutor()
     private val observers = mutableListOf<AudioObserver>()
     
-    private var lastEnergyTime = System.currentTimeMillis()
+    // VAD State
+    private var currentNoiseFloor = 200.0
+    private var lastSpeechTime = 0L
+    private var isSpeechActive = false
 
     @SuppressLint("MissingPermission")
     fun start() {
@@ -80,14 +87,22 @@ class MicManager(
                         val shortsRead = record.read(readBuffer, 0, readBuffer.size)
                         
                         if (shortsRead > 0) {
+                            // --- Voice Activity Detection (VAD) ---
+                            val rms = calculateRMS(readBuffer, shortsRead)
+                            updateVADState(rms)
+                            
                             val pcmBytes = ByteArray(shortsRead * 2)
-                            for (i in 0 until shortsRead) {
-                                // Convert short to byte for our shared buffer
-                                // PCM_16BIT is 2 bytes per sample
-                                val low = (readBuffer[i].toInt() and 0xFF).toByte()
-                                val high = ((readBuffer[i].toInt() shr 8) and 0xFF).toByte()
-                                pcmBytes[i * 2] = low
-                                pcmBytes[i * 2 + 1] = high
+                            if (isSpeechActive) {
+                                // Real voice: Fill with actual data
+                                for (i in 0 until shortsRead) {
+                                    val sample = readBuffer[i].toInt()
+                                    pcmBytes[i * 2] = (sample and 0xFF).toByte()
+                                    pcmBytes[i * 2 + 1] = ((sample shr 8) and 0xFF).toByte()
+                                }
+                            } else {
+                                // Background noise: Fill with zeros (Silence)
+                                // This tells the engine to stop transcribing without closing the pipe
+                                for (i in pcmBytes.indices) pcmBytes[i] = 0
                             }
                             
                             // 1. Write to legacy circular buffer
@@ -198,6 +213,36 @@ class MicManager(
     fun removeObserver(observer: AudioObserver) {
         synchronized(observers) {
             observers.remove(observer)
+        }
+    }
+
+    private fun calculateRMS(buffer: ShortArray, size: Int): Double {
+        var sum = 0.0
+        for (i in 0 until size) {
+            sum += buffer[i].toDouble() * buffer[i].toDouble()
+        }
+        return kotlin.math.sqrt(sum / size)
+    }
+
+    private fun updateVADState(rms: Double) {
+        val now = System.currentTimeMillis()
+        
+        // Adaptive threshold logic:
+        // We compare the current energy to the noise floor.
+        // We need a significant jump (MIN_VOICE_RMS) above the floor to trigger.
+        val threshold = currentNoiseFloor + MIN_VOICE_RMS
+        
+        if (rms > threshold) {
+            lastSpeechTime = now
+            isSpeechActive = true
+        } else {
+            // Update noise floor slowly when it's quiet
+            currentNoiseFloor = (currentNoiseFloor * (1.0 - NOISE_FLOOR_ADAPT_RATE)) + (rms * NOISE_FLOOR_ADAPT_RATE)
+            
+            // Apply hangtime before closing the gate
+            if (now - lastSpeechTime > HANGTIME_MS) {
+                isSpeechActive = false
+            }
         }
     }
 }
