@@ -22,6 +22,8 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
     <!-- Quick settings -->
     <uses-permission android:name="android.permission.BIND_QUICK_SETTINGS_TILE" />
+    <!-- Keep CPU alive -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <permission
         android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
@@ -89,6 +91,7 @@
         <!-- ============================================================ -->
         <activity
             android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.scribe.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|layoutDirection|locale"
             android:exported="true"
             android:label="Live Transcribe"
             android:windowSoftInputMode="adjustResize" >

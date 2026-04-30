@@ -14,35 +14,30 @@ import androidx.activity.ComponentActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import android.util.Log
-import android.widget.Toast
+import android.widget.ScrollView
 import com.google.audio.hearing.visualization.accessibility.scribe.clone.asr.AsrBridge
+import com.google.audio.hearing.visualization.accessibility.scribe.clone.asr.StreamAsrBridge
 import com.google.audio.hearing.visualization.accessibility.scribe.clone.textflow.TextFlowEngine
 import com.google.audio.hearing.visualization.accessibility.scribe.clone.R
+import com.google.audio.hearing.visualization.accessibility.scribe.clone.dolphin.DolphinForegroundService
 
 /**
  * MainActivity (Scribe)
+ * 
+ * Optimized for the "Infinite Mic" flow discovered from reverse engineering.
  */
 class MainActivity : ComponentActivity() {
 
     private lateinit var transcriptView: TextView
-    private lateinit var scrollView: android.widget.ScrollView
+    private lateinit var scrollView: ScrollView
     private lateinit var statusText: TextView
-    private lateinit var textFlowEngine: TextFlowEngine
-    private lateinit var asrBridge: AsrBridge
+    private var asrBridge: AsrBridge? = null
     
     private val mainHandler = Handler(Looper.getMainLooper())
     
-    private val transcriptReceiver = object : BroadcastReceiver() {
+    private val eventReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context?, intent: Intent?) {
             when (intent?.action) {
-                "com.google.scribe.PARTIAL_TRANSCRIPT" -> {
-                    val text = intent.getStringExtra("text") ?: return
-                    updatePartialTranscript(text)
-                }
-                "com.google.scribe.FINAL_TRANSCRIPT" -> {
-                    val text = intent.getStringExtra("text") ?: return
-                    finalizeTranscript(text)
-                }
                 "com.google.dolphin.SOUND_DETECTED" -> {
                     val labels = intent.getStringArrayListExtra("labels") ?: return
                     val confidences = intent.getFloatArrayExtra("confidences") ?: return
@@ -56,57 +51,60 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        
+        // Keep screen on to prevent system from killing the capture (matches original app)
+        window.addFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+        
         setContentView(R.layout.activity_main)
         
         transcriptView = findViewById(R.id.transcript_text)
         scrollView = findViewById(R.id.transcript_scroll)
         statusText = findViewById(R.id.status_text)
         
-        textFlowEngine = TextFlowEngine()
+        // Use the persistent engine from the service
         asrBridge = AsrBridge(this)
         
-        val filter = IntentFilter().apply {
-            addAction("com.google.scribe.PARTIAL_TRANSCRIPT")
-            addAction("com.google.scribe.FINAL_TRANSCRIPT")
-            addAction("com.google.dolphin.SOUND_DETECTED")
-        }
-        registerReceiver(transcriptReceiver, filter, Context.RECEIVER_EXPORTED)
+        val filter = IntentFilter("com.google.dolphin.SOUND_DETECTED")
+        registerReceiver(eventReceiver, filter, Context.RECEIVER_EXPORTED)
         
         checkPermissions()
     }
 
     private fun checkPermissions() {
-        val permissions = arrayOf(
-            Manifest.permission.RECORD_AUDIO
-        )
-        
-        val missingPermissions = permissions.filter {
+        val permissions = arrayOf(Manifest.permission.RECORD_AUDIO)
+        val missing = permissions.filter {
             ContextCompat.checkSelfPermission(this, it) != PackageManager.PERMISSION_GRANTED
         }
         
-        if (missingPermissions.isNotEmpty()) {
-            Log.i("MainActivity", "Requesting missing permissions: $missingPermissions")
-            ActivityCompat.requestPermissions(this, missingPermissions.toTypedArray(), 100)
+        if (missing.isNotEmpty()) {
+            ActivityCompat.requestPermissions(this, missing.toTypedArray(), 100)
         } else {
-            Log.i("MainActivity", "Permissions already granted, starting transcription")
-            startTranscription()
+            startInfiniteMicService()
         }
     }
 
-    private fun startTranscription() {
-        statusText.text = "Initializing..."
+    private fun startInfiniteMicService() {
+        statusText.text = "Initializing Mic..."
         
-        // Start foreground service
-        val serviceIntent = Intent(this, com.google.audio.hearing.visualization.accessibility.scribe.clone.dolphin.DolphinForegroundService::class.java)
+        // Start the service that holds the persistent AudioRecord
+        val serviceIntent = Intent(this, DolphinForegroundService::class.java)
         ContextCompat.startForegroundService(this, serviceIntent)
         
-        asrBridge.initialize()
-        asrBridge.startStreaming(object : AsrBridge.TranscriptionCallback {
+        // Wait a bit for the buffer to initialize then start ASR
+        mainHandler.postDelayed({
+            startTranscription()
+        }, 500)
+    }
+
+    private fun startTranscription() {
+        statusText.text = "Live"
+        findViewById<android.view.View>(R.id.status_indicator).setBackgroundResource(android.R.drawable.presence_online)
+        
+        // Using the persistent pipe-based AsrBridge
+        asrBridge?.initialize()
+        asrBridge?.startStreaming(object : AsrBridge.TranscriptionCallback {
             override fun onPartialResult(text: String, confidence: Float) {
-                mainHandler.post { 
-                    updatePartialTranscript(text)
-                    statusText.text = "Live"
-                }
+                mainHandler.post { updatePartialTranscript(text) }
             }
 
             override fun onFinalResult(text: String, isPersonalized: Boolean) {
@@ -114,7 +112,10 @@ class MainActivity : ComponentActivity() {
             }
 
             override fun onError(errorCode: Int, errorMessage: String) {
-                mainHandler.post { showError(errorMessage) }
+                mainHandler.post { 
+                    statusText.text = "Mic Error"
+                    Log.e("MainActivity", "ASR Error: $errorMessage ($errorCode)")
+                }
             }
 
             override fun onSoundEvent(label: String, confidence: Float) {
@@ -124,17 +125,17 @@ class MainActivity : ComponentActivity() {
     }
 
     private fun updatePartialTranscript(text: String) {
-        transcriptView.text = textFlowEngine.updatePartial(text)
+        transcriptView.text = DolphinForegroundService.textFlowEngine.updatePartial(text)
         scrollToBottom()
     }
 
     private fun finalizeTranscript(text: String) {
-        transcriptView.text = textFlowEngine.finalizeSegment(text)
+        transcriptView.text = DolphinForegroundService.textFlowEngine.finalizeSegment(text)
         scrollToBottom()
     }
 
     private fun insertSoundEvent(label: String, confidence: Float) {
-        transcriptView.text = textFlowEngine.insertSoundEvent(label, confidence)
+        transcriptView.text = DolphinForegroundService.textFlowEngine.insertSoundEvent(label, confidence)
         scrollToBottom()
     }
 
@@ -144,15 +145,19 @@ class MainActivity : ComponentActivity() {
         }
     }
 
-    private fun showError(message: String) {
-        transcriptView.text = "Error: $message"
-        statusText.text = "Error"
-        findViewById<android.view.View>(R.id.status_indicator).setBackgroundResource(android.R.drawable.presence_offline)
+    override fun onResume() {
+        super.onResume()
+        // Ensure service is running when we return
+        val serviceIntent = Intent(this, DolphinForegroundService::class.java)
+        ContextCompat.startForegroundService(this, serviceIntent)
     }
 
     override fun onDestroy() {
-        unregisterReceiver(transcriptReceiver)
-        asrBridge.release()
+        try {
+            unregisterReceiver(eventReceiver)
+        } catch (e: Exception) {}
+        asrBridge?.release()
         super.onDestroy()
     }
 }
+

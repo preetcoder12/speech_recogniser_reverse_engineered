@@ -36,242 +36,248 @@
 24    <uses-permission android:name="android.permission.BIND_QUICK_SETTINGS_TILE" />
 24-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:18:5-83
 24-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:18:22-80
-25
-26    <permission
-26-->[androidx.core:core:1.12.0] /Users/officebox/.gradle/caches/9.3.0/transforms/4262b3f3c1693f233b2525a41553ae58/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
-27        android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-27-->[androidx.core:core:1.12.0] /Users/officebox/.gradle/caches/9.3.0/transforms/4262b3f3c1693f233b2525a41553ae58/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
-28        android:protectionLevel="signature" />
-28-->[androidx.core:core:1.12.0] /Users/officebox/.gradle/caches/9.3.0/transforms/4262b3f3c1693f233b2525a41553ae58/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
-29
-30    <uses-permission android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-30-->[androidx.core:core:1.12.0] /Users/officebox/.gradle/caches/9.3.0/transforms/4262b3f3c1693f233b2525a41553ae58/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
-30-->[androidx.core:core:1.12.0] /Users/officebox/.gradle/caches/9.3.0/transforms/4262b3f3c1693f233b2525a41553ae58/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
-31    <!-- <uses-sdk android:minSdkVersion="14"/> -->
-32    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-32-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/61995cbf29eca54fb77223b290db0202/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:25:5-79
-32-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/61995cbf29eca54fb77223b290db0202/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:25:22-76
-33    <uses-permission android:name="android.permission.INTERNET" />
-33-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/61995cbf29eca54fb77223b290db0202/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:26:5-67
-33-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/61995cbf29eca54fb77223b290db0202/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:26:22-64
-34
-35    <application
-35-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:20:5-91:19
-36        android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.scribe.ScribeApplication"
-36-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:21:9-114
-37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-37-->[androidx.core:core:1.12.0] /Users/officebox/.gradle/caches/9.3.0/transforms/4262b3f3c1693f233b2525a41553ae58/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
-38        android:debuggable="true"
-39        android:extractNativeLibs="false"
-40        android:label="Live Transcribe"
-40-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:22:9-40
-41        android:supportsRtl="true" >
-41-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:23:9-35
-42
-43        <!-- ============================================================ -->
-44        <!-- Accessibility Service (Background listening - Dolphin) -->
+25    <!-- Keep CPU alive -->
+26    <uses-permission android:name="android.permission.WAKE_LOCK" />
+26-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:20:5-68
+26-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:20:22-65
+27
+28    <permission
+28-->[androidx.core:core:1.12.0] /Users/officebox/.gradle/caches/9.3.0/transforms/4262b3f3c1693f233b2525a41553ae58/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+29        android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+29-->[androidx.core:core:1.12.0] /Users/officebox/.gradle/caches/9.3.0/transforms/4262b3f3c1693f233b2525a41553ae58/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+30        android:protectionLevel="signature" />
+30-->[androidx.core:core:1.12.0] /Users/officebox/.gradle/caches/9.3.0/transforms/4262b3f3c1693f233b2525a41553ae58/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+31
+32    <uses-permission android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+32-->[androidx.core:core:1.12.0] /Users/officebox/.gradle/caches/9.3.0/transforms/4262b3f3c1693f233b2525a41553ae58/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+32-->[androidx.core:core:1.12.0] /Users/officebox/.gradle/caches/9.3.0/transforms/4262b3f3c1693f233b2525a41553ae58/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+33    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+34    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+34-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/61995cbf29eca54fb77223b290db0202/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:25:5-79
+34-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/61995cbf29eca54fb77223b290db0202/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:25:22-76
+35    <uses-permission android:name="android.permission.INTERNET" />
+35-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/61995cbf29eca54fb77223b290db0202/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:26:5-67
+35-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/61995cbf29eca54fb77223b290db0202/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:26:22-64
+36
+37    <application
+37-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:22:5-94:19
+38        android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.scribe.ScribeApplication"
+38-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:23:9-114
+39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+39-->[androidx.core:core:1.12.0] /Users/officebox/.gradle/caches/9.3.0/transforms/4262b3f3c1693f233b2525a41553ae58/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+40        android:debuggable="true"
+41        android:extractNativeLibs="false"
+42        android:label="Live Transcribe"
+42-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:24:9-40
+43        android:supportsRtl="true" >
+43-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:25:9-35
+44
 45        <!-- ============================================================ -->
-46        <service
-46-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:28:9-38:19
-47            android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.dolphin.DolphinAccessibilityService"
-47-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:29:13-129
-48            android:exported="true"
-48-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:30:13-36
-49            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
-49-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:31:13-79
-50            <intent-filter>
-50-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:32:13-34:29
-51                <action android:name="android.accessibilityservice.AccessibilityService" />
-51-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:33:17-92
-51-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:33:25-89
-52            </intent-filter>
-53
-54            <meta-data
-54-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:35:13-37:72
-55                android:name="android.accessibilityservice"
-55-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:36:17-60
-56                android:resource="@xml/accessibility_service_config" />
-56-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:37:17-69
-57        </service>
-58
-59        <!-- ============================================================ -->
-60        <!-- Foreground Service (Microphone type - high priority) -->
+46        <!-- Accessibility Service (Background listening - Dolphin) -->
+47        <!-- ============================================================ -->
+48        <service
+48-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:30:9-40:19
+49            android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.dolphin.DolphinAccessibilityService"
+49-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:31:13-129
+50            android:exported="true"
+50-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:32:13-36
+51            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+51-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:33:13-79
+52            <intent-filter>
+52-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:34:13-36:29
+53                <action android:name="android.accessibilityservice.AccessibilityService" />
+53-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:35:17-92
+53-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:35:25-89
+54            </intent-filter>
+55
+56            <meta-data
+56-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:37:13-39:72
+57                android:name="android.accessibilityservice"
+57-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:38:17-60
+58                android:resource="@xml/accessibility_service_config" />
+58-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:39:17-69
+59        </service>
+60
 61        <!-- ============================================================ -->
-62        <service
-62-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:43:9-46:40
-63            android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.dolphin.DolphinForegroundService"
-63-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:44:13-126
-64            android:exported="false"
-64-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:46:13-37
-65            android:foregroundServiceType="microphone" />
-65-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:45:13-55
-66
-67        <!-- ============================================================ -->
-68        <!-- Quick Settings Tiles -->
+62        <!-- Foreground Service (Microphone type - high priority) -->
+63        <!-- ============================================================ -->
+64        <service
+64-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:45:9-48:40
+65            android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.dolphin.DolphinForegroundService"
+65-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:46:13-126
+66            android:exported="false"
+66-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:48:13-37
+67            android:foregroundServiceType="microphone" />
+67-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:47:13-55
+68
 69        <!-- ============================================================ -->
-70        <service
-70-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:51:9-58:19
-71            android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.scribe.ScribeTileService"
-71-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:52:13-118
-72            android:exported="true"
-72-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:53:13-36
-73            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" >
-73-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:54:13-77
-74            <intent-filter>
-74-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:55:13-57:29
-75                <action android:name="android.service.quicksettings.action.QS_TILE" />
-75-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:56:17-87
-75-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:56:25-84
-76            </intent-filter>
-77        </service>
-78        <service
-78-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:60:9-67:19
-79            android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.dolphin.DolphinTileService"
-79-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:61:13-120
-80            android:exported="true"
-80-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:62:13-36
-81            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" >
-81-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:63:13-77
-82            <intent-filter>
-82-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:55:13-57:29
-83                <action android:name="android.service.quicksettings.action.QS_TILE" />
-83-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:56:17-87
-83-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:56:25-84
-84            </intent-filter>
-85        </service>
-86
-87        <!-- ============================================================ -->
-88        <!-- Main Activity (Scribe - Live Transcribe) -->
+70        <!-- Quick Settings Tiles -->
+71        <!-- ============================================================ -->
+72        <service
+72-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:53:9-60:19
+73            android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.scribe.ScribeTileService"
+73-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:54:13-118
+74            android:exported="true"
+74-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:55:13-36
+75            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" >
+75-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:56:13-77
+76            <intent-filter>
+76-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:57:13-59:29
+77                <action android:name="android.service.quicksettings.action.QS_TILE" />
+77-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:58:17-87
+77-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:58:25-84
+78            </intent-filter>
+79        </service>
+80        <service
+80-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:62:9-69:19
+81            android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.dolphin.DolphinTileService"
+81-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:63:13-120
+82            android:exported="true"
+82-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:64:13-36
+83            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" >
+83-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:65:13-77
+84            <intent-filter>
+84-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:57:13-59:29
+85                <action android:name="android.service.quicksettings.action.QS_TILE" />
+85-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:58:17-87
+85-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:58:25-84
+86            </intent-filter>
+87        </service>
+88
 89        <!-- ============================================================ -->
-90        <activity
-90-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:72:9-81:20
-91            android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.scribe.MainActivity"
-91-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:73:13-113
-92            android:exported="true"
-92-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:75:13-36
-93            android:label="Live Transcribe"
-93-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:74:13-44
-94            android:windowSoftInputMode="adjustResize" >
-94-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:76:13-55
-95            <intent-filter>
-95-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:77:13-80:29
-96                <action android:name="android.intent.action.MAIN" />
-96-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:78:17-69
-96-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:78:25-66
-97
-98                <category android:name="android.intent.category.LAUNCHER" />
-98-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:79:17-77
-98-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:79:27-74
-99            </intent-filter>
-100        </activity>
-101
-102        <!-- ============================================================ -->
-103        <!-- Custom Sound Recording (Personalized sounds) -->
-104        <!-- ============================================================ -->
-105        <activity
-105-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:86:9-89:58
-106            android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.dolphin.CustomSoundRecordingActivity"
-106-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:87:13-130
-107            android:label="Custom Sound"
-107-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:88:13-41
-108            android:windowSoftInputMode="adjustResize" />
-108-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:89:13-55
-109
-110        <provider
-110-->[androidx.emoji2:emoji2:1.2.0] /Users/officebox/.gradle/caches/9.3.0/transforms/fc9f0b0345574fda53b61ebd0662e072/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-111            android:name="androidx.startup.InitializationProvider"
-111-->[androidx.emoji2:emoji2:1.2.0] /Users/officebox/.gradle/caches/9.3.0/transforms/fc9f0b0345574fda53b61ebd0662e072/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-112            android:authorities="com.google.audio.hearing.visualization.accessibility.scribe.clone.androidx-startup"
-112-->[androidx.emoji2:emoji2:1.2.0] /Users/officebox/.gradle/caches/9.3.0/transforms/fc9f0b0345574fda53b61ebd0662e072/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-113            android:exported="false" >
-113-->[androidx.emoji2:emoji2:1.2.0] /Users/officebox/.gradle/caches/9.3.0/transforms/fc9f0b0345574fda53b61ebd0662e072/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-114            <meta-data
-114-->[androidx.emoji2:emoji2:1.2.0] /Users/officebox/.gradle/caches/9.3.0/transforms/fc9f0b0345574fda53b61ebd0662e072/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-115                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-115-->[androidx.emoji2:emoji2:1.2.0] /Users/officebox/.gradle/caches/9.3.0/transforms/fc9f0b0345574fda53b61ebd0662e072/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-116                android:value="androidx.startup" />
-116-->[androidx.emoji2:emoji2:1.2.0] /Users/officebox/.gradle/caches/9.3.0/transforms/fc9f0b0345574fda53b61ebd0662e072/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+90        <!-- Main Activity (Scribe - Live Transcribe) -->
+91        <!-- ============================================================ -->
+92        <activity
+92-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:74:9-84:20
+93            android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.scribe.MainActivity"
+93-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:75:13-113
+94            android:configChanges="orientation|screenSize|keyboardHidden|layoutDirection|locale"
+94-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:78:13-97
+95            android:exported="true"
+95-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:77:13-36
+96            android:label="Live Transcribe"
+96-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:76:13-44
+97            android:windowSoftInputMode="adjustResize" >
+97-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:79:13-55
+98            <intent-filter>
+98-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:80:13-83:29
+99                <action android:name="android.intent.action.MAIN" />
+99-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:81:17-69
+99-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:81:25-66
+100
+101                <category android:name="android.intent.category.LAUNCHER" />
+101-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:82:17-77
+101-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:82:27-74
+102            </intent-filter>
+103        </activity>
+104
+105        <!-- ============================================================ -->
+106        <!-- Custom Sound Recording (Personalized sounds) -->
+107        <!-- ============================================================ -->
+108        <activity
+108-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:89:9-92:58
+109            android:name="com.google.audio.hearing.visualization.accessibility.scribe.clone.dolphin.CustomSoundRecordingActivity"
+109-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:90:13-130
+110            android:label="Custom Sound"
+110-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:91:13-41
+111            android:windowSoftInputMode="adjustResize" />
+111-->/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/src/main/AndroidManifest.xml:92:13-55
+112
+113        <provider
+113-->[androidx.emoji2:emoji2:1.2.0] /Users/officebox/.gradle/caches/9.3.0/transforms/fc9f0b0345574fda53b61ebd0662e072/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+114            android:name="androidx.startup.InitializationProvider"
+114-->[androidx.emoji2:emoji2:1.2.0] /Users/officebox/.gradle/caches/9.3.0/transforms/fc9f0b0345574fda53b61ebd0662e072/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+115            android:authorities="com.google.audio.hearing.visualization.accessibility.scribe.clone.androidx-startup"
+115-->[androidx.emoji2:emoji2:1.2.0] /Users/officebox/.gradle/caches/9.3.0/transforms/fc9f0b0345574fda53b61ebd0662e072/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+116            android:exported="false" >
+116-->[androidx.emoji2:emoji2:1.2.0] /Users/officebox/.gradle/caches/9.3.0/transforms/fc9f0b0345574fda53b61ebd0662e072/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
 117            <meta-data
-117-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/officebox/.gradle/caches/9.3.0/transforms/b95e1f235e0349ed9126282d9927075f/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
-118                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-118-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/officebox/.gradle/caches/9.3.0/transforms/b95e1f235e0349ed9126282d9927075f/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+117-->[androidx.emoji2:emoji2:1.2.0] /Users/officebox/.gradle/caches/9.3.0/transforms/fc9f0b0345574fda53b61ebd0662e072/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+118                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+118-->[androidx.emoji2:emoji2:1.2.0] /Users/officebox/.gradle/caches/9.3.0/transforms/fc9f0b0345574fda53b61ebd0662e072/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
 119                android:value="androidx.startup" />
-119-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/officebox/.gradle/caches/9.3.0/transforms/b95e1f235e0349ed9126282d9927075f/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+119-->[androidx.emoji2:emoji2:1.2.0] /Users/officebox/.gradle/caches/9.3.0/transforms/fc9f0b0345574fda53b61ebd0662e072/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
 120            <meta-data
-120-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-121                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-121-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+120-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/officebox/.gradle/caches/9.3.0/transforms/b95e1f235e0349ed9126282d9927075f/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+121                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+121-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/officebox/.gradle/caches/9.3.0/transforms/b95e1f235e0349ed9126282d9927075f/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
 122                android:value="androidx.startup" />
-122-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-123        </provider>
-124
-125        <receiver
-125-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-126            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-126-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
-127            android:directBootAware="false"
-127-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
-128            android:enabled="true"
-128-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-129            android:exported="true"
-129-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
-130            android:permission="android.permission.DUMP" >
-130-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
-131            <intent-filter>
-131-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
-132                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-132-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-132-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
-133            </intent-filter>
+122-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/officebox/.gradle/caches/9.3.0/transforms/b95e1f235e0349ed9126282d9927075f/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+123            <meta-data
+123-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+124                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+124-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+125                android:value="androidx.startup" />
+125-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+126        </provider>
+127
+128        <receiver
+128-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+129            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+129-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+130            android:directBootAware="false"
+130-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+131            android:enabled="true"
+131-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+132            android:exported="true"
+132-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+133            android:permission="android.permission.DUMP" >
+133-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
 134            <intent-filter>
-134-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
-135                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-135-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-135-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+134-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+135                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+135-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+135-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
 136            </intent-filter>
 137            <intent-filter>
-137-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
-138                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-138-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-138-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+137-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+138                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+138-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+138-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
 139            </intent-filter>
 140            <intent-filter>
-140-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
-141                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-141-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-141-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+140-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+141                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+141-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+141-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
 142            </intent-filter>
-143        </receiver>
-144
-145        <service
-145-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/61995cbf29eca54fb77223b290db0202/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:29:9-35:19
-146            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-146-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/61995cbf29eca54fb77223b290db0202/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:30:13-103
-147            android:exported="false" >
-147-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/61995cbf29eca54fb77223b290db0202/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:31:13-37
-148            <meta-data
-148-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/61995cbf29eca54fb77223b290db0202/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:32:13-34:39
-149                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-149-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/61995cbf29eca54fb77223b290db0202/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:33:17-94
-150                android:value="cct" />
-150-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/61995cbf29eca54fb77223b290db0202/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:34:17-36
-151        </service>
-152        <service
-152-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/134adabd653112b666177b3ca4bf6c08/transformed/transport-runtime-3.1.0/AndroidManifest.xml:26:9-30:19
-153            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-153-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/134adabd653112b666177b3ca4bf6c08/transformed/transport-runtime-3.1.0/AndroidManifest.xml:27:13-117
-154            android:exported="false"
-154-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/134adabd653112b666177b3ca4bf6c08/transformed/transport-runtime-3.1.0/AndroidManifest.xml:28:13-37
-155            android:permission="android.permission.BIND_JOB_SERVICE" >
-155-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/134adabd653112b666177b3ca4bf6c08/transformed/transport-runtime-3.1.0/AndroidManifest.xml:29:13-69
-156        </service>
-157
-158        <receiver
-158-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/134adabd653112b666177b3ca4bf6c08/transformed/transport-runtime-3.1.0/AndroidManifest.xml:32:9-34:40
-159            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-159-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/134adabd653112b666177b3ca4bf6c08/transformed/transport-runtime-3.1.0/AndroidManifest.xml:33:13-132
-160            android:exported="false" />
-160-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/134adabd653112b666177b3ca4bf6c08/transformed/transport-runtime-3.1.0/AndroidManifest.xml:34:13-37
-161    </application>
-162
-163</manifest>
+143            <intent-filter>
+143-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+144                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+144-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+144-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/officebox/.gradle/caches/9.3.0/transforms/8fa8ec464502f73accfdd40f66a8e0da/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+145            </intent-filter>
+146        </receiver>
+147
+148        <service
+148-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/61995cbf29eca54fb77223b290db0202/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:29:9-35:19
+149            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+149-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/61995cbf29eca54fb77223b290db0202/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:30:13-103
+150            android:exported="false" >
+150-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/61995cbf29eca54fb77223b290db0202/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:31:13-37
+151            <meta-data
+151-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/61995cbf29eca54fb77223b290db0202/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:32:13-34:39
+152                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+152-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/61995cbf29eca54fb77223b290db0202/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:33:17-94
+153                android:value="cct" />
+153-->[com.google.android.datatransport:transport-backend-cct:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/61995cbf29eca54fb77223b290db0202/transformed/transport-backend-cct-3.1.0/AndroidManifest.xml:34:17-36
+154        </service>
+155        <service
+155-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/134adabd653112b666177b3ca4bf6c08/transformed/transport-runtime-3.1.0/AndroidManifest.xml:26:9-30:19
+156            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+156-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/134adabd653112b666177b3ca4bf6c08/transformed/transport-runtime-3.1.0/AndroidManifest.xml:27:13-117
+157            android:exported="false"
+157-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/134adabd653112b666177b3ca4bf6c08/transformed/transport-runtime-3.1.0/AndroidManifest.xml:28:13-37
+158            android:permission="android.permission.BIND_JOB_SERVICE" >
+158-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/134adabd653112b666177b3ca4bf6c08/transformed/transport-runtime-3.1.0/AndroidManifest.xml:29:13-69
+159        </service>
+160
+161        <receiver
+161-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/134adabd653112b666177b3ca4bf6c08/transformed/transport-runtime-3.1.0/AndroidManifest.xml:32:9-34:40
+162            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+162-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/134adabd653112b666177b3ca4bf6c08/transformed/transport-runtime-3.1.0/AndroidManifest.xml:33:13-132
+163            android:exported="false" />
+163-->[com.google.android.datatransport:transport-runtime:3.1.0] /Users/officebox/.gradle/caches/9.3.0/transforms/134adabd653112b666177b3ca4bf6c08/transformed/transport-runtime-3.1.0/AndroidManifest.xml:34:13-37
+164    </application>
+165
+166</manifest>

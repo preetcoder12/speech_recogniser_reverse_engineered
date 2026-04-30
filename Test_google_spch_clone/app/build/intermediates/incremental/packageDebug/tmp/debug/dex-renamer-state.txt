@@ -1,8 +1,10 @@
-#Wed Apr 29 11:08:21 IST 2026
+#Thu Apr 30 19:32:59 IST 2026
 path.4=14/classes.dex
 path.3=13/classes.dex
 path.2=12/classes.dex
 path.1=0/classes.dex
+renamed.8=classes9.dex
+path.8=3/classes.dex
 path.7=classes3.dex
 path.6=classes2.dex
 path.5=8/classes.dex
@@ -17,6 +19,7 @@ renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
 renamed.7=classes8.dex
+base.8=/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/build/intermediates/dex/debug/mergeProjectDexDebug/3/classes.dex
 renamed.6=classes7.dex
 base.7=/Users/officebox/Downloads/Live Transcribe and Sound Notifications_v8.7.880674799(186088)_src/Test_google_spch_clone/app/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex
 renamed.5=classes6.dex

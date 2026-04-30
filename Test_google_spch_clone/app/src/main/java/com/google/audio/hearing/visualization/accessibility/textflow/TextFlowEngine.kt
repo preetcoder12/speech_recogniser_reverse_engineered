@@ -19,18 +19,8 @@ import android.graphics.Color
  */
 class TextFlowEngine {
     
-    private val completedLines = mutableListOf<String>()
+    private val completedSegments = mutableListOf<String>()
     private var partialText = ""
-    
-    data class TextSegment(
-        val text: String,
-        val type: SegmentType,
-        val timestamp: Long
-    )
-    
-    enum class SegmentType { PARTIAL, FINAL, SOUND_EVENT, PERSONALIZED }
-    
-    private val segmentHistory = mutableListOf<TextSegment>()
     
     fun updatePartial(text: String): SpannableStringBuilder {
         partialText = text
@@ -39,60 +29,48 @@ class TextFlowEngine {
     
     fun finalizeSegment(text: String): SpannableStringBuilder {
         if (text.isNotBlank()) {
-            completedLines.add(text)
-            segmentHistory.add(TextSegment(text, SegmentType.FINAL, System.currentTimeMillis()))
+            android.util.Log.i("TextFlowEngine", "Finalizing segment: '$text'")
             
-            while (completedLines.size > 100) {
-                completedLines.removeAt(0)
+            // Simplified: ALWAYS APPEND to verify list growth
+            completedSegments.add(text)
+            
+            if (completedSegments.size > 200) {
+                completedSegments.removeAt(0)
             }
+            
+            android.util.Log.i("TextFlowEngine", "Segments count: ${completedSegments.size}")
         }
         partialText = ""
         return buildDisplay()
     }
     
     fun insertSoundEvent(label: String, confidence: Float): SpannableStringBuilder {
-        val soundText = "[$label]"
-        completedLines.add(soundText)
-        segmentHistory.add(TextSegment(soundText, SegmentType.SOUND_EVENT, System.currentTimeMillis()))
+        completedSegments.add("[$label]")
         return buildDisplay()
     }
     
     private fun buildDisplay(): SpannableStringBuilder {
         val builder = SpannableStringBuilder()
         
-        for (line in completedLines) {
+        for (segment in completedSegments) {
             val start = builder.length
-            builder.append(line)
-            builder.append('\n')
+            builder.append(segment)
             
-            val segment = segmentHistory.find { it.text == line }
-            if (segment?.type == SegmentType.SOUND_EVENT) {
-                builder.setSpan(
-                    ForegroundColorSpan(Color.parseColor("#FFA726")),
-                    start, builder.length - 1,
-                    Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
-                )
-                builder.setSpan(
-                    StyleSpan(Typeface.BOLD),
-                    start, builder.length - 1,
-                    Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
-                )
+            if (segment.startsWith("[") && segment.endsWith("]")) {
+                builder.setSpan(ForegroundColorSpan(Color.parseColor("#FFA726")), start, builder.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+                builder.setSpan(StyleSpan(Typeface.BOLD), start, builder.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+                builder.append(" ")
+            } else {
+                builder.setSpan(ForegroundColorSpan(Color.parseColor("#E0E0E0")), start, builder.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+                builder.append("\n\n")
             }
         }
         
         if (partialText.isNotBlank()) {
             val start = builder.length
             builder.append(partialText)
-            builder.setSpan(
-                ForegroundColorSpan(Color.parseColor("#80FFFFFF")),
-                start, builder.length,
-                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
-            )
-            builder.setSpan(
-                StyleSpan(Typeface.ITALIC),
-                start, builder.length,
-                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
-            )
+            builder.setSpan(ForegroundColorSpan(Color.parseColor("#90FFFFFF")), start, builder.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+            builder.setSpan(StyleSpan(Typeface.ITALIC), start, builder.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
         }
         
         return builder
